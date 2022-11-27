@@ -1,0 +1,49 @@
+.points {
+    margin: 8rem 0 12rem 0;
+
+    &__row {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -1rem;
+    }
+
+    &__col {
+        flex: 0 0 auto;
+        width: 33.33%;
+        padding: 0 1rem;
+        margin-bottom: 2rem;
+        box-sizing: border-box;
+    }
+
+    &__item {
+        padding: 4rem 3.2rem;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 1.5rem rgba(0, 0, 0, 0.05);
+        border-radius: 0.4rem;
+    }
+
+    &__num {
+        display: inline-block;
+        background: #72CAC1;
+        border-radius: 4rem 0px;
+        padding: 0.7rem 3.2rem;
+        font-weight: 700;
+        font-size: 4rem;
+        line-height: 150%;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+        color: #FFFFFF;
+    }
+
+    &__title {
+        margin-top: 4rem;
+        font-weight: 500;
+        font-size: 2.4rem;
+        line-height: 150%;
+    }
+
+    &__desc {
+        margin-top: 1.6rem;
+        font-size: 1.6rem;
+        line-height: 150%;
+    }
+}

@@ -1,0 +1,22 @@
+.page {
+    &__center {
+        max-width: 138rem;
+        margin: 0 auto;
+    }
+
+    &__gray {
+        padding: 1px 0;
+        background: #F8F8F8;
+    }
+
+    &__h3 {
+        font-weight: 500;
+        font-size: 4rem;
+        line-height: 135%;
+        letter-spacing: -0.03em;
+        text-transform: uppercase;
+        margin-bottom: 4rem;
+    }
+
+   
+}

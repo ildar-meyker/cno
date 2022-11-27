@@ -1,0 +1,38 @@
+.nav-pager {
+    display: flex;
+    font-size: 1.6rem;
+    line-height: calc(19/16);
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    margin: 6.4rem 0;
+    
+
+    &__nums {
+        display: flex;
+
+        a {
+            text-decoration: none;
+            padding: .5em .8em;
+            color: #000;
+
+            &:hover {
+                background: #f8f8f8;
+                border-radius: .5em;
+            }
+
+            &.active {
+                background: #20877D;
+                border-radius: 1em 0px;
+                color: #fff;
+            }
+        }
+
+    }
+
+    &__btn {
+        text-decoration: none;
+        padding: .5em 0;
+        margin-left: 1em;
+        font-weight: 500;
+        color: #20877D;
+    }
+}

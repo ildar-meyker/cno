@@ -1,0 +1,82 @@
+.read-tiles {
+
+
+    &__row {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -1.2rem;
+    }
+
+    &__col {
+        flex: 0 0 auto;
+        width: 33.33%;
+        padding: 0 1.2rem;
+        margin-bottom: 4rem;
+        box-sizing: border-box;
+    }
+
+    &__item {
+        position: relative;
+    }
+
+    &__image {
+        position: relative;
+        background-position: 50% 50%;
+        background-size: cover;
+    }
+
+    &__date-1 {
+        display: block;
+        margin-top: 2.4rem;
+        font-size: 1.4rem;
+        line-height: 135%;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+        color: #3D3D3D;
+    }
+
+    &__date-2 {
+        position: absolute;
+        left: 0;
+        bottom: 10%;
+        padding: 1em calc(24/16) + em;
+        background: #FFFFFF;
+        font-weight: 500;
+        font-size: 1.6rem;
+        line-height: 155%;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+        color: #20877D;
+    }
+
+
+
+    &__name {
+        margin: 1.6rem 0;
+        font-weight: 500;
+        font-size: 2.4rem;
+        line-height: 140%;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+
+        .read-tiles__image + & {
+            margin-top: 3.2rem;
+        }
+    }
+
+    &__media {
+        font-weight: 500;
+        font-size: 1.4rem;
+        line-height: 150%;
+        color: #20877D;
+    }
+
+    &__tags {
+        margin-top: 2.4rem;
+        font-weight: 500;
+        font-size: 1.6rem;
+        line-height: 150%;
+
+        span {
+            display: inline-block;
+            margin: 0 1.5em .3em 0;
+        }
+    }
+}

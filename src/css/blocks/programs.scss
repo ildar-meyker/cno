@@ -1,0 +1,115 @@
+.programs {
+    margin: 15rem 0;
+
+    &__row {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -1rem
+    }
+
+    &__col {
+        flex: 0 0 auto;
+        width: 33.33%;
+        padding: 0 1rem;
+        box-sizing: border-box;
+        margin-bottom: 2rem;
+    }
+
+    &__item {
+        transition:  filter .2s;
+        position: relative;
+        padding: 3.2rem;
+        min-height: 27.5rem;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        overflow: hidden;
+        box-sizing: border-box;
+
+        &:hover {
+            filter: brightness(1.1);
+
+        }
+    
+
+        &:before {
+            @include fill;
+            content: " ";
+            background: url(../img/flower-2.svg) 100% 100% / contain no-repeat;
+        }
+
+        &--orange {
+            background: linear-gradient(110.34deg, #F0DC8D 0%, #FF1C3E 100%);
+
+        }
+
+        &--green {
+            background: linear-gradient(110.34deg, #00706C 0%, #00FFBB 100%);
+        }
+
+        &--dark-blue {
+            background: linear-gradient(110.34deg, #0B31BF 0%, #1DEBD5 100%);
+        }
+
+        &--yellow {
+            background: linear-gradient(110.34deg, #FF9800 0%, #FFC107 49.48%, #FFEB3B 100%);
+        }
+
+        &--blue {
+            background: linear-gradient(110.34deg, #00A4DB 0%, #B6FBFF 100%);
+        }
+
+        &--purple {
+            background: linear-gradient(110.34deg, #B76AE6 0%, #CC2B2B 100%);
+        }
+    }
+
+    &__tags {
+        font-weight: 700;
+        font-size: 1.6rem;
+        line-height: 150%;
+        font-feature-settings: "pnum" on, "lnum" on;
+        
+        > span {
+            display: inline-block;
+            margin: 0 1.5em .3em 0 ;
+        }
+    }
+
+    &__name {
+        font-weight: 700;
+        font-size: 2.4rem;
+        line-height: 150%;
+        
+      
+    }
+
+    
+
+    &__btn-all {
+        margin-top: 4rem;
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+        font-size: 2.4rem;
+        line-height: 150%;
+        color: #20877D;
+        text-decoration: none;
+
+        &:hover {
+            .icon {
+                transform: translateX(.2em);
+            }
+        }
+
+        .icon {
+            transition: transform .2s;
+            margin-left: 0.75em;
+            margin-top: .2em;
+            flex: 0 0 auto;
+            width: .75em;
+            height: .75em;
+        }
+    }
+}
