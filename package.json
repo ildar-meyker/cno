@@ -32,6 +32,7 @@
     "gulp-filelist": "^2.0.5",
     "gulp-group-css-media-queries": "^1.2.2",
     "gulp-grunt": "^0.5.5",
+    "gulp-html-extend": "^1.1.6",
     "gulp-if": "^3.0.0",
     "gulp-less": "^5.0.0",
     "gulp-postcss": "^9.0.1",
@@ -48,11 +49,10 @@
     "style-loader": "^3.3.1",
     "vinyl-named": "^1.1.0",
     "webpack": "^5.66.0",
-    "webpack-stream": "^7.0.0",
-    "gulp-html-extend": "^1.1.6"
+    "webpack-stream": "^7.0.0"
   },
   "dependencies": {
-    "destyle.css": "^3.0.2",
+    "bootstrap": "^4.3.1",
     "howler": "^2.2.3",
     "jquery": "^3.6.0",
     "slick-carousel": "^1.8.1",

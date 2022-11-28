@@ -149,8 +149,8 @@ gulp.task("watch", function () {
 	watch(assets).on("add", onAssetsChange).on("change", onAssetsChange);
 
 	// watch other
-	watch("./src/css/**/*", { delay: 10000 }, series("styles"));
-	watch("./src/js/**/*", { delay: 10000 }, series("scripts", "reload"));
+	watch("./src/css/**/*", { delay: 500 }, series("styles"));
+	watch("./src/js/**/*", { delay: 500 }, series("scripts", "reload"));
 });
 
 gulp.task("reload", function (done) {

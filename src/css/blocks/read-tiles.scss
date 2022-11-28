@@ -30,7 +30,6 @@
         margin-top: 2.4rem;
         font-size: 1.4rem;
         line-height: 135%;
-        font-feature-settings: 'pnum' on, 'lnum' on;
         color: #3D3D3D;
     }
 
@@ -43,7 +42,6 @@
         font-weight: 500;
         font-size: 1.6rem;
         line-height: 155%;
-        font-feature-settings: 'pnum' on, 'lnum' on;
         color: #20877D;
     }
 
@@ -54,7 +52,6 @@
         font-weight: 500;
         font-size: 2.4rem;
         line-height: 140%;
-        font-feature-settings: 'pnum' on, 'lnum' on;
 
         .read-tiles__image + & {
             margin-top: 3.2rem;

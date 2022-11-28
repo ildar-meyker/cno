@@ -1,3 +1,5 @@
+@import './vendor/bootstrap-transitions.scss';
+
 @mixin fill {
     position: absolute;
     top: 0;
@@ -6,15 +8,47 @@
     height: 100%;
 }
 
+:root {
+    --side-padding: 100px;
+}
+
+@media (max-width: 1600px) {
+    :root {
+        --side-padding: 40px;
+    }
+}
+
+
+html {
+    font-size: clamp(7px, .7vw, 10px);
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #000;
+}
+
+a {
+    color: inherit;
+}
+
+
 .text-center {
     text-align: center;
+}
+
+.text-green {
+    color: #20877D;
+}
+
+.text-white {
+    color: #fff;
 }
 
 .link-area {
     @include fill;
 }
-
-
 
 .nice-link {
     background-image: linear-gradient(currentColor,currentColor);
@@ -27,22 +61,13 @@
         background-size: 100% 1px;
     }
 
-    &.active {
+    &--active {
         background-size: 100% 1px;
 
         &:hover {
             background-size: 0 1px;
         }
     }
-}
-
-html {
-    font-size: clamp(7px, .7vw, 10px);
-}
-
-body {
-    font-family: 'Raleway', sans-serif;
-    color: #000;
 }
 
 @import './blocks/page.scss';
@@ -54,4 +79,8 @@ body {
 @import './blocks/read-list.scss';
 @import './blocks/nav-bread.scss';
 @import './blocks/points.scss';
+@import './blocks/header.scss';
+@import './blocks/promo.scss';
+@import './blocks/accordion.scss'; 
+@import './blocks/faq.scss'; 
 
