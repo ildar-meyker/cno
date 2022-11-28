@@ -30,6 +30,7 @@ body {
 }
 
 a {
+    text-decoration: none;
     color: inherit;
 }
 
@@ -83,4 +84,5 @@ a {
 @import './blocks/promo.scss';
 @import './blocks/accordion.scss'; 
 @import './blocks/faq.scss'; 
+@import './blocks/footer.scss'; 
 

@@ -47,6 +47,7 @@ body {
 }
 
 a {
+  text-decoration: none;
   color: inherit;
 }
 
@@ -70,14 +71,14 @@ a {
   height: 100%;
 }
 
-.nice-link, .header__nav a {
+.nice-link, .footer__nav a, .header__nav a {
   background-image: linear-gradient(currentColor, currentColor);
   background-position: 0 100%;
   background-repeat: no-repeat;
   background-size: 0 1px;
   transition: background-size 0.25s ease-out, color 0.2s;
 }
-.nice-link:hover, .header__nav a:hover {
+.nice-link:hover, .footer__nav a:hover, .header__nav a:hover {
   background-size: 100% 1px;
 }
 .nice-link--active {
@@ -299,7 +300,6 @@ a {
   font-size: 2.4rem;
   line-height: 150%;
   color: #20877D;
-  text-decoration: none;
 }
 .programs__btn-all:hover .icon {
   transform: translateX(0.2em);
@@ -323,7 +323,6 @@ a {
   display: flex;
 }
 .nav-pager__nums a {
-  text-decoration: none;
   padding: 0.5em 0.8em;
   color: #000;
 }
@@ -337,7 +336,6 @@ a {
   color: #fff;
 }
 .nav-pager__btn {
-  text-decoration: none;
   padding: 0.5em 0;
   margin-left: 1em;
   font-weight: 500;
@@ -414,9 +412,6 @@ a {
   line-height: 1.1428571429;
   color: #B7B7B7;
 }
-.nav-bread a {
-  text-decoration: none;
-}
 .nav-bread span {
   color: #000;
 }
@@ -482,7 +477,6 @@ a {
   font-size: 1.2rem;
   line-height: 1.1666666667;
   text-transform: uppercase;
-  text-decoration: none;
   color: rgba(255, 255, 255, 0.5);
 }
 .header__lang a:hover, .header__lang a.active {
@@ -524,7 +518,6 @@ a {
   font-size: 1.6rem;
   line-height: 120%;
   text-transform: uppercase;
-  text-decoration: none;
   white-space: nowrap;
 }
 .header__nav {
@@ -538,7 +531,6 @@ a {
   line-height: 150%;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  text-decoration: none;
 }
 
 .promo {
@@ -587,13 +579,12 @@ a {
   font-weight: 500;
   font-size: 2.4rem;
   line-height: 155%;
-  text-decoration: none;
 }
 .accordion__title.collapsed i:before {
-  transform: rotate(180deg);
+  transform: rotate(-180deg);
 }
 .accordion__title.collapsed i:after {
-  transform: rotate(90deg);
+  transform: rotate(-90deg);
   opacity: 1;
 }
 .accordion__title i:before, .accordion__title i:after {
@@ -612,7 +603,7 @@ a {
   opacity: 0;
 }
 .accordion__body {
-  padding: 0 4rem 2.4rem 4rem;
+  padding: 0 4rem 4rem 4rem;
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 150%;
@@ -621,4 +612,83 @@ a {
 
 .faq {
   margin: 20rem 0;
+}
+
+.footer {
+  padding: 10rem 0;
+  background: #20877D;
+  background-image: url(../../img/wave-1.svg), url(../../img/wave-2.svg), url(../../img/flower-3.svg);
+  background-position: 100% 100%, 100% 100%, 0 100%;
+  background-size: 100% auto, 80% auto, 40% auto;
+  background-repeat: no-repeat;
+  font-size: 1.6rem;
+  color: #FFFFFF;
+}
+.footer__in {
+  display: flex;
+}
+.footer__content {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer__name {
+  font-weight: 500;
+  line-height: 120%;
+  text-transform: uppercase;
+  margin-right: auto;
+  white-space: nowrap;
+}
+.footer__nav {
+  margin-left: 8rem;
+  max-width: 20rem;
+  margin-bottom: 8rem;
+}
+.footer__nav div {
+  margin-top: 2.4rem;
+}
+.footer__nav div:first-child {
+  margin-top: 0;
+}
+.footer__nav a {
+  font-weight: 700;
+  line-height: 150%;
+  text-transform: uppercase;
+}
+.footer__touch {
+  margin-left: 8rem;
+  margin-bottom: 8rem;
+}
+.footer__touch__title {
+  margin-bottom: 1.6rem;
+  font-weight: 700;
+  line-height: 150%;
+  text-transform: uppercase;
+}
+.footer__touch__desc {
+  line-height: 150%;
+}
+.footer__touch__desc > div {
+  margin-bottom: 0.8rem;
+}
+.footer__promo {
+  margin-left: 8rem;
+  margin-bottom: 8rem;
+}
+.footer__promo__title {
+  margin-bottom: 2.2rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: 150%;
+}
+.footer__icons {
+  display: flex;
+  margin-top: 1rem;
+}
+.footer__icons a {
+  margin-right: 1.6rem;
+}
+.footer__icons a .icon {
+  width: 2.4rem;
+  height: 2.4rem;
+  fill: #fff;
 }
