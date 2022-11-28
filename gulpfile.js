@@ -38,14 +38,13 @@ const pkg = require("./package.json");
 
 require("gulp-grunt")(gulp);
 
-var path = {
-	assets: [
-		"src/fonts/**/*",
-		"src/video/**/*",
-		"src/data/**/*",
-		"src/robots.txt",
-	],
-};
+const assets = [
+	"src/img/**",
+	"src/fonts/**/*",
+	"src/video/**/*",
+	"src/data/**/*",
+	"src/robots.txt",
+];
 
 function renderHtml(path) {
 	const src = path || "./src/markup/*.html";
@@ -55,6 +54,12 @@ function renderHtml(path) {
 		.pipe(extender({ annotations: false, verbose: false }))
 		.pipe(cachebust({ type: "timestamp" }))
 		.pipe(gulp.dest("./public"));
+}
+
+function copyAssets(path) {
+	const src = path || assets;
+
+	return gulp.src(src, { base: "src/" }).pipe(gulp.dest("./public"));
 }
 
 gulp.task("templates", function () {
@@ -119,26 +124,33 @@ gulp.task("styles", function () {
 });
 
 /*----------  Assets  ----------*/
-gulp.task("images", function () {
-	return gulp.src("src/img/**", { base: "src/" }).pipe(gulp.dest("./public"));
-});
 
 gulp.task("copy", function () {
-	return gulp.src(path.assets, { base: "src/" }).pipe(gulp.dest("./public"));
+	return copyAssets();
 });
 
 /*----------  Server  ----------*/
 
 gulp.task("watch", function () {
-	watch("./src/markup/*.html").on("change", (path) => {
+	// watch html
+	const onHtmlChange = (path) => {
 		renderHtml(path);
 		server.reload();
-	});
+	};
+	watch("./src/markup/*.html", { delay: 500 })
+		.on("add", onHtmlChange)
+		.on("change", onHtmlChange);
 
-	watch("./src/css/**/*", { delay: 2000 }, series("styles"));
-	watch("./src/js/**/*", { delay: 2000 }, series("scripts", "reload"));
-	watch("./src/img/**/*", { delay: 2000 }, series("images", "reload"));
-	watch(path.assets, { delay: 2000 }, series("copy", "reload"));
+	// watch assets
+	const onAssetsChange = (path) => {
+		copyAssets(path);
+		server.reload();
+	};
+	watch(assets).on("add", onAssetsChange).on("change", onAssetsChange);
+
+	// watch other
+	watch("./src/css/**/*", { delay: 10000 }, series("styles"));
+	watch("./src/js/**/*", { delay: 10000 }, series("scripts", "reload"));
 });
 
 gulp.task("reload", function (done) {
@@ -169,7 +181,6 @@ gulp.task(
 		"filelist",
 		"templates",
 		"styles",
-		"images",
 		"scripts"
 	)
 );
