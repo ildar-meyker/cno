@@ -32,6 +32,8 @@ body {
     font-family: 'Raleway', sans-serif;
     font-feature-settings: 'pnum' on, 'lnum' on;
     color: #000;
+
+    
 }
 
 a {
@@ -97,5 +99,6 @@ a {
 @import './blocks/form-feedback.scss'; 
 
 @import './layouts/l-index.scss';
+@import './layouts/l-media.scss';
 
 

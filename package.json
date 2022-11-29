@@ -2,7 +2,7 @@
   "name": "cno",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git@bitbucket.org:ildar-meyker/html-cno.git"
   },
   "version": "0.0.1",
   "description": "",
