@@ -11,7 +11,6 @@
         flex: 0 0 auto;
         width: 33.33%;
         padding: 0 1rem;
-        box-sizing: border-box;
         margin-bottom: 2rem;
     }
 
@@ -25,7 +24,6 @@
         justify-content: space-between;
         flex-direction: column;
         overflow: hidden;
-        box-sizing: border-box;
 
         &:hover {
             filter: brightness(1.1);

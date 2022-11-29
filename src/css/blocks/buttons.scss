@@ -1,0 +1,19 @@
+.btn-green {
+    transition: background .2s;
+    display: inline-block;
+    border: 0;
+    border-radius: 10rem 0px;
+    min-width: 15em;
+    padding: 1.6rem;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 150%;
+    background: #20877D;
+    text-align: center;
+    cursor: pointer;
+    color: #FFFFFF;
+
+    &:hover {
+        background: lighten(#20877D, 5%);
+    }
+}

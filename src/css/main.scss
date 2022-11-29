@@ -18,6 +18,10 @@
     }
 }
 
+* {
+    box-sizing: border-box;
+}
+
 
 html {
     font-size: clamp(7px, .7vw, 10px);
@@ -72,6 +76,9 @@ a {
 }
 
 @import './blocks/page.scss';
+@import './blocks/inputs.scss'; 
+@import './blocks/buttons.scss'; 
+@import './blocks/form.scss'; 
 @import './blocks/digits.scss';
 @import './blocks/docs.scss';
 @import './blocks/programs.scss';
@@ -85,4 +92,7 @@ a {
 @import './blocks/accordion.scss'; 
 @import './blocks/faq.scss'; 
 @import './blocks/footer.scss'; 
+@import './blocks/contacts.scss'; 
+@import './blocks/form-feedback.scss'; 
+
 

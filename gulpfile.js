@@ -98,29 +98,31 @@ gulp.task("scripts", function () {
 /*----------  Styles  ----------*/
 
 gulp.task("styles", function () {
-	return gulp
-		.src(["src/css/*.*", "!src/css/_*.*"])
-		.pipe(
-			gulpif(
-				"*.scss",
-				sass({
-					importer: require("node-sass-tilde-importer"),
-				}).on("error", sass.logError)
+	return (
+		gulp
+			.src(["src/css/*.*", "!src/css/_*.*"])
+			.pipe(
+				gulpif(
+					"*.scss",
+					sass({
+						importer: require("node-sass-tilde-importer"),
+					}).on("error", sass.logError)
+				)
 			)
-		)
-		.pipe(gulpif("*.less", less()))
-		.pipe(postcss([autoprefixer()]))
-		.pipe(gulp.dest("public/css/"))
-		.pipe(sourcemaps.init())
-		.pipe(cleancss())
-		.pipe(
-			rename({
-				suffix: ".min",
-			})
-		)
-		.pipe(sourcemaps.write("."))
-		.pipe(gulp.dest("public/css/"))
-		.pipe(server.stream());
+			.pipe(gulpif("*.less", less()))
+			// .pipe(postcss([autoprefixer()]))
+			// .pipe(gulp.dest("public/css/"))
+			// .pipe(sourcemaps.init())
+			// .pipe(cleancss())
+			.pipe(
+				rename({
+					suffix: ".min",
+				})
+			)
+			// .pipe(sourcemaps.write("."))
+			.pipe(gulp.dest("public/css/"))
+			.pipe(server.stream())
+	);
 });
 
 /*----------  Assets  ----------*/
@@ -132,23 +134,14 @@ gulp.task("copy", function () {
 /*----------  Server  ----------*/
 
 gulp.task("watch", function () {
-	// watch html
-	const onHtmlChange = (path) => {
-		renderHtml(path);
-		server.reload();
-	};
 	watch("./src/markup/*.html", { delay: 500 })
-		.on("add", onHtmlChange)
-		.on("change", onHtmlChange);
+		.on("add", renderHtml)
+		.on("change", renderHtml);
 
-	// watch assets
-	const onAssetsChange = (path) => {
-		copyAssets(path);
-		server.reload();
-	};
-	watch(assets).on("add", onAssetsChange).on("change", onAssetsChange);
+	watch(assets, { delay: 500 })
+		.on("add", copyAssets)
+		.on("change", copyAssets);
 
-	// watch other
 	watch("./src/css/**/*", { delay: 500 }, series("styles"));
 	watch("./src/js/**/*", { delay: 500 }, series("scripts", "reload"));
 });
