@@ -96,6 +96,9 @@ a {
 .page__wrapper {
   background: url(../../img/flower-4.svg) 100% 0/40% auto no-repeat;
 }
+.page__wrapper--gray {
+  background-color: #F8F8F8;
+}
 .page__center {
   padding: 0 var(--side-padding);
   max-width: 1380px;
@@ -155,6 +158,64 @@ a {
 }
 .btn-green:hover {
   background: #259c90;
+}
+
+.checkbox {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+.checkbox:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.checkbox input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkbox input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.checkbox .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
 }
 
 .digits {
@@ -366,6 +427,9 @@ a {
   line-height: 1.1875;
   margin: 6.4rem 0;
 }
+.nav-pager:last-child {
+  margin-bottom: 0;
+}
 .nav-pager__nums {
   display: flex;
 }
@@ -452,10 +516,12 @@ a {
   margin: 0 1.5em 0.3em 0;
 }
 
+.list-events--air .list-events__item {
+  padding: 5.2rem 0;
+}
 .list-events__item {
-  padding: 3.2rem 0;
+  padding: 4rem 0;
   border-bottom: 1px solid #E1E1E1;
-  margin-bottom: 3.2rem;
 }
 .list-events__tags {
   font-weight: 500;
@@ -485,7 +551,6 @@ a {
   line-height: 140%;
 }
 .list-events__place {
-  margin: 1.6rem 0;
   font-size: 1.4rem;
   line-height: 135%;
 }
@@ -697,10 +762,13 @@ a {
 }
 
 .faq {
-  margin: 20rem 0;
+  padding: 20rem 0;
+  background: #f8f8f8;
+  margin-bottom: -20rem;
 }
 
 .footer {
+  margin-top: 20rem;
   padding: 10rem 0;
   background: #20877D;
   background-image: url(../../img/wave-1.svg), url(../../img/wave-2.svg), url(../../img/flower-3.svg);
@@ -779,9 +847,6 @@ a {
   fill: #fff;
 }
 
-.contacts {
-  margin-bottom: 20rem;
-}
 .contacts__row {
   display: flex;
 }
@@ -896,6 +961,15 @@ a {
   margin-top: 2rem;
 }
 
-.l-media__1 {
-  margin-bottom: 20rem;
+.l-coming__1__row {
+  display: flex;
+}
+.l-coming__1__left {
+  flex: 0 0 auto;
+  width: 33.33%;
+}
+.l-coming__1__right {
+  flex: 0 0 auto;
+  width: 66.66%;
+  padding-left: 12rem;
 }

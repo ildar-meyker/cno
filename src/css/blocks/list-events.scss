@@ -1,9 +1,14 @@
 .list-events {
 
+    &--air {
+        .list-events__item {
+            padding: 5.2rem 0;
+        }
+    }
+
     &__item {
-        padding: 3.2rem 0;
+        padding: 4rem 0;
         border-bottom: 1px solid #E1E1E1;
-        margin-bottom: 3.2rem;
     }
 
     &__tags {
@@ -41,7 +46,6 @@
     }
 
     &__place {
-        margin: 1.6rem 0;
         font-size: 1.4rem;
         line-height: 135%;
     }

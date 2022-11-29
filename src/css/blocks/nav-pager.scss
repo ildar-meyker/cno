@@ -3,6 +3,10 @@
     font-size: 1.6rem;
     line-height: calc(19/16);
     margin: 6.4rem 0;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
     
 
     &__nums {
