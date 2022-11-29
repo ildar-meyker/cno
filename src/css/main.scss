@@ -84,8 +84,8 @@ a {
 @import './blocks/docs.scss';
 @import './blocks/programs.scss';
 @import './blocks/nav-pager.scss';
-@import './blocks/read-tiles.scss';
-@import './blocks/read-list.scss';
+@import './blocks/tiles-article.scss';
+@import './blocks/list-events.scss';
 @import './blocks/nav-bread.scss';
 @import './blocks/points.scss';
 @import './blocks/header.scss';
@@ -95,5 +95,7 @@ a {
 @import './blocks/footer.scss'; 
 @import './blocks/contacts.scss'; 
 @import './blocks/form-feedback.scss'; 
+
+@import './layouts/l-index.scss';
 
 
