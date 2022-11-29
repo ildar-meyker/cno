@@ -26,15 +26,15 @@ const del = require("del");
 
 const pkg = require("./package.json");
 
-// if (pkg.name === "project-name") {
-// 	throw new Error(
-// 		"Project has a default name. Change it first in package.json."
-// 	);
-// }
+if (pkg.name === "project-name") {
+	throw new Error(
+		"Project has a default name. Change it first in package.json."
+	);
+}
 
-// if (pkg.repository.url === "") {
-// 	throw new Error("The repository url is not specified.");
-// }
+if (pkg.repository.url === "") {
+	throw new Error("The repository url is not specified.");
+}
 
 require("gulp-grunt")(gulp);
 
