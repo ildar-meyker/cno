@@ -334,18 +334,18 @@ a {
     margin-bottom: 8px;
   }
 }
-.docs__row {
+.docs-tiles__row {
   display: flex;
   flex-wrap: wrap;
   margin: 0 -1rem;
 }
-.docs__col {
+.docs-tiles__col {
   flex: 0 0 auto;
   width: 50%;
   padding: 0 1rem;
   margin-bottom: 2rem;
 }
-.docs__item {
+.docs-tiles__item {
   transition: box-shadow 0.2s;
   position: relative;
   min-height: 23.5rem;
@@ -357,10 +357,10 @@ a {
   justify-content: space-between;
   flex-direction: column;
 }
-.docs__item:hover {
+.docs-tiles__item:hover {
   box-shadow: 0px 0px 1.5rem rgba(0, 0, 0, 0.15);
 }
-.docs__ext {
+.docs-tiles__ext {
   display: inline-block;
   padding: 0.2rem 0.8rem;
   background: #20877D;
@@ -370,7 +370,7 @@ a {
   letter-spacing: 0.03em;
   color: #FFFFFF;
 }
-.docs__name {
+.docs-tiles__name {
   max-width: 50%;
   font-weight: 500;
   font-size: 2rem;
