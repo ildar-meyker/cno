@@ -13,15 +13,18 @@
     }
 
     &__reports {
-        margin-top: 14rem;
+        margin-top: 16rem;
         margin-bottom: 12rem;
-
-       
     }
 }
 
 @media (max-width: 899.98px) {
     .l-about-us {
+
+        &__reg-docs {
+            margin: 80px 0;
+        }
+
         &__reports {
             margin: 80px 0;
             

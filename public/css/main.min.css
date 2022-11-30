@@ -345,6 +345,9 @@ a {
   padding: 0 1rem;
   margin-bottom: 2rem;
 }
+.docs-tiles__col:last-child {
+  margin-bottom: 0;
+}
 .docs-tiles__item {
   transition: box-shadow 0.2s;
   position: relative;
@@ -377,6 +380,22 @@ a {
   line-height: 135%;
 }
 
+@media (max-width: 899.98px) {
+  .docs-tiles__row {
+    display: block;
+  }
+  .docs-tiles__col {
+    width: auto;
+    margin-bottom: 12px;
+  }
+  .docs-tiles__item {
+    padding: 24px;
+    min-height: 160px;
+  }
+  .docs-tiles__name {
+    font-size: 16px;
+  }
+}
 .docs-list__item {
   margin-top: 1.6rem;
   padding: 2rem 3.2rem;
@@ -1103,11 +1122,14 @@ a {
   margin: 10rem 0;
 }
 .l-about-us__reports {
-  margin-top: 14rem;
+  margin-top: 16rem;
   margin-bottom: 12rem;
 }
 
 @media (max-width: 899.98px) {
+  .l-about-us__reg-docs {
+    margin: 80px 0;
+  }
   .l-about-us__reports {
     margin: 80px 0;
   }
