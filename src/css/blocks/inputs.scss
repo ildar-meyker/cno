@@ -15,7 +15,9 @@
         &::placeholder {
             color: #898989;
         }
+    }
 
-    
+    textarea {
+        resize: vertical;
     }
 }

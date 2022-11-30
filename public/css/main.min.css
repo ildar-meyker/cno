@@ -144,6 +144,9 @@ a {
 .input textarea::placeholder {
   color: #898989;
 }
+.input textarea {
+  resize: vertical;
+}
 
 .btn-100 {
   width: 100%;
