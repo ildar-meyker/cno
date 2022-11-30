@@ -1126,6 +1126,7 @@ a {
   letter-spacing: 0.03em;
 }
 .team__fullname span {
+  display: block;
   font-weight: 700;
   text-transform: uppercase;
   color: #20877D;
@@ -1137,6 +1138,36 @@ a {
   color: #3D3D3D;
 }
 
+@media (max-width: 899.98px) {
+  .team {
+    padding-top: 60px;
+    padding-bottom: 28px;
+  }
+  .team__group {
+    display: block;
+    margin-bottom: 0;
+  }
+  .team__faces {
+    width: auto;
+  }
+  .team__about {
+    width: auto;
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+  .team__col {
+    margin-bottom: 32px;
+    width: 240px;
+  }
+  .team__fullname {
+    font-size: 18px;
+  }
+}
+@media (max-width: 320.98px) {
+  .team__col {
+    width: 100%;
+  }
+}
 .l-index__1 {
   margin: 16rem 0;
 }
