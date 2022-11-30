@@ -12,12 +12,7 @@
     --side-padding: 100px;
 }
 
-@media (max-width: 1600px) {
-    :root {
-        --side-padding: 40px;
-        --color-green: #20877D;
-    }
-}
+
 
 * {
     box-sizing: border-box;
@@ -96,7 +91,6 @@ a {
 @import './blocks/header.scss';
 @import './blocks/promo.scss';
 @import './blocks/accordion.scss'; 
-@import './blocks/faq.scss'; 
 @import './blocks/footer.scss'; 
 @import './blocks/contacts.scss'; 
 @import './blocks/form-feedback.scss'; 
@@ -109,4 +103,20 @@ a {
 @import './layouts/l-contacts.scss';
 
 
+@media (max-width: 1600px) {
+    :root {
+        --side-padding: 40px;
+        --color-green: #20877D;
+    }
+}
 
+@media (max-width: 899.98px) {
+
+    :root {
+        --side-padding: 10px;
+    }
+
+    html {
+        font-size: 9px;
+    }
+}

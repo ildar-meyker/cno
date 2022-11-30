@@ -31,12 +31,6 @@
   --side-padding: 100px;
 }
 
-@media (max-width: 1600px) {
-  :root {
-    --side-padding: 40px;
-    --color-green: #20877D;
-  }
-}
 * {
   box-sizing: border-box;
 }
@@ -128,6 +122,12 @@ a {
   text-transform: uppercase;
 }
 
+@media (max-width: 899.98px) {
+  .page__h3 {
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+}
 .input input,
 .input textarea {
   display: block;
@@ -409,6 +409,11 @@ a {
   background: #20877D;
 }
 
+@media (max-width: 899.98px) {
+  .docs-list__item {
+    padding: 8px;
+  }
+}
 .programs {
   margin: 16rem 0;
 }
@@ -841,12 +846,19 @@ a {
   color: #3D3D3D;
 }
 
-.faq {
-  padding: 20rem 0;
-  background: #f8f8f8;
-  margin-bottom: -20rem;
+@media (max-width: 899.98px) {
+  .accordion__title {
+    padding: 13px 54px 13px 24px;
+    font-size: 14px;
+  }
+  .accordion__title i:before, .accordion__title i:after {
+    width: 18px;
+    right: 24px;
+  }
+  .accordion__body {
+    padding: 0 24px 24px 24px;
+  }
 }
-
 .footer {
   padding: 10rem 0;
   background: #20877D;
@@ -1069,7 +1081,16 @@ a {
 .l-index__3__title {
   margin-top: 2rem;
 }
+.l-index__faq {
+  padding: 20rem 0;
+  background: #f8f8f8;
+}
 
+@media (max-width: 899.98px) {
+  .l-index__faq {
+    padding: 80px 0;
+  }
+}
 .l-coming__1__row {
   display: flex;
 }
@@ -1086,6 +1107,30 @@ a {
   margin-bottom: 12rem;
 }
 
+@media (max-width: 899.98px) {
+  .l-about-us__reports {
+    margin: 80px 0;
+  }
+  .l-about-us__reports__docs {
+    margin: 0 -14px;
+  }
+}
 .l-contacts__welcome {
   margin-bottom: 20rem;
+}
+
+@media (max-width: 1600px) {
+  :root {
+    --side-padding: 40px;
+    --color-green: #20877D;
+  }
+}
+@media (max-width: 899.98px) {
+  :root {
+    --side-padding: 10px;
+  }
+
+  html {
+    font-size: 9px;
+  }
 }

@@ -36,3 +36,11 @@
         background: #20877D;
     }
 }
+
+@media (max-width: 899.98px) {
+    .docs-list {
+        &__item {
+            padding: 8px;
+        }
+    }
+}

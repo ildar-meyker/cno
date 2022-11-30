@@ -61,3 +61,24 @@
         color: #3D3D3D;
     }
 }
+
+@media (max-width: 899.98px) {
+    .accordion {
+        &__title {
+            padding: 13px 54px 13px 24px;
+            font-size: 14px;
+
+            i {
+                &:before,
+                &:after {
+                    width: 18px;
+                    right: 24px;
+                }
+            }
+        }
+
+        &__body {
+            padding: 0 24px 24px 24px;
+        }
+    }
+}
