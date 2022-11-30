@@ -1,14 +1,12 @@
 .checkbox {
     display: block;
     position: relative;
-    padding-left: 35px;
-    margin-bottom: 12px;
-    cursor: pointer;
-    font-size: 22px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
+    padding-left: 2.8rem;
+    margin-bottom: .8rem;
+    font-size: 1.4rem;
+    line-height: 155%;
     user-select: none;
+    cursor: pointer;
 }
   
 .checkbox input {
@@ -20,20 +18,24 @@
 }
   
 .checkmark {
+    transition: all .2s;
     position: absolute;
     top: 0;
     left: 0;
-    height: 25px;
-    width: 25px;
-    background-color: #eee;
+    height: 2rem;
+    width: 2rem;
+    background: #F6F6F6;
+    border: 1px solid #E1E1E1;
+    border-radius: .4rem;
 }
   
 .checkbox:hover input ~ .checkmark {
-    background-color: #ccc;
+    background-color: #E1E1E1;
 }
   
 .checkbox input:checked ~ .checkmark {
     background-color: #2196F3;
+    border-color: transparent;
 }
   
 .checkmark:after {
@@ -47,11 +49,11 @@
 }
   
 .checkbox .checkmark:after {
-    left: 9px;
-    top: 5px;
-    width: 5px;
-    height: 10px;
+    left: 37%;
+    top: 11%;
+    width: 20%;
+    height: 50%;
     border: solid white;
-    border-width: 0 3px 3px 0;
+    border-width: 0 2px 2px 0;
     transform: rotate(45deg);
 }

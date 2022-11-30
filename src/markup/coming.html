@@ -4,6 +4,13 @@
 <title>Главная</title>
 <!-- @@close-->
 
+<!-- @@block = styles-->
+<!-- @@close-->
+
+<!-- @@block = scripts-->
+<script src="https://cdn.jsdelivr.net/npm/@easepick/bundle@1.2.0/dist/index.umd.min.js"></script>
+<!-- @@close-->
+
 <!-- @@block = content-->
 <div class="page__center">
    <nav class="nav-bread">
@@ -24,7 +31,7 @@
                <h3 class="form-filter__title">Фильтр</h3>
 
                <div class="form-filter__group">
-                  calendar
+                  <input type="hidden" id="calendar">
                </div>
 
                <div class="form-filter__group">
@@ -69,7 +76,7 @@
                </div>
 
                <div class="form-filter__apply">
-                  <button class="btn-green">Применить</button>
+                  <button class="btn-green text-uppercase btn-100">Применить</button>
                </div>
 
                <div class="form-filter__reset">

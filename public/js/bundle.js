@@ -1,65 +1,6 @@
 /******/ (function() { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/js/modules/Notify.js":
-/*!**********************************!*\
-  !*** ./src/js/modules/Notify.js ***!
-  \**********************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
-
-var Notify = {
-  _counter: 0,
-  _handleItemClick: function _handleItemClick(e) {
-    e.preventDefault();
-    jquery__WEBPACK_IMPORTED_MODULE_0___default()(e.currentTarget).remove();
-  },
-  _notify: function _notify(message, colorType) {
-    var uniqueId = ++this._counter;
-    jquery__WEBPACK_IMPORTED_MODULE_0___default()('<div id="notify-' + uniqueId + '" class="notify__item notify__item--' + colorType + '">' + message + "</div>").prependTo(jquery__WEBPACK_IMPORTED_MODULE_0___default()("#notify"));
-    setTimeout(function () {
-      jquery__WEBPACK_IMPORTED_MODULE_0___default()("#notify-" + uniqueId).remove();
-    }, 8000);
-  },
-  error: function error(message) {
-    this._notify(message, "error");
-  },
-  warning: function warning(message) {
-    this._notify(message, "warning");
-  },
-  success: function success(message) {
-    this._notify(message, "success");
-  },
-  init: function init() {
-    jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).on("click", ".notify__item", this._handleItemClick.bind(this));
-  }
-};
-jquery__WEBPACK_IMPORTED_MODULE_0___default()(function () {
-  Notify.init();
-});
-/* harmony default export */ __webpack_exports__["default"] = (Notify);
-
-/***/ }),
-
-/***/ "./src/js/modules/globals.js":
-/*!***********************************!*\
-  !*** ./src/js/modules/globals.js ***!
-  \***********************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
-
-window.$ = window.jQuery = (jquery__WEBPACK_IMPORTED_MODULE_0___default());
-
-/***/ }),
-
 /***/ "./node_modules/bootstrap/js/dist/collapse.js":
 /*!****************************************************!*\
   !*** ./node_modules/bootstrap/js/dist/collapse.js ***!
@@ -11646,16 +11587,29 @@ var __webpack_exports__ = {};
   !*** ./src/js/main.js ***!
   \************************/
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _modules_globals__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/globals */ "./src/js/modules/globals.js");
-/* harmony import */ var _modules_Notify__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/Notify */ "./src/js/modules/Notify.js");
-/* harmony import */ var _node_modules_bootstrap_js_dist_util__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../node_modules/bootstrap/js/dist/util */ "./node_modules/bootstrap/js/dist/util.js");
-/* harmony import */ var _node_modules_bootstrap_js_dist_util__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_bootstrap_js_dist_util__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _node_modules_bootstrap_js_dist_collapse__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../node_modules/bootstrap/js/dist/collapse */ "./node_modules/bootstrap/js/dist/collapse.js");
-/* harmony import */ var _node_modules_bootstrap_js_dist_collapse__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_bootstrap_js_dist_collapse__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _node_modules_bootstrap_js_dist_util__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/bootstrap/js/dist/util */ "./node_modules/bootstrap/js/dist/util.js");
+/* harmony import */ var _node_modules_bootstrap_js_dist_util__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_bootstrap_js_dist_util__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_bootstrap_js_dist_collapse__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../node_modules/bootstrap/js/dist/collapse */ "./node_modules/bootstrap/js/dist/collapse.js");
+/* harmony import */ var _node_modules_bootstrap_js_dist_collapse__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_bootstrap_js_dist_collapse__WEBPACK_IMPORTED_MODULE_1__);
 
 
-
-
+var picker = new easepick.create({
+  element: document.getElementById("calendar"),
+  css: ["https://cdn.jsdelivr.net/npm/@easepick/bundle@1.2.0/dist/index.css", "/css/easepick-custom.min.css"],
+  inline: true,
+  lang: "ru-RU",
+  plugins: ["RangePlugin", "AmpPlugin"],
+  RangePlugin: {
+    tooltip: false
+  },
+  AmpPlugin: {
+    dropdown: {
+      months: true,
+      years: true
+    },
+    darkMode: false
+  }
+});
 }();
 /******/ })()
 ;

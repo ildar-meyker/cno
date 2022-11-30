@@ -6,14 +6,11 @@
         }
     
         &__left {
-            flex: 0 0 auto;
-            width: 33.33%;
         }
     
         &__right {
-            flex: 0 0 auto;
-            width: 66.66%;
             padding-left: 12rem;
+            flex-grow: 1;
         }
     
       

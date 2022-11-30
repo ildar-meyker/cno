@@ -12,8 +12,11 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
-		<link rel="stylesheet" href="css/main.min.css?t=1669741287035">
-		<script src="js/modernizr-output.js?t=1669741287035"></script>
+
+
+
+		<link rel="stylesheet" href="css/main.min.css?t=1669814079747">
+		<script src="js/modernizr-output.js?t=1669814079747"></script>
 	 </head>
 <body> 
 	<div class="page__wrapper page__wrapper--gray">
@@ -91,7 +94,7 @@
                <h3 class="form-filter__title">Фильтр</h3>
 
                <div class="form-filter__group">
-                  calendar
+                  <input type="hidden" id="calendar">
                </div>
 
                <div class="form-filter__group">
@@ -136,7 +139,7 @@
                </div>
 
                <div class="form-filter__apply">
-                  <button class="btn-green">Применить</button>
+                  <button class="btn-green text-uppercase btn-100">Применить</button>
                </div>
 
                <div class="form-filter__reset">
@@ -232,7 +235,12 @@
 
 
 
-		<script src="js/bundle.js?t=1669741287035"></script>
+		
+		<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@easepick/bundle@1.2.0/dist/index.umd.min.js"></script>
+
+		<script src="js/bundle.js?t=1669814079747"></script>
 
 		<div id="notify" class="notify"></div>
 

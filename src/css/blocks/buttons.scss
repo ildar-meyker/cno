@@ -1,3 +1,9 @@
+.btn-100 {
+    width: 100%;
+}
+
+
+
 .btn-green {
     transition: background .2s;
     display: inline-block;
@@ -15,5 +21,35 @@
 
     &:hover {
         background: lighten(#20877D, 5%);
+    }
+}
+
+.btn-text {
+    transition: background .2s;
+    display: inline-flex;
+    align-items: center;
+    background: none;
+    border: 0;
+    padding: 1rem 1.5rem;
+    border-radius: .5rem;
+    cursor: pointer;
+
+    &:hover {
+        background: #f7f7f7;
+    }
+
+    .icon {
+        stroke: #20877D;
+        width: 1.6rem;
+        height: 1.6rem;
+    }
+
+    span {
+        margin-left: 1rem;
+        font-weight: 500;
+        font-size: 1.4rem;
+        line-height: 135%;
+        text-decoration-line: underline;
+        color: #20877D;
     }
 }
