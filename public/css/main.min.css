@@ -1104,14 +1104,22 @@ a {
     padding: 80px 0;
   }
 }
-.l-coming__1__row {
+.l-coming__main {
+  margin-bottom: 15rem;
+}
+.l-coming__main__row {
   display: flex;
 }
-.l-coming__1__right {
+.l-coming__main__right {
   padding-left: 12rem;
   flex-grow: 1;
 }
 
+@media (max-width: 899.98px) {
+  .l-coming__main {
+    margin-bottom: 80px;
+  }
+}
 .l-about-us__reg-docs {
   margin: 10rem 0;
 }
