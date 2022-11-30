@@ -113,19 +113,19 @@ a {
   background: #F8F8F8;
 }
 .page__h1 {
+  margin-bottom: 3.2rem;
   font-weight: 500;
   font-size: 5.6rem;
   line-height: 150%;
   text-transform: uppercase;
-  margin-bottom: 3.2rem;
 }
 .page__h3 {
+  margin-bottom: 4rem;
   font-weight: 500;
   font-size: 4rem;
   line-height: 135%;
   letter-spacing: -0.03em;
   text-transform: uppercase;
-  margin-bottom: 4rem;
 }
 
 .input input,
@@ -323,6 +323,17 @@ a {
   line-height: 135%;
 }
 
+@media (max-width: 899.98px) {
+  .digits__row {
+    display: block;
+  }
+  .digits__col {
+    width: auto !important;
+    max-width: 300px;
+    margin: 0 auto;
+    margin-bottom: 8px;
+  }
+}
 .docs {
   margin: 10rem 0;
 }

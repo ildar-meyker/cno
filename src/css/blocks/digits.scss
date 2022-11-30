@@ -76,3 +76,18 @@
         line-height: 135%;
     }
 }
+
+@media (max-width: 899.98px) {
+    .digits {
+        &__row {
+            display: block;
+        }
+
+        &__col {
+            width: auto !important;
+            max-width: 300px;
+            margin: 0 auto;
+            margin-bottom: 8px;
+        }
+    }
+}
