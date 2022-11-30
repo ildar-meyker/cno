@@ -1,0 +1,102 @@
+.team {
+    padding-top: 10rem;
+    padding-bottom: 8rem;
+    background: #FFFFFF;
+
+    &__group {
+        margin-bottom: 6rem;
+        display: flex;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__about {
+        flex: 0 0 auto;
+        width: 40%;
+        padding-right: 4rem;
+        font-weight: 500;
+        font-size: 2.4rem;
+        line-height: 135%;
+        color: #20877D;
+        
+    }
+
+    &__name {
+        max-width: 380px;
+    }
+
+    &__faces {
+        flex: 0 0 auto;
+        width: 60%;
+    }
+
+    &__row {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -1rem;
+    }
+
+    &__col {
+        margin-bottom: 4rem;
+        flex: 0 0 auto;
+        width: 33.33%;
+        padding: 0 1rem;
+    }
+
+    &__item {
+
+    }
+
+    &__photo {
+        position: relative;
+        background: #F8F8F8 50% 50%/ cover no-repeat;
+    
+
+        &[style] {
+            &:after {
+                display: none;
+            }
+        }
+
+        &:before {
+            content: ' ';
+            padding-top: 130%;
+            display: block;
+        }
+
+        &:after {
+            @include fill;
+            content: ' ';
+            background: url(../../img/icons/no-image.svg) 50% 50% / 20% auto no-repeat;
+        }
+    }
+
+    &__fullname {
+        margin-top: 2.4rem;
+        font-size: 2.4rem;
+        line-height: 135%;
+        letter-spacing: 0.03em;
+
+        span {
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #20877D;
+        }
+    }
+
+    &__post {
+        margin-top: 1.6rem;
+        font-size: 1.4rem;
+        line-height: 135%;
+        color: #3D3D3D;
+    }
+
+}
+
+@media (max-width: 899.98px) {
+    .team {
+        
+    }
+}

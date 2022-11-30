@@ -12,9 +12,7 @@
         padding: 0 1rem;
         margin-bottom: 2rem;
 
-        &:last-child {
-            margin-bottom: 0;
-        }
+        
     }
 
     &__item {
@@ -66,6 +64,10 @@
         &__col {
             width: auto;
             margin-bottom: 12px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
         }
 
         &__item {
