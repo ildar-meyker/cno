@@ -91,6 +91,9 @@ a {
   background-size: 0 1px;
 }
 
+.page__space {
+  height: 150px;
+}
 .page__wrapper {
   background: url(../../img/flower-4.svg) 100% 0/40% auto no-repeat;
 }
@@ -258,9 +261,6 @@ a {
   transform: rotate(45deg);
 }
 
-.digits {
-  margin: 10rem 0;
-}
 .digits--4-in-row .digits__col {
   width: 25%;
 }
@@ -432,9 +432,6 @@ a {
   .docs-list__item {
     padding: 8px;
   }
-}
-.programs {
-  margin: 16rem 0;
 }
 .programs__row {
   display: flex;
@@ -669,9 +666,6 @@ a {
   color: #000;
 }
 
-.points {
-  margin: 8rem 0 12rem 0;
-}
 .points__row {
   display: flex;
   flex-wrap: wrap;

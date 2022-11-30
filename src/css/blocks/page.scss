@@ -1,5 +1,9 @@
 .page {
 
+    &__space {
+        height: 150px;
+    }
+
     &__wrapper {
         background: url(../../img/flower-4.svg) 100% 0 / 40% auto no-repeat;
 
