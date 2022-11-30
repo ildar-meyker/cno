@@ -334,9 +334,6 @@ a {
     margin-bottom: 8px;
   }
 }
-.docs {
-  margin: 10rem 0;
-}
 .docs__row {
   display: flex;
   flex-wrap: wrap;
@@ -819,7 +816,6 @@ a {
 }
 
 .footer {
-  margin-top: 20rem;
   padding: 10rem 0;
   background: #20877D;
   background-image: url(../../img/wave-1.svg), url(../../img/wave-2.svg), url(../../img/flower-3.svg);
@@ -1048,4 +1044,12 @@ a {
 .l-coming__1__right {
   padding-left: 12rem;
   flex-grow: 1;
+}
+
+.l-about-us__reg-docs {
+  margin: 10rem 0;
+}
+.l-about-us__reports {
+  margin-top: 14rem;
+  margin-bottom: 12rem;
 }
