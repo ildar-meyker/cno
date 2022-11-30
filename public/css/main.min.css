@@ -377,6 +377,38 @@ a {
   line-height: 135%;
 }
 
+.docs-list__item {
+  margin-top: 1.6rem;
+  padding: 2rem 3.2rem;
+  background: #F8F8F8;
+  display: flex;
+  align-items: flex-start;
+}
+.docs-list__item:first-child {
+  margin-top: 0;
+}
+.docs-list__type {
+  flex: 0 0 auto;
+  width: 10rem;
+}
+.docs-list__name {
+  align-self: center;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 155%;
+}
+.docs-list__ext {
+  display: inline-block;
+  padding: 0.2rem 0.8rem;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 155%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: #20877D;
+}
+
 .programs {
   margin: 16rem 0;
 }
@@ -501,33 +533,33 @@ a {
   color: #20877D;
 }
 
-.tiles-article__row {
+.articles-tiles__row {
   display: flex;
   flex-wrap: wrap;
   margin: 0 -1.2rem;
 }
-.tiles-article__col {
+.articles-tiles__col {
   flex: 0 0 auto;
   width: 33.33%;
   padding: 0 1.2rem;
   margin-bottom: 4rem;
 }
-.tiles-article__item {
+.articles-tiles__item {
   position: relative;
 }
-.tiles-article__image {
+.articles-tiles__image {
   position: relative;
   background-position: 50% 50%;
   background-size: cover;
 }
-.tiles-article__date-1 {
+.articles-tiles__date-1 {
   display: block;
   margin-top: 2.4rem;
   font-size: 1.4rem;
   line-height: 135%;
   color: #3D3D3D;
 }
-.tiles-article__date-2 {
+.articles-tiles__date-2 {
   position: absolute;
   left: 0;
   bottom: 10%;
@@ -538,28 +570,28 @@ a {
   line-height: 155%;
   color: #20877D;
 }
-.tiles-article__name {
+.articles-tiles__name {
   margin: 1.6rem 0;
   font-weight: 500;
   font-size: 2.4rem;
   line-height: 140%;
 }
-.tiles-article__image + .tiles-article__name {
+.articles-tiles__image + .articles-tiles__name {
   margin-top: 3.2rem;
 }
-.tiles-article__media {
+.articles-tiles__media {
   font-weight: 500;
   font-size: 1.4rem;
   line-height: 150%;
   color: #20877D;
 }
-.tiles-article__tags {
+.articles-tiles__tags {
   margin-top: 2.4rem;
   font-weight: 500;
   font-size: 1.6rem;
   line-height: 150%;
 }
-.tiles-article__tags span {
+.articles-tiles__tags span {
   display: inline-block;
   margin: 0 1.5em 0.3em 0;
 }

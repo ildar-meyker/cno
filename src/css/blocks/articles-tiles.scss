@@ -1,4 +1,4 @@
-.tiles-article {
+.articles-tiles {
 
 
     &__row {
@@ -52,7 +52,7 @@
         font-size: 2.4rem;
         line-height: 140%;
 
-        .tiles-article__image + & {
+        .articles-tiles__image + & {
             margin-top: 3.2rem;
         }
     }

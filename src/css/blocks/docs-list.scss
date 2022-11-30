@@ -1,0 +1,38 @@
+.docs-list {
+
+    &__item {
+        margin-top: 1.6rem;
+        padding: 2rem 3.2rem;
+        background: #F8F8F8;
+        display: flex;
+        align-items: flex-start;
+
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+
+    &__type {
+        flex: 0 0 auto;
+        width: 10rem;
+    }
+
+    &__name {
+        align-self: center;
+        font-weight: 500;
+        font-size: 1.6rem;
+        line-height: 155%;
+    }
+
+    &__ext {
+        display: inline-block;
+        padding: .2rem 0.8rem;
+        font-weight: 700;
+        font-size: 1.4rem;
+        line-height: 155%;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        background: #20877D;
+    }
+}
