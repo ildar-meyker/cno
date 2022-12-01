@@ -52,6 +52,10 @@ a {
     text-transform: uppercase;
 }
 
+.mb-0 {
+    margin-bottom: 0 !important;
+}
+
 .link-area {
     @include fill;
 }
@@ -100,12 +104,14 @@ a {
 @import './blocks/form-filter.scss'; 
 @import './blocks/team.scss'; 
 @import './blocks/about-us.scss'; 
+@import './blocks/gallery.scss'; 
 
 @import './layouts/l-index.scss';
 @import './layouts/l-coming.scss';
 @import './layouts/l-about-us.scss';
 @import './layouts/l-contacts.scss';
 @import './layouts/l-media.scss';
+@import './layouts/l-gallery.scss';
 
 
 @media (max-width: 1600px) {

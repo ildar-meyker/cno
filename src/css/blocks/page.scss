@@ -1,8 +1,6 @@
 .page {
 
-    &__space {
-        height: 150px;
-    }
+    
 
     &__wrapper {
         background: url(../../img/flower-4.svg) 100% 0 / 40% auto no-repeat;
@@ -43,6 +41,20 @@
         text-transform: uppercase;
     }
 
+    &__date {
+        margin-top: 1.6rem;
+        font-size: 1.4rem;
+        line-height: 135%;
+        color: #3D3D3D;
+    }
+
+    &__more {
+        margin-top: 4rem;
+    }
+
+    &__space {
+        height: 150px;
+    }
 
    
 }

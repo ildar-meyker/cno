@@ -1,0 +1,31 @@
+.gallery {
+
+
+    &__row {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -1rem;
+    }
+
+    &__col {
+        flex: 0 0 auto;
+        width: 25%;
+        padding: 0 1rem;
+        margin-top: 2rem;
+
+        &:nth-child(-n+3) {
+            margin-top: 0;
+        }
+
+        &:nth-child(5n+2),
+        &:nth-child(5n+4),
+        &:nth-child(5n+5) {
+            width: 50%;
+        }
+    }
+
+    &__item {
+        height: 40rem;
+        background: #eeeeee 50% 50% / cover;
+    }
+}

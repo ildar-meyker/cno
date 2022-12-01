@@ -67,6 +67,10 @@ a {
   text-transform: uppercase;
 }
 
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+
 .link-area {
   position: absolute;
   top: 0;
@@ -92,9 +96,6 @@ a {
   background-size: 0 1px;
 }
 
-.page__space {
-  height: 150px;
-}
 .page__wrapper {
   background: url(../../img/flower-4.svg) 100% 0/40% auto no-repeat;
 }
@@ -124,6 +125,18 @@ a {
   line-height: 135%;
   letter-spacing: -0.03em;
   text-transform: uppercase;
+}
+.page__date {
+  margin-top: 1.6rem;
+  font-size: 1.4rem;
+  line-height: 135%;
+  color: #3D3D3D;
+}
+.page__more {
+  margin-top: 4rem;
+}
+.page__space {
+  height: 150px;
 }
 
 @media (max-width: 899.98px) {
@@ -203,8 +216,7 @@ a {
 }
 
 .btn-all {
-  margin-top: 4rem;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   font-weight: 500;
   font-size: 2.4rem;
@@ -225,7 +237,7 @@ a {
 }
 
 .btn-back {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   font-weight: 500;
   font-size: 2.4rem;
@@ -1389,6 +1401,28 @@ a {
     padding-right: 20px;
   }
 }
+.gallery__row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -1rem;
+}
+.gallery__col {
+  flex: 0 0 auto;
+  width: 25%;
+  padding: 0 1rem;
+  margin-top: 2rem;
+}
+.gallery__col:nth-child(-n+3) {
+  margin-top: 0;
+}
+.gallery__col:nth-child(5n+2), .gallery__col:nth-child(5n+4), .gallery__col:nth-child(5n+5) {
+  width: 50%;
+}
+.gallery__item {
+  height: 40rem;
+  background: #eeeeee 50% 50%/cover;
+}
+
 .l-index__1 {
   margin: 16rem 0;
 }
@@ -1480,6 +1514,18 @@ a {
 
 @media (max-width: 899.98px) {
   .l-media__main {
+    margin-bottom: 80px;
+  }
+}
+.l-gallery__main {
+  margin-bottom: 15rem;
+}
+.l-gallery__main__photos {
+  margin: 6.4rem 0;
+}
+
+@media (max-width: 899.98px) {
+  .l-gallery__main {
     margin-bottom: 80px;
   }
 }
