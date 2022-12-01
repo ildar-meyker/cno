@@ -257,6 +257,12 @@ a {
   stroke: currentColor;
 }
 
+@media (max-width: 899.98px) {
+  .btn-all,
+.btn-back {
+    font-size: 14px;
+  }
+}
 .checkbox {
   display: block;
   position: relative;
@@ -1405,6 +1411,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   margin: 0 -1rem;
+  margin-top: -2rem;
 }
 .gallery__col {
   flex: 0 0 auto;
@@ -1412,17 +1419,31 @@ a {
   padding: 0 1rem;
   margin-top: 2rem;
 }
-.gallery__col:nth-child(-n+3) {
-  margin-top: 0;
-}
 .gallery__col:nth-child(5n+2), .gallery__col:nth-child(5n+4), .gallery__col:nth-child(5n+5) {
   width: 50%;
 }
 .gallery__item {
-  height: 40rem;
   background: #eeeeee 50% 50%/cover;
+  height: clamp(200px, 30vw, 400px);
+  cursor: pointer;
 }
 
+@media (max-width: 899.98px) {
+  .gallery__row {
+    margin: 0 -6px;
+    margin-top: -12px;
+  }
+  .gallery__col {
+    width: 50%;
+    padding: 0 6px;
+    margin-top: 12px;
+  }
+}
+@media (max-width: 399.98px) {
+  .gallery__col {
+    width: 100% !important;
+  }
+}
 .l-index__1 {
   margin: 16rem 0;
 }
@@ -1527,6 +1548,10 @@ a {
 @media (max-width: 899.98px) {
   .l-gallery__main {
     margin-bottom: 80px;
+  }
+  .l-gallery__main__photos {
+    margin-top: 32px;
+    margin-bottom: 40px;
   }
 }
 @media (max-width: 1600px) {

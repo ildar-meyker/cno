@@ -12,6 +12,11 @@
     .l-gallery {
         &__main {
             margin-bottom: 80px;
+
+            &__photos {
+                margin-top: 32px;
+                margin-bottom: 40px;
+            }
         }
     }
 }

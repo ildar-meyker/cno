@@ -103,3 +103,10 @@
         stroke: currentColor;
     }
 }
+
+@media (max-width: 899.98px) {
+    .btn-all,
+    .btn-back {
+        font-size: 14px;
+    }
+}

@@ -5,6 +5,7 @@
         display: flex;
         flex-wrap: wrap;
         margin: 0 -1rem;
+        margin-top: -2rem;
     }
 
     &__col {
@@ -12,10 +13,6 @@
         width: 25%;
         padding: 0 1rem;
         margin-top: 2rem;
-
-        &:nth-child(-n+3) {
-            margin-top: 0;
-        }
 
         &:nth-child(5n+2),
         &:nth-child(5n+4),
@@ -25,7 +22,33 @@
     }
 
     &__item {
-        height: 40rem;
         background: #eeeeee 50% 50% / cover;
+        height: clamp(200px, 30vw, 400px);
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 899.98px) {
+    .gallery {
+
+
+        &__row {
+            margin: 0 -6px;
+            margin-top: -12px;
+        }
+
+        &__col {
+            width: 50%;
+            padding: 0 6px;
+            margin-top: 12px;
+        }
+    }
+}
+
+@media (max-width: 399.98px) {
+    .gallery {
+        &__col {
+            width: 100% !important;
+        }
     }
 }
