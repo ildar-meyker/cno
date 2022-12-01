@@ -4,7 +4,7 @@
 
 
 
-.btn-green {
+.btn-filled {
     transition: background .2s;
     display: inline-block;
     border: 0;
@@ -51,5 +51,56 @@
         line-height: 135%;
         text-decoration-line: underline;
         color: #20877D;
+    }
+}
+
+.btn-all {
+    margin-top: 4rem;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 2.4rem;
+    line-height: 150%;
+    color: #20877D;
+
+    &:hover {
+        .icon {
+            transform: translateX(.2em);
+        }
+    }
+
+    .icon {
+        transition: transform .2s;
+        margin-left: 0.75em;
+        margin-top: .2em;
+        flex: 0 0 auto;
+        width: .75em;
+        height: .75em;
+        stroke: currentColor;
+    }
+}
+
+.btn-back {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 2.4rem;
+    line-height: 150%;
+    color: #20877D;
+
+    &:hover {
+        .icon {
+            transform: translateX(-.2em);
+        }
+    }
+
+    .icon {
+        transition: transform .2s;
+        margin-right: 0.75em;
+        margin-top: .2em;
+        flex: 0 0 auto;
+        width: .75em;
+        height: .75em;
+        stroke: currentColor;
     }
 }

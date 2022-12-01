@@ -156,7 +156,7 @@ a {
   width: 100%;
 }
 
-.btn-green {
+.btn-filled {
   transition: background 0.2s;
   display: inline-block;
   border: 0;
@@ -171,7 +171,7 @@ a {
   cursor: pointer;
   color: #FFFFFF;
 }
-.btn-green:hover {
+.btn-filled:hover {
   background: #259c90;
 }
 
@@ -200,6 +200,49 @@ a {
   line-height: 135%;
   text-decoration-line: underline;
   color: #20877D;
+}
+
+.btn-all {
+  margin-top: 4rem;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 2.4rem;
+  line-height: 150%;
+  color: #20877D;
+}
+.btn-all:hover .icon {
+  transform: translateX(0.2em);
+}
+.btn-all .icon {
+  transition: transform 0.2s;
+  margin-left: 0.75em;
+  margin-top: 0.2em;
+  flex: 0 0 auto;
+  width: 0.75em;
+  height: 0.75em;
+  stroke: currentColor;
+}
+
+.btn-back {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 2.4rem;
+  line-height: 150%;
+  color: #20877D;
+}
+.btn-back:hover .icon {
+  transform: translateX(-0.2em);
+}
+.btn-back .icon {
+  transition: transform 0.2s;
+  margin-right: 0.75em;
+  margin-top: 0.2em;
+  flex: 0 0 auto;
+  width: 0.75em;
+  height: 0.75em;
+  stroke: currentColor;
 }
 
 .checkbox {
@@ -500,27 +543,6 @@ a {
   font-weight: 700;
   font-size: 2.4rem;
   line-height: 150%;
-}
-.programs__btn-all {
-  margin-top: 4rem;
-  display: flex;
-  align-items: center;
-  font-weight: 500;
-  font-size: 2.4rem;
-  line-height: 150%;
-  color: #20877D;
-}
-.programs__btn-all:hover .icon {
-  transform: translateX(0.2em);
-}
-.programs__btn-all .icon {
-  transition: transform 0.2s;
-  margin-left: 0.75em;
-  margin-top: 0.2em;
-  flex: 0 0 auto;
-  width: 0.75em;
-  height: 0.75em;
-  stroke: currentColor;
 }
 
 .nav-pager {
