@@ -40,6 +40,7 @@ html {
 }
 
 body {
+  min-width: 320px;
   font-family: "Raleway", sans-serif;
   font-feature-settings: "pnum" on, "lnum" on;
   color: #000;
@@ -769,6 +770,59 @@ a {
     font-size: 20px;
   }
 }
+.points-green {
+  background: #20877D url(../../img/flower-5.svg) 80% 30%/70% auto no-repeat;
+  padding: 10rem 0;
+}
+.points-green__row {
+  display: flex;
+  margin: 0 -2rem;
+  justify-content: space-between;
+  margin-top: 6.4rem;
+}
+.points-green__col {
+  flex: 0 1 36rem;
+  padding: 0 2rem;
+}
+.points-green__num {
+  display: inline-block;
+  background: #72CAC1;
+  border-radius: 4rem 0px;
+  padding: 0.7rem 3.2rem;
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 150%;
+  color: #FFFFFF;
+}
+.points-green__desc {
+  margin-top: 4rem;
+  font-size: 2.4rem;
+  line-height: 150%;
+  color: #FFFFFF;
+}
+
+@media (max-width: 899.98px) {
+  .points-green {
+    padding: 60px 0;
+    background-position: 50% 50%;
+    background-size: auto 130%;
+  }
+  .points-green__row {
+    display: block;
+    margin-left: 50px;
+    margin-right: 0;
+  }
+  .points-green__col {
+    margin-top: 32px;
+    padding: 0;
+  }
+  .points-green__num {
+    font-size: 32px;
+  }
+  .points-green__desc {
+    margin-top: 16px;
+  }
+}
 .header {
   box-shadow: 0px 0px 1.5rem rgba(0, 0, 0, 0.05);
 }
@@ -1309,7 +1363,7 @@ a {
   }
   .about-us__col {
     width: auto;
-    margin-bottom: 3.2rem;
+    margin-bottom: 32px;
     padding-right: 20px;
   }
 }
