@@ -11,7 +11,11 @@
         flex: 0 0 auto;
         width: 33.33%;
         padding: 0 1.2rem;
-        margin-bottom: 4rem;
+        margin-top: 4rem;
+
+        &:nth-child(-n+3) {
+            margin-top: 0;
+        }
     }
 
     &__item {

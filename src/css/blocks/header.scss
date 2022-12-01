@@ -5,6 +5,31 @@
     &__top {
         background: #20877D;
         padding: .8rem 0;
+        color: #FFFFFF;
+
+        &--gray {
+            background: #F6F6F6;
+            .header__lang {
+                a {
+                    color: #8D8D8D;
+
+                    &:hover,
+                    &.active {
+                        color:  #20877D;
+                    }
+                }
+            }
+            .header__desc {
+                color: #333;
+            }
+            .header__icons {
+                a {
+                    .icon {
+                        fill: #20877D;
+                    }
+                }
+            }
+        }
 
         &__in {
             display: flex;
@@ -33,7 +58,7 @@
         margin-left: 3rem;
         font-size: 1.4rem;
         line-height: calc(16/14);
-        color: #FFFFFF;
+        
     }
 
     &__icons {
@@ -46,7 +71,7 @@
             .icon {
                 width: 2.4rem;
                 height: 2.4rem;
-                fill: #fff;
+                fill: currentColor;
             }
         }
 

@@ -2,7 +2,7 @@
     display: flex;
     font-size: 1.6rem;
     line-height: calc(19/16);
-    margin: 6.4rem 0;
+    margin-top: 6.4rem;
 
     &:last-child {
         margin-bottom: 0;
@@ -35,5 +35,11 @@
         margin-left: 1em;
         font-weight: 500;
         color: #20877D;
+    }
+}
+
+@media (max-width: 899.98px) {
+    .nav-pager {
+        margin-top: 40px;
     }
 }
