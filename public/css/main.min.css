@@ -407,6 +407,9 @@ a {
     margin: 12px 0;
     font-size: 56px;
   }
+  .digits__value--medium, .digits__value--small {
+    font-size: 32px;
+  }
   .digits__label, .digits__desc {
     font-size: 14px;
   }
@@ -1757,6 +1760,10 @@ a {
 .l-index__programs {
   margin: 16rem 0;
 }
+.l-index__digits {
+  padding-top: 100px;
+  background: #F8F8F8;
+}
 .l-index__faq {
   padding: 20rem 0;
   background: #f8f8f8;
@@ -1785,6 +1792,9 @@ a {
   .l-index__programs {
     margin-top: 80px;
     margin-bottom: 60px;
+  }
+  .l-index__digits {
+    padding-top: 60px;
   }
   .l-index__faq {
     padding: 80px 0;

@@ -95,6 +95,11 @@
         &__value {
             margin: 12px 0;
             font-size: 56px;
+
+            &--medium,
+            &--small {
+                font-size: 32px;
+            }
         }
 
         &__label,
