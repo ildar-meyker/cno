@@ -3,7 +3,7 @@
     line-height: 155%;
 
     * {
-        @include my-0;
+        @include fix-margin;
     }
 
     blockquote,

@@ -1,5 +1,5 @@
 .points-green {
-    background: #20877D url(../../img/flower-5.svg) 80% 30% / 70% auto no-repeat;
+    background: #20877D url(../../img/flower-soft.svg) 80% 30% / 70% auto no-repeat;
     padding: 10rem 0;
 
     &__row {
@@ -41,14 +41,14 @@
 
         &__row {
             display: block;
-            margin-left: 50px;
-            margin-right: 0;
+            margin: 40px 0 0 50px;
         }
-
 
         &__col {
             margin-top: 32px;
             padding: 0;
+
+            @include fix-margin;
         }
 
         &__num {
@@ -57,6 +57,7 @@
 
         &__desc {
             margin-top: 16px;
+            font-size: 14px;
         }
     }
 }

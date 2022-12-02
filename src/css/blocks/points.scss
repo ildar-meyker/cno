@@ -46,3 +46,38 @@
         line-height: 150%;
     }
 }
+
+@media (max-width: 899.98px) {
+
+
+    .points {
+        &__row {
+            display: block;
+        }
+
+        &__col {
+            width: auto;
+            margin-top: 16px;
+
+            @include fix-margin;
+        }
+
+        &__item {
+            padding: 40px 24px;
+        }
+
+        &__num {
+            font-size: 32px;
+        }
+
+        &__title {
+            margin-top: 40px;
+            font-size: 16px;
+        }
+
+        &__desc {
+            margin-top: 16px;
+            font-size: 14px;
+        }
+    }
+}

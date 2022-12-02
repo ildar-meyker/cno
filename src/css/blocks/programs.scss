@@ -123,11 +123,12 @@
 
         &__col {
             margin: 12px 0 0 0;
-            @include my-0;
 
             &:nth-child(n+4) {
                 display: none;
             }
+
+            @include fix-margin;
         }
 
     }

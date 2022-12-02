@@ -8,7 +8,7 @@
     height: 100%;
 }
 
-@mixin my-0 {
+@mixin fix-margin {
     &:first-child {
         margin-top: 0;
     }
@@ -132,6 +132,7 @@ a {
 @import './layouts/l-media.scss';
 @import './layouts/l-gallery.scss';
 @import './layouts/l-creative.scss';
+@import './layouts/l-program.scss';
 
 
 @media (max-width: 1600px) {

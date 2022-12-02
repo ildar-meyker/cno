@@ -1,0 +1,26 @@
+.l-program {
+
+
+    &__points-text {
+
+    }
+
+    &__points-green {
+
+    }
+
+    &__points {
+        padding-top: 80px;
+        padding-bottom: 120px;
+        background: #F8F8F8;
+
+    }
+}
+
+@media (max-width: 899.98px) {
+    .l-program {
+        &__points {
+            padding: 60px 0;
+        }
+    }
+}
