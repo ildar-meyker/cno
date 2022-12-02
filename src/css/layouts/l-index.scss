@@ -19,10 +19,7 @@
             width: 33.33%;
         }
 
-        &__sep {
-            margin: 4rem 0;
-            border-top: 1px solid #E1E1E1;
-        }
+        
     }
 
     &__news {
@@ -35,6 +32,11 @@
             flex: 0 0 auto;
             width: 50%;
             padding: 0 1rem;
+        }
+
+        &__sep {
+            margin: 4rem 0;
+            border-top: 1px solid #E1E1E1;
         }
     }
 
@@ -61,6 +63,25 @@
         &__read {
             margin-top: 60px;
             margin-bottom: 80px;
+
+            &__row {
+                display: block;
+            }
+
+            &__left {
+                padding-right: 0;
+                width: auto;
+            }
+
+            &__right {
+                width: auto;
+                margin-top: 80px;
+            }
+
+            .page__h1 {
+                margin-bottom: 24px;
+                font-size: 24px;
+            }
         }
 
         &__programs {
@@ -71,6 +92,31 @@
 
         &__faq {
             padding: 80px 0;
+        }
+    }
+}
+
+@media (max-width: 499.98px) {
+    
+    .l-index {
+        &__news {
+            &__row {
+                display: block;
+                margin-top: 32px;
+            }
+
+            &__col {
+                width: auto;
+                margin-top: 32px;
+
+                &:first-child {
+                    margin-top: 0;
+                }
+            }
+
+            &__sep {
+                display: none;
+            }
         }
     }
 }

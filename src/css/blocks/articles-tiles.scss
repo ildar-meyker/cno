@@ -1,6 +1,5 @@
 .articles-tiles {
 
-
     &__row {
         display: flex;
         flex-wrap: wrap;
@@ -76,3 +75,18 @@
         margin-top: 2.4rem;
     }
 }
+
+@media (max-width: 899.98px) {
+
+    .articles-tiles {
+        &__name {
+            margin: 24px 0;
+            font-size: 16px;
+        }
+
+        &__date-2 {
+            font-size: 14px;
+        }
+    }
+}
+
