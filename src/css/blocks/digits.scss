@@ -85,7 +85,21 @@
             width: auto !important;
             max-width: 300px;
             margin: 0 auto;
-            margin-bottom: 8px;
+            margin-top: 8px;
+
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+
+        &__value {
+            margin: 12px 0;
+            font-size: 56px;
+        }
+
+        &__label,
+        &__desc {
+            font-size: 14px;
         }
     }
 }

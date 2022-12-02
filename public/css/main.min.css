@@ -397,7 +397,17 @@ a {
     width: auto !important;
     max-width: 300px;
     margin: 0 auto;
-    margin-bottom: 8px;
+    margin-top: 8px;
+  }
+  .digits__col:first-child {
+    margin-top: 0;
+  }
+  .digits__value {
+    margin: 12px 0;
+    font-size: 56px;
+  }
+  .digits__label, .digits__desc {
+    font-size: 14px;
   }
 }
 .docs-tiles__row {
