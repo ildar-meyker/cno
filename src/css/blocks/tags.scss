@@ -1,0 +1,21 @@
+.tags {
+    display: flex;
+    margin-bottom: -1.6rem;
+    flex-wrap: wrap;
+
+    a, span {
+        margin: 0 1.6rem 1.6rem 0;
+        padding: .4rem .8rem;
+        border-radius: 2.3rem;
+        background: #F8F8F8;
+        font-weight: 500;
+        font-size: 1.2rem;
+        line-height: 150%;
+    }
+
+    a {
+        &:hover {
+            background: darken(#F8F8F8, 2%);
+        }
+    }
+}

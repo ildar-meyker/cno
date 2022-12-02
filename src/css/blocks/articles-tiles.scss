@@ -59,6 +59,10 @@
         .articles-tiles__image + & {
             margin-top: 3.2rem;
         }
+
+        a {
+            display: block;
+        }
     }
 
     &__media {
@@ -70,13 +74,5 @@
 
     &__tags {
         margin-top: 2.4rem;
-        font-weight: 500;
-        font-size: 1.6rem;
-        line-height: 150%;
-
-        span {
-            display: inline-block;
-            margin: 0 1.5em .3em 0;
-        }
     }
 }
