@@ -8,6 +8,15 @@
     height: 100%;
 }
 
+@mixin my-0 {
+    &:first-child {
+        margin-top: 0;
+    }
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
 :root {
     --side-padding: 100px;
 }
@@ -110,6 +119,8 @@ a {
 @import './blocks/team.scss'; 
 @import './blocks/about-us.scss'; 
 @import './blocks/gallery.scss'; 
+@import './blocks/inform.scss'; 
+@import './blocks/article.scss'; 
 
 @import './layouts/l-index.scss';
 @import './layouts/l-coming.scss';

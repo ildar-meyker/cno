@@ -1557,6 +1557,68 @@ a {
     width: 100% !important;
   }
 }
+.inform {
+  border: 1px solid #20877D;
+  border-radius: 12rem 0px;
+  padding: 6.4rem;
+}
+.inform__title {
+  margin-bottom: 11rem;
+  font-weight: 500;
+  font-size: 3.2rem;
+  line-height: 135%;
+  color: #000000;
+}
+
+@media (max-width: 899.98px) {
+  .inform {
+    padding: 40px;
+    border-radius: 80px 0;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  .inform__title {
+    margin-bottom: 40px;
+    font-size: 20px;
+  }
+}
+.article {
+  font-size: 1.6rem;
+  line-height: 155%;
+}
+.article *:first-child {
+  margin-top: 0;
+}
+.article *:last-child {
+  margin-bottom: 0;
+}
+.article blockquote,
+.article p {
+  margin: 4rem 0;
+}
+.article blockquote {
+  border-left: 1.6rem solid #20877D;
+  padding-left: 3.2rem;
+  font-size: 2rem;
+  line-height: 150%;
+}
+
+@media (max-width: 899.98px) {
+  .article {
+    font-size: 14px;
+    line-height: 135%;
+  }
+  .article p,
+.article blockquote {
+    margin: 24px 0;
+  }
+  .article blockquote {
+    border-left-width: 8px;
+    padding-left: 24px;
+    font-size: 14px;
+    line-height: 135%;
+  }
+}
 .l-index__1 {
   margin: 16rem 0;
 }
@@ -1634,7 +1696,7 @@ a {
   }
 }
 .l-contacts__main {
-  margin-bottom: 15rem;
+  margin-bottom: 20rem;
 }
 
 @media (max-width: 899.98px) {
@@ -1643,7 +1705,7 @@ a {
   }
 }
 .l-media__main {
-  margin-bottom: 15rem;
+  margin-bottom: 20rem;
 }
 
 @media (max-width: 899.98px) {
@@ -1652,7 +1714,7 @@ a {
   }
 }
 .l-gallery__main {
-  margin-bottom: 15rem;
+  margin-bottom: 20rem;
 }
 .l-gallery__main__photos {
   margin: 6.4rem 0;
@@ -1667,6 +1729,20 @@ a {
     margin-bottom: 40px;
   }
 }
+.l-creative__about {
+  margin: 10rem 0;
+}
+.l-creative__about__row {
+  display: flex;
+}
+.l-creative__about__left {
+  flex-grow: 1;
+  padding-right: 77px;
+}
+.l-creative__about__right {
+  flex: 0 0 auto;
+  width: 32rem;
+}
 .l-creative__digits {
   margin: 16rem 0;
 }
@@ -1675,6 +1751,19 @@ a {
 }
 
 @media (max-width: 899.98px) {
+  .l-creative__about {
+    margin: 40px 0;
+  }
+  .l-creative__about__row {
+    display: block;
+  }
+  .l-creative__about__left {
+    padding-right: 0;
+  }
+  .l-creative__about__right {
+    margin: 64px 0;
+    width: auto;
+  }
   .l-creative__digits {
     margin: 80px 0;
   }
