@@ -518,12 +518,13 @@ a {
   display: flex;
   flex-wrap: wrap;
   margin: 0 -1rem;
+  margin-top: -2rem;
 }
 .programs__col {
   flex: 0 0 auto;
   width: 33.33%;
   padding: 0 1rem;
-  margin-bottom: 2rem;
+  margin-top: 2rem;
 }
 .programs__item {
   transition: filter 0.2s;
@@ -535,6 +536,7 @@ a {
   justify-content: space-between;
   flex-direction: column;
   overflow: hidden;
+  border-radius: 4px;
 }
 .programs__item:hover {
   filter: brightness(1.1);
@@ -546,7 +548,7 @@ a {
   width: 100%;
   height: 100%;
   content: " ";
-  background: url(../img/flower-2.svg) 100% 100%/contain no-repeat;
+  background: url(../img/programs/flower.svg) 100% 100%/contain no-repeat;
 }
 .programs__item--orange {
   background: linear-gradient(110.34deg, #F0DC8D 0%, #FF1C3E 100%);
@@ -570,7 +572,6 @@ a {
   font-weight: 700;
   font-size: 1.6rem;
   line-height: 150%;
-  font-feature-settings: "pnum" on, "lnum" on;
 }
 .programs__tags > span {
   display: inline-block;
@@ -582,6 +583,42 @@ a {
   line-height: 150%;
 }
 
+@media (max-width: 899.98px) {
+  .programs__col {
+    flex: 1 1 300px;
+    width: auto;
+  }
+  .programs__item {
+    min-height: 250px;
+    padding: 24px;
+  }
+  .programs__tags {
+    font-size: 14px;
+    line-height: 150%;
+  }
+  .programs__name {
+    font-size: 20px;
+    line-height: 135%;
+  }
+}
+@media (max-width: 499.98px) {
+  .programs__row {
+    display: block;
+    margin-top: 0;
+  }
+  .programs__col {
+    margin: 12px 0 0 0;
+  }
+  .programs__col:first-child {
+    margin-top: 0;
+  }
+  .programs__col:last-child {
+    margin-bottom: 0;
+  }
+  .programs__col:nth-child(n+4) {
+    display: none;
+  }
+}
 .nav-pager {
   display: flex;
   font-size: 1.6rem;
