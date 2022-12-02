@@ -1,13 +1,14 @@
 .nav-bread {
-
     margin: 4rem 0;
     font-size: 1.4rem;
     line-height: calc(16/14);
     color: #B7B7B7;
 
+    &--dark-bg {
+        color: rgba(#fff, .5);
 
-
-    span {
-        color: #000;
+        span {
+            color: #fff;
+        }
     }
 }

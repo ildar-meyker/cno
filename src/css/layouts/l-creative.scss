@@ -1,0 +1,25 @@
+.l-creative {
+
+    &__digits {
+        margin: 16rem 0;
+    }
+
+    &__reg-docs {
+        margin-top: 10rem;
+        margin-bottom: 18rem;
+    }
+}
+
+
+@media (max-width: 899.98px) {
+    .l-creative {
+
+        &__digits {
+            margin: 80px 0;
+        }
+
+        &__reg-docs {
+            margin: 80px 0;
+        }
+    }
+}

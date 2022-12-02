@@ -56,6 +56,10 @@ a {
     margin-bottom: 0 !important;
 }
 
+.mt-0 {
+    margin-top: 0 !important;
+}
+
 .link-area {
     @include fill;
 }
@@ -97,6 +101,7 @@ a {
 @import './blocks/points-green.scss';
 @import './blocks/header.scss';
 @import './blocks/promo-1.scss';
+@import './blocks/promo-2.scss';
 @import './blocks/accordion.scss'; 
 @import './blocks/footer.scss'; 
 @import './blocks/contacts.scss'; 
@@ -112,6 +117,7 @@ a {
 @import './layouts/l-contacts.scss';
 @import './layouts/l-media.scss';
 @import './layouts/l-gallery.scss';
+@import './layouts/l-creative.scss';
 
 
 @media (max-width: 1600px) {
