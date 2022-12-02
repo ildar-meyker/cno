@@ -404,12 +404,13 @@ a {
   display: flex;
   flex-wrap: wrap;
   margin: 0 -1rem;
+  margin-top: -2rem;
 }
 .docs-tiles__col {
   flex: 0 0 auto;
   width: 50%;
   padding: 0 1rem;
-  margin-bottom: 2rem;
+  margin-top: 2rem;
 }
 .docs-tiles__item {
   transition: box-shadow 0.2s;
@@ -449,10 +450,10 @@ a {
   }
   .docs-tiles__col {
     width: auto;
-    margin-bottom: 12px;
+    margin-top: 12px;
   }
-  .docs-tiles__col:last-child {
-    margin-bottom: 0;
+  .docs-tiles__col:first-child {
+    margin-top: 0;
   }
   .docs-tiles__item {
     padding: 24px;
@@ -1660,8 +1661,7 @@ a {
   margin: 16rem 0;
 }
 .l-creative__reg-docs {
-  margin-top: 10rem;
-  margin-bottom: 18rem;
+  margin: 10rem 0 20rem 0;
 }
 
 @media (max-width: 899.98px) {

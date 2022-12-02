@@ -4,15 +4,14 @@
         display: flex;
         flex-wrap: wrap;
         margin: 0 -1rem;
+        margin-top: -2rem;
     }
 
     &__col {
         flex: 0 0 auto;
         width: 50%;
         padding: 0 1rem;
-        margin-bottom: 2rem;
-
-        
+        margin-top: 2rem;
     }
 
     &__item {
@@ -63,10 +62,10 @@
 
         &__col {
             width: auto;
-            margin-bottom: 12px;
+            margin-top: 12px;
 
-            &:last-child {
-                margin-bottom: 0;
+            &:first-child {
+                margin-top: 0;
             }
         }
 
