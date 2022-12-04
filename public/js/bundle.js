@@ -1,6 +1,55 @@
 /******/ (function() { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/js/modules/rangePicker.js":
+/*!***************************************!*\
+  !*** ./src/js/modules/rangePicker.js ***!
+  \***************************************/
+/***/ (function() {
+
+(function () {
+  var elem = document.getElementById("calendar");
+  if (!elem) return;
+  var picker = new easepick.create({
+    element: elem,
+    css: ["https://cdn.jsdelivr.net/npm/@easepick/bundle@1.2.0/dist/index.css", "css/easepick-custom.min.css"],
+    inline: true,
+    lang: "ru-RU",
+    plugins: ["RangePlugin", "AmpPlugin"],
+    RangePlugin: {
+      tooltip: false
+    },
+    AmpPlugin: {
+      dropdown: {
+        months: true,
+        years: true
+      },
+      darkMode: false
+    }
+  });
+})();
+
+/***/ }),
+
+/***/ "./src/js/modules/sliderFaces.js":
+/*!***************************************!*\
+  !*** ./src/js/modules/sliderFaces.js ***!
+  \***************************************/
+/***/ (function() {
+
+$(".slider-faces").each(function () {
+  $(this).find(".slider-faces__list").slick({
+    dots: true,
+    infinite: false,
+    prevArrow: $(this).find(".slider-faces__prev"),
+    nextArrow: $(this).find(".slider-faces__next"),
+    appendDots: $(this).find(".slider-faces__dots"),
+    slidesToShow: 4
+  });
+});
+
+/***/ }),
+
 /***/ "./node_modules/bootstrap/js/dist/collapse.js":
 /*!****************************************************!*\
   !*** ./node_modules/bootstrap/js/dist/collapse.js ***!
@@ -11591,25 +11640,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_bootstrap_js_dist_util__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_bootstrap_js_dist_util__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _node_modules_bootstrap_js_dist_collapse__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../node_modules/bootstrap/js/dist/collapse */ "./node_modules/bootstrap/js/dist/collapse.js");
 /* harmony import */ var _node_modules_bootstrap_js_dist_collapse__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_bootstrap_js_dist_collapse__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _modules_rangePicker__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/rangePicker */ "./src/js/modules/rangePicker.js");
+/* harmony import */ var _modules_rangePicker__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_modules_rangePicker__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _modules_sliderFaces__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/sliderFaces */ "./src/js/modules/sliderFaces.js");
+/* harmony import */ var _modules_sliderFaces__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_modules_sliderFaces__WEBPACK_IMPORTED_MODULE_3__);
 
 
-var picker = new easepick.create({
-  element: document.getElementById("calendar"),
-  css: ["https://cdn.jsdelivr.net/npm/@easepick/bundle@1.2.0/dist/index.css", "css/easepick-custom.min.css"],
-  inline: true,
-  lang: "ru-RU",
-  plugins: ["RangePlugin", "AmpPlugin"],
-  RangePlugin: {
-    tooltip: false
-  },
-  AmpPlugin: {
-    dropdown: {
-      months: true,
-      years: true
-    },
-    darkMode: false
-  }
-});
+
+
 }();
 /******/ })()
 ;

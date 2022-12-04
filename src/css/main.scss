@@ -45,6 +45,10 @@ a {
     color: inherit;
 }
 
+button {
+    transition: all .2s;
+}
+
 
 .text-center {
     text-align: center;
@@ -124,6 +128,7 @@ a {
 @import './blocks/inform.scss'; 
 @import './blocks/article.scss'; 
 @import './blocks/tags.scss'; 
+@import './blocks/slider-faces.scss'; 
 
 @import './layouts/l-index.scss';
 @import './layouts/l-coming.scss';
