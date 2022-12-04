@@ -1849,8 +1849,9 @@ button {
   color: #20877D;
 }
 .slider-faces__name {
+  word-break: break-all;
   margin-top: 1.6rem;
-  font-size: 2.4rem;
+  font-size: 2.2rem;
   line-height: 135%;
 }
 .slider-faces__name span {
@@ -1916,6 +1917,26 @@ button {
 }
 
 @media (max-width: 899.98px) {
+  .slider-faces__header {
+    margin-bottom: 24px;
+  }
+  .slider-faces__list {
+    margin: 0 -5px;
+  }
+  .slider-faces__item {
+    padding: 0 5px;
+  }
+  .slider-faces__post {
+    margin-top: 24px;
+    font-size: 12px;
+  }
+  .slider-faces__name {
+    margin-top: 16px;
+    font-size: 16px;
+  }
+  .slider-faces__btns {
+    display: none;
+  }
   .slider-faces__dots {
     display: block;
   }

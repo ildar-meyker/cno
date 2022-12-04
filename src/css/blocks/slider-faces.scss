@@ -40,8 +40,9 @@
     } 
 
     &__name {
+        word-break: break-all;
         margin-top: 1.6rem;
-        font-size: 2.4rem;
+        font-size: 2.2rem;
         line-height: 135%;
 
         span {
@@ -129,8 +130,35 @@
 @media (max-width: 899.98px) {
     .slider-faces {
 
+        &__header {
+            margin-bottom: 24px;
+        }
+
+        &__list {
+            margin: 0 -5px;
+        }
+
+        &__item {
+            padding: 0 5px;
+        }
+       
+        &__post {
+            margin-top: 24px;
+            font-size: 12px;
+        }
+
+        &__name {
+            margin-top: 16px;
+            font-size: 16px;
+        }
+
+        &__btns {
+            display: none;
+        }
+
         &__dots {
             display: block;
         }
+
     }
 }
