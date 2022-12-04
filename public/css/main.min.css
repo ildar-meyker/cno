@@ -121,7 +121,7 @@ button {
   background: #F8F8F8;
 }
 .page__h1 {
-  margin-bottom: 3.2rem;
+  margin-bottom: 4rem;
   font-weight: 500;
   font-size: 5.6rem;
   line-height: 150%;
@@ -2006,6 +2006,10 @@ button {
   flex: 0 0 auto;
   width: 33.33%;
 }
+.l-index__read__right .page__h3 {
+  margin-top: 2rem;
+  margin-bottom: 4.6rem;
+}
 .l-index__news__row {
   display: flex;
   margin: 0 -1rem;
@@ -2019,15 +2023,15 @@ button {
   margin: 4rem 0;
   border-top: 1px solid #E1E1E1;
 }
-.l-index__events__title {
-  margin-top: 2rem;
-}
 .l-index__programs {
   margin: 16rem 0;
 }
 .l-index__digits {
   padding-top: 100px;
   background: #F8F8F8;
+}
+.l-index__digits .page__h1 {
+  margin-bottom: 7rem;
 }
 .l-index__faq {
   padding: 20rem 0;
@@ -2050,12 +2054,19 @@ button {
     width: auto;
     margin-top: 80px;
   }
+  .l-index__read__right .page__h3 {
+    margin-top: 0;
+    margin-bottom: 24px;
+  }
   .l-index__programs {
     margin-top: 80px;
     margin-bottom: 60px;
   }
   .l-index__digits {
     padding-top: 60px;
+  }
+  .l-index__digits .page__h1 {
+    margin-bottom: 32px;
   }
   .l-index__faq {
     padding: 80px 0;
@@ -2197,6 +2208,7 @@ button {
 .l-program__about__left {
   flex: 0 0 auto;
   padding-right: 8rem;
+  padding-top: 1rem;
   width: 40%;
 }
 .l-program__about__right {
@@ -2233,6 +2245,7 @@ button {
     order: 2;
     width: 100%;
     margin-top: 40px;
+    padding-top: 0;
   }
   .l-program__about__right {
     order: 1;

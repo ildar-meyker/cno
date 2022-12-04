@@ -17,6 +17,11 @@
         &__right {
             flex: 0 0 auto;
             width: 33.33%;
+
+            .page__h3 {
+                margin-top: 2rem;
+                margin-bottom: 4.6rem;
+            }
         }
 
         
@@ -40,11 +45,6 @@
         }
     }
 
-    &__events {
-        &__title {
-            margin-top: 2rem;
-        }
-    }
 
     &__programs {
         margin: 16rem 0;
@@ -53,6 +53,10 @@
     &__digits {
         padding-top: 100px;
         background: #F8F8F8;
+
+        .page__h1 {
+            margin-bottom: 7rem;
+        }
     }
 
     &__faq {
@@ -83,6 +87,11 @@
             &__right {
                 width: auto;
                 margin-top: 80px;
+
+                .page__h3 {
+                    margin-top: 0;
+                    margin-bottom: 24px;
+                }
             }
 
         }
@@ -94,11 +103,17 @@
 
         &__digits {
             padding-top: 60px;
+
+            .page__h1 {
+                margin-bottom: 32px;
+            }
         }
 
         &__faq {
             padding: 80px 0;
         }
+
+    
     }
 }
 
