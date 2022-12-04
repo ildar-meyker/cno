@@ -88,20 +88,20 @@ button {
   height: 100%;
 }
 
-.nice-link, .footer__nav a, .header__nav a {
+.nice-link, .l-program__docs__list a, .footer__nav a, .header__nav a {
   background-image: linear-gradient(currentColor, currentColor);
   background-position: 0 100%;
   background-repeat: no-repeat;
   background-size: 0 1px;
   transition: background-size 0.25s ease-out, color 0.2s;
 }
-.nice-link:hover, .footer__nav a:hover, .header__nav a:hover {
+.nice-link:hover, .l-program__docs__list a:hover, .footer__nav a:hover, .header__nav a:hover {
   background-size: 100% 1px;
 }
-.nice-link--active {
+.nice-link--active, .l-program__docs__list a {
   background-size: 100% 1px;
 }
-.nice-link--active:hover {
+.nice-link--active:hover, .l-program__docs__list a:hover {
   background-size: 0 1px;
 }
 
@@ -1932,6 +1932,9 @@ button {
   .slider-people__item {
     padding: 0 5px;
   }
+  .slider-people__photo:before {
+    padding-top: 133%;
+  }
   .slider-people__post {
     margin-top: 24px;
     font-size: 12px;
@@ -2231,7 +2234,7 @@ button {
   background: #F8F8F8;
 }
 .l-program__teachers {
-  margin: 20rem 0;
+  margin: 16rem 0;
 }
 .l-program__docs {
   margin-top: 16rem;
@@ -2248,6 +2251,22 @@ button {
 .l-program__docs__right {
   flex: 0 0 auto;
   width: 60%;
+}
+.l-program__docs__right .page__h1 {
+  display: inline-block;
+  border-bottom: 1px solid #20877D;
+  padding-bottom: 1.6rem;
+  margin-bottom: 2.4rem;
+}
+.l-program__docs__list {
+  margin-top: 4rem;
+  list-style: disc;
+  list-style-position: inside;
+  font-size: 2.4rem;
+  line-height: 150%;
+}
+.l-program__docs__list a {
+  color: #20877D;
 }
 
 @media (max-width: 899.98px) {
@@ -2276,7 +2295,31 @@ button {
     padding-bottom: 16px;
   }
   .l-program__teachers {
-    margin: 60px 0 80px 0;
+    margin: 80px 0;
+  }
+  .l-program__docs {
+    margin: 80px 0;
+  }
+  .l-program__docs__row {
+    flex-direction: column;
+  }
+  .l-program__docs__left {
+    margin-top: 80px;
+    width: 100%;
+    padding-right: 0;
+    order: 2;
+  }
+  .l-program__docs__right {
+    width: 100%;
+    order: 1;
+  }
+  .l-program__docs__right .page__h1 {
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+  }
+  .l-program__docs__list {
+    font-size: 14px;
+    margin-top: 24px;
   }
 }
 @media (max-width: 1600px) {

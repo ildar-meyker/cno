@@ -31,10 +31,10 @@
 
 /***/ }),
 
-/***/ "./src/js/modules/sliderFaces.js":
-/*!***************************************!*\
-  !*** ./src/js/modules/sliderFaces.js ***!
-  \***************************************/
+/***/ "./src/js/modules/sliderPeople.js":
+/*!****************************************!*\
+  !*** ./src/js/modules/sliderPeople.js ***!
+  \****************************************/
 /***/ (function() {
 
 $(".slider-people").each(function () {
@@ -52,7 +52,7 @@ $(".slider-people").each(function () {
         slidesToShow: 3
       }
     }, {
-      breakpoint: 600,
+      breakpoint: 700,
       settings: {
         slidesToShow: 2
       }
@@ -11659,8 +11659,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_bootstrap_js_dist_collapse__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_bootstrap_js_dist_collapse__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _modules_rangePicker__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/rangePicker */ "./src/js/modules/rangePicker.js");
 /* harmony import */ var _modules_rangePicker__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_modules_rangePicker__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _modules_sliderFaces__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/sliderFaces */ "./src/js/modules/sliderFaces.js");
-/* harmony import */ var _modules_sliderFaces__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_modules_sliderFaces__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _modules_sliderPeople__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/sliderPeople */ "./src/js/modules/sliderPeople.js");
+/* harmony import */ var _modules_sliderPeople__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_modules_sliderPeople__WEBPACK_IMPORTED_MODULE_3__);
 
 
 
