@@ -149,8 +149,9 @@ button {
 }
 
 @media (max-width: 899.98px) {
-  .page__h3 {
+  .page__h1, .page__h3 {
     font-size: 24px;
+    font-weight: 600;
     margin-bottom: 24px;
   }
 }
@@ -1941,6 +1942,33 @@ button {
     display: block;
   }
 }
+.contact__title {
+  margin-bottom: 2.4rem;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 135%;
+}
+.contact__label {
+  margin-bottom: 0.4rem;
+  font-size: 1.4rem;
+  line-height: 135%;
+  color: #B7B7B7;
+}
+.contact__name {
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 135%;
+  color: #20877D;
+}
+.contact__list {
+  margin-top: 1.6rem;
+}
+.contact__item {
+  margin-top: 0.8rem;
+  font-size: 16px;
+  line-height: 150%;
+}
+
 .l-index__read {
   margin-top: 15rem;
   margin-bottom: 16rem;
@@ -2000,10 +2028,6 @@ button {
   .l-index__read__right {
     width: auto;
     margin-top: 80px;
-  }
-  .l-index__read .page__h1 {
-    margin-bottom: 24px;
-    font-size: 24px;
   }
   .l-index__programs {
     margin-top: 80px;
@@ -2142,6 +2166,27 @@ button {
   .l-creative__reg-docs {
     margin: 80px 0;
   }
+}
+.l-program__about {
+  margin: 10rem 0 16rem 0;
+}
+.l-program__about__row {
+  display: flex;
+}
+.l-program__about__left {
+  flex: 0 0 auto;
+  padding-right: 8rem;
+  width: 40%;
+}
+.l-program__about__right {
+  flex: 0 0 auto;
+  width: 60%;
+}
+.l-program__about .page__h1 {
+  display: inline-block;
+  padding-bottom: 1.6rem;
+  border-bottom: 1px solid #20877D;
+  margin-bottom: 2.4rem;
 }
 .l-program__points {
   padding-top: 80px;

@@ -5,6 +5,32 @@
 
     }
 
+    &__about {
+        margin: 10rem 0 16rem 0;
+
+        &__row {
+            display: flex;
+        }
+
+        &__left {
+            flex: 0 0 auto;
+            padding-right: 8rem;
+            width: 40%;
+        }
+
+        &__right {
+            flex: 0 0 auto;
+            width: 60%;
+        }
+
+        .page__h1 {
+            display: inline-block;
+            padding-bottom: 1.6rem;
+            border-bottom: 1px solid #20877D;
+            margin-bottom: 2.4rem;
+        }
+    }
+
     &__points-green {
 
     }

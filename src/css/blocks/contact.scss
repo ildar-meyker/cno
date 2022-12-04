@@ -1,0 +1,33 @@
+.contact {
+
+    &__title {
+        margin-bottom: 2.4rem;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 135%;
+    }
+
+    &__label {
+        margin-bottom: .4rem;
+        font-size: 1.4rem;
+        line-height: 135%;
+        color: #B7B7B7;
+    }
+
+    &__name {
+        font-weight: 500;
+        font-size: 2rem;
+        line-height: 135%;
+        color: #20877D;
+    }
+
+    &__list {
+        margin-top: 1.6rem;
+    }
+
+    &__item {
+        margin-top: .8rem;
+        font-size: 16px;
+        line-height: 150%;
+    }
+}
