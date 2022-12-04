@@ -31,3 +31,33 @@
         line-height: 150%;
     }
 }
+
+@media (max-width: 899.98px) {
+
+    .contact {
+
+        &__title {
+            margin-bottom: 16px;
+            font-size: 20px;
+        }
+
+        &__label {
+            margin-bottom: 4px;
+            font-size: 12px;
+        }
+
+        &__list {
+            margin-top: 16px;
+        }
+
+        &__name {
+            font-size: 16px;
+        }
+
+        &__item {
+            margin-top: 8px;
+            font-size: 14px;
+        }
+    }
+
+}
