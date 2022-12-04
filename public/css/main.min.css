@@ -364,7 +364,7 @@ button {
   display: block;
 }
 .digits__item:hover {
-  background: #72CAC1 url(../img/flower-1.svg) 0 0/cover no-repeat;
+  background: #72CAC1 url(../img/digits/flower.svg) 0 0/cover no-repeat;
 }
 .digits__text {
   position: absolute;
@@ -932,7 +932,7 @@ button {
   }
 }
 .points-green {
-  background: #20877D url(../../img/flower-soft.svg) 80% 30%/70% auto no-repeat;
+  background: #20877D url(../../img/flower-white.svg) 80% 30%/70% auto no-repeat;
   padding: 10rem 0;
 }
 .points-green__row {
@@ -1212,7 +1212,7 @@ button {
 .promo-3__flower {
   position: absolute;
   bottom: 0;
-  background: url(../../img/flower-outlined.svg) 50% 50%/contain no-repeat;
+  background: url(../../img/flower-white-outlined.svg) 50% 50%/contain no-repeat;
 }
 .promo-3__flower::before {
   content: " ";
