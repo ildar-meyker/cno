@@ -1,13 +1,13 @@
-$(".slider-faces").each(function () {
+$(".slider-people").each(function () {
 	$(this)
-		.find(".slider-faces__list")
+		.find(".slider-people__list")
 		.slick({
 			dots: true,
 			infinite: false,
 			autoplay: false,
-			prevArrow: $(this).find(".slider-faces__prev"),
-			nextArrow: $(this).find(".slider-faces__next"),
-			appendDots: $(this).find(".slider-faces__dots"),
+			prevArrow: $(this).find(".slider-people__prev"),
+			nextArrow: $(this).find(".slider-people__next"),
+			appendDots: $(this).find(".slider-people__dots"),
 			slidesToShow: 4,
 			responsive: [
 				{
