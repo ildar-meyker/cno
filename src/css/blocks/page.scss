@@ -8,8 +8,9 @@
     }
 
     &__center {
+        box-sizing: content-box;
         padding: 0 var(--side-padding);
-        max-width: 1380px;
+        max-width: 1400px;
         margin: 0 auto;
     }
 

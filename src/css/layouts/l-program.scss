@@ -46,6 +46,26 @@
     &__teachers {
         margin: 20rem 0;
     }
+
+    &__docs {
+        margin-top: 16rem;
+        margin-bottom: 20rem;
+
+        &__row {
+            display: flex;
+        }
+
+        &__left {
+            flex: 0 0 auto;
+            padding-right: 8rem;
+            width: 40%;
+        }
+
+        &__right {
+            flex: 0 0 auto;
+            width: 60%;
+        }
+    }
 }
 
 @media (max-width: 899.98px) {

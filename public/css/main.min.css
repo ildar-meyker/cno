@@ -112,8 +112,9 @@ button {
   background-color: #F8F8F8;
 }
 .page__center {
+  box-sizing: content-box;
   padding: 0 var(--side-padding);
-  max-width: 1380px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 .page__gray {
@@ -2231,6 +2232,22 @@ button {
 }
 .l-program__teachers {
   margin: 20rem 0;
+}
+.l-program__docs {
+  margin-top: 16rem;
+  margin-bottom: 20rem;
+}
+.l-program__docs__row {
+  display: flex;
+}
+.l-program__docs__left {
+  flex: 0 0 auto;
+  padding-right: 8rem;
+  width: 40%;
+}
+.l-program__docs__right {
+  flex: 0 0 auto;
+  width: 60%;
 }
 
 @media (max-width: 899.98px) {
