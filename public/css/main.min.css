@@ -2118,6 +2118,22 @@ button {
   margin-top: 14rem;
   margin-bottom: 12rem;
 }
+.l-about-us__speakers {
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  padding: 20rem 0;
+}
+.l-about-us__speakers__flower {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30%;
+  transform: rotate(-17deg);
+}
+.l-about-us__speakers__content {
+  position: relative;
+}
 
 @media (max-width: 899.98px) {
   .l-about-us__reg-docs {
@@ -2128,6 +2144,14 @@ button {
   }
   .l-about-us__reports__docs {
     margin: 0 -14px;
+  }
+  .l-about-us__speakers {
+    padding: 60px 0 80px 0;
+    background: #F8F8F8;
+  }
+  .l-about-us__speakers__flower {
+    transform: rotate(-155deg) translateY(50%);
+    min-width: 170px;
   }
 }
 .l-contacts__main {
