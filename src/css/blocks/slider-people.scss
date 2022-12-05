@@ -89,44 +89,7 @@
         overflow: visible;
     }
 
-    .slick-dots {
-        display: flex;
-        justify-content: center;
-        margin-top: 35px;
-
-        li {
-            
-            margin: 0 3px;
-
-            &.slick-active {
-                button {
-                   &:before {
-                        background: #20877D; 
-                   }
-                }
-            }
-        }
-
-        button {
-            padding: 5px;
-            background: none;
-            border: 0;
-            cursor: pointer;
-            font-size: 0;
-            overflow: hidden;
-
-            &:before {
-                content: " ";
-                display: block;
-                width: 10px;
-                height: 10px;
-                border-radius: 50%;
-                box-shadow: 0 0 0 1px #20877D;
-                padding: 0;
-                background: transparent;
-            }
-        }
-    }
+   
 
 }
 

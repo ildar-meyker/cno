@@ -1,0 +1,135 @@
+.slider-docs {
+
+    &__wrap {
+        position: relative;
+    }
+
+    &__row {
+        position: relative;
+        font-size: 0;
+        white-space: nowrap;
+        margin: 0 -1rem;
+
+        &:before,
+        &:after {
+            content: ' ';
+            width: 4rem;
+            position: absolute;
+            z-index: 10;
+            top: 0;
+            height: 100%;
+            background: #fff;
+        }
+
+        &:before {
+            left: 0;
+            box-shadow: 1rem 0 4rem 2rem #fff;
+            border-radius: 0 50% 50% 0;
+        }
+
+        &:after {
+            right: 0;
+            box-shadow: -1rem 0 4rem 2rem #fff;
+            border-radius: 50% 0 0 50%;
+        }
+    }
+
+    &__col {
+        transition: all .2s;
+        display: inline-block;
+        vertical-align: top;
+        white-space: normal;
+        width: 30%;
+        padding: 0 1rem;
+        
+        img {
+            max-width: 100%;
+            margin: 0 auto;
+        }
+
+        &.zoom-0,
+        &.zoom-3 {
+            transform: scale(0.7);
+        }
+
+        &.zoom-1,
+        &.zoom-2 {
+            transform: scale(0.85);
+        }
+    }
+
+    &__prev,
+    &__next {
+        position: absolute;
+        z-index: 20;
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 1.6rem 2.4rem;
+        border-radius: 2rem 0px;
+        border: 0;
+        cursor: pointer;
+        background: #20877D;
+
+        &:hover {
+            background: darken(#20877D, 2%);
+        }
+
+        .icon {
+            width: 2rem;
+            height: 2rem;
+            stroke: #fff;
+        }
+    }
+
+    &__prev {
+        left: 0;
+    }
+
+    &__next {
+        right: 0;
+        border-radius: 0px 2rem;
+    }
+
+    &__dots {
+        display: none;
+    }
+
+    .page__h1 {
+        margin-bottom: 5.6rem;
+    }
+
+}
+
+@media (max-width: 899.98px) {
+    .slider-docs {
+
+        &__col {
+            width: 100%;
+        }
+
+        &__btns {
+            display: none;
+        }
+
+        &__dots {
+            display: block;
+        }
+
+        .page__h1 {
+            margin-bottom: 24px;
+        }
+    
+    }
+}
+
+@media (max-width: 499.98px) {
+    .slider-docs {
+        &__row {
+            &:before,
+            &:after {
+                display: none;
+            }
+        }
+
+    }
+}

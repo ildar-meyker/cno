@@ -69,7 +69,7 @@
         &:after {
             @include fill;
             content: ' ';
-            background: url(../../img/icons/no-image.svg) 50% 50% / 20% auto no-repeat;
+            background: url(../img/icons/no-image.svg) 50% 50% / 20% auto no-repeat;
         }
     }
 

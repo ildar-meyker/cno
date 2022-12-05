@@ -12,11 +12,11 @@
     }
 
     &:before {
-        background: url(../../img/reviews/curve-1.svg) 0 101% / 90% auto no-repeat ;
+        background: url(../img/reviews/curve-1.svg) 0 105% / 90% auto no-repeat ;
     }
 
     &:after {
-        background: url(../../img/reviews/curve-2.svg) 0 101% / 60% auto no-repeat ;
+        background: url(../img/reviews/curve-2.svg) 0 105% / 60% auto no-repeat ;
     }
 
     &__content {
@@ -113,44 +113,7 @@
         margin-right: 0;
     }
 
-    .slick-dots {
-        display: flex;
-        justify-content: center;
-        margin-top: 35px;
-    
-        li {
-            
-            margin: 0 3px;
-    
-            &.slick-active {
-                button {
-                   &:before {
-                        background: #fff; 
-                   }
-                }
-            }
-        }
-    
-        button {
-            padding: 5px;
-            background: none;
-            border: 0;
-            cursor: pointer;
-            font-size: 0;
-            overflow: hidden;
-    
-            &:before {
-                content: " ";
-                display: block;
-                width: 10px;
-                height: 10px;
-                border-radius: 50%;
-                box-shadow: 0 0 0 1px #fff;
-                padding: 0;
-                background: transparent;
-            }
-        }
-    }
+   
 }
 
 @media (max-width: 899.98px) {
