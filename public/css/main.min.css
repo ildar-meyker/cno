@@ -2073,104 +2073,6 @@ button {
     display: block;
   }
 }
-.slider-docs__wrap {
-  position: relative;
-}
-.slider-docs__row {
-  position: relative;
-  font-size: 0;
-  white-space: nowrap;
-  margin: 0 -1rem;
-}
-.slider-docs__row:before, .slider-docs__row:after {
-  content: " ";
-  width: 4rem;
-  position: absolute;
-  z-index: 10;
-  top: 0;
-  height: 100%;
-  background: #fff;
-}
-.slider-docs__row:before {
-  left: 0;
-  box-shadow: 1rem 0 4rem 2rem #fff;
-  border-radius: 0 50% 50% 0;
-}
-.slider-docs__row:after {
-  right: 0;
-  box-shadow: -1rem 0 4rem 2rem #fff;
-  border-radius: 50% 0 0 50%;
-}
-.slider-docs__col {
-  transition: all 0.2s;
-  display: inline-block;
-  vertical-align: top;
-  white-space: normal;
-  width: 30%;
-  padding: 0 1rem;
-}
-.slider-docs__col img {
-  max-width: 100%;
-  margin: 0 auto;
-}
-.slider-docs__col.zoom-0, .slider-docs__col.zoom-3 {
-  transform: scale(0.7);
-}
-.slider-docs__col.zoom-1, .slider-docs__col.zoom-2 {
-  transform: scale(0.85);
-}
-.slider-docs__prev, .slider-docs__next {
-  position: absolute;
-  z-index: 20;
-  top: 50%;
-  transform: translateY(-50%);
-  padding: 1.6rem 2.4rem;
-  border-radius: 2rem 0px;
-  border: 0;
-  cursor: pointer;
-  background: #20877D;
-}
-.slider-docs__prev:hover, .slider-docs__next:hover {
-  background: #1e7f75;
-}
-.slider-docs__prev .icon, .slider-docs__next .icon {
-  width: 2rem;
-  height: 2rem;
-  stroke: #fff;
-}
-.slider-docs__prev {
-  left: 0;
-}
-.slider-docs__next {
-  right: 0;
-  border-radius: 0px 2rem;
-}
-.slider-docs__dots {
-  display: none;
-}
-.slider-docs .page__h1 {
-  margin-bottom: 5.6rem;
-}
-
-@media (max-width: 899.98px) {
-  .slider-docs__col {
-    width: 100%;
-  }
-  .slider-docs__btns {
-    display: none;
-  }
-  .slider-docs__dots {
-    display: block;
-  }
-  .slider-docs .page__h1 {
-    margin-bottom: 24px;
-  }
-}
-@media (max-width: 499.98px) {
-  .slider-docs__row:before, .slider-docs__row:after {
-    display: none;
-  }
-}
 .slider-thanks .swiper:before, .slider-thanks .swiper:after {
   content: " ";
   width: 4rem;
@@ -2243,6 +2145,9 @@ button {
 .slider-thanks__dots {
   display: none;
 }
+.slider-thanks .page__h1 {
+  margin-bottom: 5.6rem;
+}
 
 @media (max-width: 899.98px) {
   .slider-thanks .swiper-slide {
@@ -2253,6 +2158,9 @@ button {
   }
   .slider-thanks__dots {
     display: block;
+  }
+  .slider-thanks .page__h1 {
+    margin-bottom: 24px;
   }
 }
 @media (max-width: 499.98px) {

@@ -31,53 +31,6 @@
 
 /***/ }),
 
-/***/ "./src/js/modules/sliderDocs.js":
-/*!**************************************!*\
-  !*** ./src/js/modules/sliderDocs.js ***!
-  \**************************************/
-/***/ (function() {
-
-function markSlides($slides, nextSlide) {
-  var indexes = [nextSlide - 2, nextSlide - 1, nextSlide + 1, nextSlide + 2];
-  $slides.removeClass("zoom-0 zoom-1 zoom-2 zoom-3");
-  indexes.forEach(function (index, zoomId) {
-    $slides.filter("[data-slick-index=\"".concat(index, "\"]")).addClass("zoom-".concat(zoomId));
-  });
-}
-
-$(".slider-docs").each(function () {
-  var $root = $(this);
-  $root.find(".slider-docs__row").on("init", function (event, slick) {
-    markSlides($root.find(".slick-slide"), slick.currentSlide);
-  }).on("beforeChange", function (event, slick, currentSlide, nextSlide) {
-    markSlides($root.find(".slick-slide"), nextSlide);
-  }).slick({
-    dots: true,
-    infinite: true,
-    autoplay: false,
-    prevArrow: $root.find(".slider-docs__prev"),
-    nextArrow: $root.find(".slider-docs__next"),
-    appendDots: $root.find(".slider-docs__dots"),
-    slidesToShow: 3,
-    centerMode: true,
-    centerPadding: "20rem",
-    responsive: [{
-      breakpoint: 900,
-      settings: {
-        slidesToShow: 1
-      }
-    }, {
-      breakpoint: 500,
-      settings: {
-        slidesToShow: 1,
-        centerPadding: 0
-      }
-    }]
-  });
-});
-
-/***/ }),
-
 /***/ "./src/js/modules/sliderPeople.js":
 /*!****************************************!*\
   !*** ./src/js/modules/sliderPeople.js ***!
@@ -11785,11 +11738,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_sliderPeople__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/sliderPeople */ "./src/js/modules/sliderPeople.js");
 /* harmony import */ var _modules_sliderPeople__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_modules_sliderPeople__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _modules_sliderReviews__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/sliderReviews */ "./src/js/modules/sliderReviews.js");
-/* harmony import */ var _modules_sliderDocs__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./modules/sliderDocs */ "./src/js/modules/sliderDocs.js");
-/* harmony import */ var _modules_sliderDocs__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_modules_sliderDocs__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _modules_sliderThanks__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./modules/sliderThanks */ "./src/js/modules/sliderThanks.js");
-/* harmony import */ var _modules_sliderThanks__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_modules_sliderThanks__WEBPACK_IMPORTED_MODULE_6__);
-
+/* harmony import */ var _modules_sliderThanks__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./modules/sliderThanks */ "./src/js/modules/sliderThanks.js");
+/* harmony import */ var _modules_sliderThanks__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_modules_sliderThanks__WEBPACK_IMPORTED_MODULE_5__);
 
 
 
