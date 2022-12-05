@@ -1479,6 +1479,35 @@ button {
   background: #f3f3f3;
 }
 
+@media (max-width: 899.98px) {
+  .contacts__row {
+    display: block;
+  }
+  .contacts__left {
+    width: auto;
+    padding-right: 0;
+  }
+  .contacts__right {
+    width: auto;
+    margin-top: 64px;
+  }
+  .contacts__desc {
+    display: block;
+  }
+  .contacts__desc__item {
+    margin-top: 24px;
+    padding-right: 0;
+    width: auto;
+  }
+  .contacts__desc__title {
+    margin-bottom: 8px;
+    font-size: 16px;
+    line-height: 135%;
+  }
+  .contacts__map {
+    margin-top: 32px;
+  }
+}
 .form-feedback {
   padding: 5.6rem;
   background: #FFFFFF;
@@ -1503,6 +1532,25 @@ button {
   text-align: center;
 }
 
+@media (max-width: 899.98px) {
+  .form-feedback {
+    padding: 40px 24px;
+  }
+  .form-feedback__title {
+    margin-bottom: 24px;
+    font-weight: 600;
+    font-size: 20px;
+  }
+  .form-feedback__input {
+    margin-bottom: 8px;
+  }
+  .form-feedback__area {
+    margin-top: 16px;
+  }
+  .form-feedback__ctrl {
+    margin-top: 24px;
+  }
+}
 .form-filter {
   background: #FFFFFF;
   border: 1px solid #E1E1E1;

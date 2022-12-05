@@ -71,3 +71,42 @@
         background: #f3f3f3;
     }
 }
+
+@media (max-width: 899.98px) {
+    .contacts {
+
+        &__row {
+            display: block;
+        }
+
+        &__left {
+            width: auto;
+            padding-right: 0;
+        }
+
+        &__right {
+            width: auto;
+            margin-top: 64px;
+        }
+
+        &__desc {
+            display: block;
+            
+            &__item {
+                margin-top: 24px;
+                padding-right: 0;
+                width: auto;
+            }
+
+            &__title {
+                margin-bottom: 8px;
+                font-size: 16px;
+                line-height: 135%;
+            }
+        }
+
+        &__map {
+            margin-top: 32px;
+        }
+    }
+}
