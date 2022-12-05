@@ -106,10 +106,26 @@ button {
 }
 
 .page__wrapper {
-  background: url(../../img/flower-green.svg) 100% 0/40% auto no-repeat;
+  position: relative;
 }
 .page__wrapper--gray {
   background-color: #F8F8F8;
+}
+.page__flower {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 38%;
+  background: url(../../img/flower-green.svg) 50% 50%/contain no-repeat;
+}
+.page__flower:before {
+  content: " ";
+  padding-top: 100%;
+  display: block;
+}
+.page__content {
+  position: relative;
+  z-index: 10;
 }
 .page__center {
   box-sizing: content-box;
@@ -2129,7 +2145,14 @@ button {
   top: 0;
   right: 0;
   width: 30%;
-  transform: rotate(-17deg);
+  min-width: 170px;
+  background: url(../../img/speakers/flower.svg) 50% 50%/contain no-repeat;
+  transform: translateY(-5%);
+}
+.l-about-us__speakers__flower:before {
+  content: " ";
+  padding-top: 145%;
+  display: block;
 }
 .l-about-us__speakers__content {
   position: relative;
@@ -2150,8 +2173,8 @@ button {
     background: #F8F8F8;
   }
   .l-about-us__speakers__flower {
-    transform: rotate(-155deg) translateY(50%);
-    min-width: 170px;
+    background-image: url(../../img/speakers/flower--small.svg);
+    transform: translateY(-45%);
   }
 }
 .l-contacts__main {

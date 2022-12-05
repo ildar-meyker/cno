@@ -28,7 +28,15 @@
             top: 0;
             right: 0;
             width: 30%;
-            transform: rotate(-17deg);
+            min-width: 170px;
+            background: url(../../img/speakers/flower.svg) 50% 50% / contain no-repeat;
+            transform: translateY(-5%);
+
+            &:before {
+                content: ' ';
+                padding-top: 145%;
+                display: block;
+            }
         }
 
         &__content {
@@ -57,8 +65,8 @@
             background: #F8F8F8;
 
             &__flower {
-                transform: rotate(-155deg) translateY(50%);
-                min-width: 170px;
+                background-image: url(../../img/speakers/flower--small.svg);
+                transform: translateY(-45%);
             }
         }
     }
