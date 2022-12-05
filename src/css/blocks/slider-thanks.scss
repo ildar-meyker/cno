@@ -1,0 +1,125 @@
+.slider-thanks {
+
+    .swiper {
+        &:before,
+        &:after {
+            content: ' ';
+            width: 4rem;
+            position: absolute;
+            z-index: 10;
+            top: 0;
+            height: 100%;
+            background: #fff;
+        }
+
+        &:before {
+            left: 0;
+            box-shadow: 1rem 0 4rem 2rem #fff;
+            border-radius: 0 50% 50% 0;
+        }
+
+        &:after {
+            right: 0;
+            box-shadow: -1rem 0 4rem 2rem #fff;
+            border-radius: 50% 0 0 50%;
+        }
+    }
+
+    .swiper-slide {
+        width: 20%;
+
+        img {
+            display: block;
+            max-width: 100%;
+            margin: 0 auto;
+        }
+    }
+
+    .swiper-pagination {
+        position: static;
+        margin-top: 35px;
+    }
+
+    .swiper-pagination-bullet {
+        margin: 0 8px !important;
+        width: 10px;
+        height: 10px;
+        box-shadow: 0 0 0 1px #20877D;
+        padding: 0;
+        background: transparent;
+        opacity: 1;
+    }
+
+    .swiper-pagination-bullet-active {
+        background: #20877d;
+    }
+
+    &__prev,
+    &__next {
+        position: absolute;
+        z-index: 20;
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 1.6rem 2.4rem;
+        border-radius: 2rem 0px;
+        border: 0;
+        cursor: pointer;
+        background: #20877D;
+
+        &:hover {
+            background: darken(#20877D, 2%);
+        }
+
+        .icon {
+            width: 2rem;
+            height: 2rem;
+            stroke: #fff;
+        }
+    }
+
+    &__prev {
+        left: 0;
+    }
+
+    &__next {
+        right: 0;
+        border-radius: 0px 2rem;
+    }
+
+    &__dots {
+        display: none;
+    }
+}
+
+@media (max-width: 899.98px) {
+    .slider-thanks {
+        .swiper-slide {
+            width: 50%;
+        }
+
+        &__btns {
+            display: none;
+        }
+
+        &__dots {
+            display: block;
+        }
+    }
+}
+
+@media (max-width: 499.98px) {
+    .slider-thanks {
+
+        .swiper {
+            &:before,
+            &:after {
+                display: none;
+            }
+        }
+
+        .swiper-slide {
+            width: 100%;
+        }
+    }
+}
+

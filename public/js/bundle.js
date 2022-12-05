@@ -145,6 +145,40 @@ new js_match_height__WEBPACK_IMPORTED_MODULE_0__.MatchHeight(".slider-reviews__i
 
 /***/ }),
 
+/***/ "./src/js/modules/sliderThanks.js":
+/*!****************************************!*\
+  !*** ./src/js/modules/sliderThanks.js ***!
+  \****************************************/
+/***/ (function() {
+
+$(".slider-thanks").each(function () {
+  var $root = $(this);
+  new Swiper($root.find(".swiper")[0], {
+    loop: true,
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    coverflowEffect: {
+      rotate: 0,
+      stretch: -100,
+      depth: 200,
+      modifier: 1,
+      slideShadows: false
+    },
+    pagination: {
+      el: $root.find(".swiper-pagination")[0],
+      clickable: true
+    },
+    navigation: {
+      nextEl: $root.find(".slider-thanks__next")[0],
+      prevEl: $root.find(".slider-thanks__prev")[0]
+    }
+  });
+});
+
+/***/ }),
+
 /***/ "./node_modules/bootstrap/js/dist/collapse.js":
 /*!****************************************************!*\
   !*** ./node_modules/bootstrap/js/dist/collapse.js ***!
@@ -11753,6 +11787,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_sliderReviews__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/sliderReviews */ "./src/js/modules/sliderReviews.js");
 /* harmony import */ var _modules_sliderDocs__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./modules/sliderDocs */ "./src/js/modules/sliderDocs.js");
 /* harmony import */ var _modules_sliderDocs__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_modules_sliderDocs__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _modules_sliderThanks__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./modules/sliderThanks */ "./src/js/modules/sliderThanks.js");
+/* harmony import */ var _modules_sliderThanks__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_modules_sliderThanks__WEBPACK_IMPORTED_MODULE_6__);
+
 
 
 
