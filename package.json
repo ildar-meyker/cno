@@ -55,6 +55,7 @@
     "bootstrap": "^4.3.1",
     "howler": "^2.2.3",
     "jquery": "^3.6.0",
+    "js-match-height": "^1.0.7",
     "slick-carousel": "^1.8.1",
     "swiper": "^7.4.1"
   }

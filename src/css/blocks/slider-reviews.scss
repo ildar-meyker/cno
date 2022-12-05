@@ -1,5 +1,28 @@
-.slider-people {
+.slider-reviews {
+    position: relative;
+    background: #20877D;
+    padding: 10rem 0 12rem 0;
     overflow: hidden;
+
+    &:before,
+    &:after {
+        content: ' ';
+        @include fill;
+        
+    }
+
+    &:before {
+        background: url(../../img/reviews/curve-1.svg) 0 101% / 90% auto no-repeat ;
+    }
+
+    &:after {
+        background: url(../../img/reviews/curve-2.svg) 0 101% / 60% auto no-repeat ;
+    }
+
+    &__content {
+        position: relative;
+        z-index: 10;
+    }
 
     &__header {
         display: flex;
@@ -10,46 +33,42 @@
     &__row {
         font-size: 0;
         white-space: nowrap;
-        margin: 0 -1.2rem;
+        margin: 0 -1rem;
     }
 
-    &__item {
+    &__col {
         display: inline-block;
         vertical-align: top;
         white-space: normal;
-        width: 25%;
-        padding: 0 1.2rem;
+        width: 40%;
+        padding: 0 1rem;
     }
 
-    &__photo {
-        background: #f3f3f3 50% 50% / cover no-repeat;
+    &__item {
+        background: #fff;
+        padding: 4.8rem 4rem;
 
-        &:before {
-            content: ' ';
-            padding-top: 145%;
-            display: block;
-        }
+    }
+
+    &__name {
+        font-weight: 600;
+        font-size: 3.2rem;
+        line-height: 135%;
     }
 
     &__post {
-        margin-top: 3.2rem;
+        margin-top: .8rem;
         font-weight: 500;
-        font-size: 1.6rem;
+        font-size: 16px;
         line-height: 155%;
-        color: #20877D;
-    } 
-
-    &__name {
-        word-break: break-all;
-        margin-top: 1.6rem;
-        font-size: 2rem;
-        line-height: 135%;
 
         span {
-            display: block;
-            text-transform: uppercase;
-            font-weight: 700;
+            color: #20877D;
         }
+    }
+
+    &__text {
+        margin-top: 3.2rem;
     }
 
     &__btns {
@@ -89,24 +108,29 @@
         overflow: visible;
     }
 
+    .slick-track {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
     .slick-dots {
         display: flex;
         justify-content: center;
         margin-top: 35px;
-
+    
         li {
             
             margin: 0 3px;
-
+    
             &.slick-active {
                 button {
                    &:before {
-                        background: #20877D; 
+                        background: #fff; 
                    }
                 }
             }
         }
-
+    
         button {
             padding: 5px;
             background: none;
@@ -114,52 +138,47 @@
             cursor: pointer;
             font-size: 0;
             overflow: hidden;
-
+    
             &:before {
                 content: " ";
                 display: block;
                 width: 10px;
                 height: 10px;
                 border-radius: 50%;
-                box-shadow: 0 0 0 1px #20877D;
+                box-shadow: 0 0 0 1px #fff;
                 padding: 0;
                 background: transparent;
             }
         }
     }
-
 }
 
 @media (max-width: 899.98px) {
-    .slider-people {
+    .slider-reviews {
+        padding: 40px 0;
 
         &__header {
             margin-bottom: 24px;
         }
 
-        &__row {
-            margin: 0 -5px;
-        }
-
-        &__item {
-            padding: 0 5px;
-            width: 33.33%;
-        }
-
-        &__photo {
-            &:before {
-                padding-top: 133%;
-            }
-        }
-       
-        &__post {
-            margin-top: 24px;
-            font-size: 12px;
+        &__col {
+            width: 100%;
         }
 
         &__name {
-            margin-top: 16px;
-            font-size: 16px;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 135%;
+        }
+
+        &__post {
+            margin-top: 8px;
+            font-size: 12px;
+            line-height: 135%;
+        }
+
+        &__text {
+            margin-top: 24px;
         }
 
         &__btns {
@@ -168,23 +187,6 @@
 
         &__dots {
             display: block;
-        }
-
-    }
-}
-
-@media (max-width: 699.98px) {
-    .slider-people {
-        &__item {
-            width: 50%;
-        }
-    }
-}
-
-@media (max-width: 399.98px) {
-    .slider-people {
-        &__item {
-            width: 100%;
         }
     }
 }

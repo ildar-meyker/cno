@@ -1,6 +1,6 @@
 $(".slider-people").each(function () {
 	$(this)
-		.find(".slider-people__list")
+		.find(".slider-people__row")
 		.slick({
 			dots: true,
 			infinite: false,

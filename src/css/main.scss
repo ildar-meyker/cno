@@ -129,6 +129,7 @@ button {
 @import './blocks/article.scss'; 
 @import './blocks/tags.scss'; 
 @import './blocks/slider-people.scss'; 
+@import './blocks/slider-reviews.scss'; 
 @import './blocks/contact.scss'; 
 
 @import './layouts/l-index.scss';
@@ -139,6 +140,8 @@ button {
 @import './layouts/l-gallery.scss';
 @import './layouts/l-creative.scss';
 @import './layouts/l-program.scss';
+
+
 
 
 @media (max-width: 1600px) {
