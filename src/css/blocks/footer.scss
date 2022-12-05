@@ -8,23 +8,34 @@
         display: flex;
     }
 
-    &__content {
+    &__row {
         display: flex;
         flex-wrap: wrap;
     }
 
+    &__col {
+        padding: 0 8rem 8rem 0;
+        flex: 1 1 auto;
+
+        &:last-child {
+            padding-right: 0;
+        }
+    }
+
     &__name {
-        font-weight: 500;
-        line-height: 120%;
-        text-transform: uppercase;
         margin-right: auto;
-        white-space: nowrap
+        
+        a {
+            display: inline-block;
+            white-space: nowrap;
+            font-weight: 500;
+            line-height: 120%;
+            text-transform: uppercase;
+        }
     }
 
     &__nav {
-        margin-left: 8rem;
         max-width: 20rem;
-        margin-bottom: 8rem;
 
         div {
             margin-top: 2.4rem;
@@ -43,8 +54,6 @@
     }
 
     &__touch {
-        margin-left: 8rem;
-        margin-bottom: 8rem;
 
         &__title {
             margin-bottom: 1.6rem;
@@ -63,13 +72,10 @@
     }
 
     &__promo {
-        margin-left: 8rem;
-        margin-bottom: 8rem;
-
         &__title {
             margin-bottom: 2.2rem;
             text-transform: uppercase;
-            font-weight: 500;
+            font-weight: 700;
             line-height: 150%;
         }
     }
@@ -85,6 +91,58 @@
                 width: 2.4rem;
                 height: 2.4rem;
                 fill: #fff;
+            }
+        }
+    }
+}
+
+@media (max-width: 899.98px) {
+    .footer {
+        padding: 40px 0;
+        font-size: 14px;
+        
+        &__in {
+            display: block;
+        }
+
+        &__name {
+            font-size: 10px;
+        }
+
+        &__row {
+            margin-top: 40px;
+        }
+
+        &__col {
+            padding-right: 40px;
+            padding-bottom: 40px;
+
+            &:last-child {
+                width: 100%;
+                padding-bottom: 0;
+            }
+        }
+
+        &__nav {
+            > div {
+                margin-top: 12px;
+                
+            }
+        }
+
+        &__touch {
+            &__title {
+                margin-bottom: 12px;
+            }
+
+            &__desc {
+                font-size: 12px;
+            }
+        }
+
+        &__promo {
+            &__title {
+                margin-bottom: 16px;
             }
         }
     }
