@@ -31,16 +31,23 @@
 @media (max-width: 899.98px) {
     .gallery {
 
-
         &__row {
-            margin: 0 -6px;
             margin-top: -12px;
         }
 
         &__col {
             width: 50%;
-            padding: 0 6px;
             margin-top: 12px;
+        }
+
+        &__item {
+            height: auto;
+
+            &:before {
+                content: ' ';
+                display: block;
+                padding-top: 66%;
+            }
         }
     }
 }

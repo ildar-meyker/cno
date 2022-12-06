@@ -701,14 +701,7 @@ button {
   background-position: 50% 50%;
   background-size: cover;
 }
-.articles-tiles__date-1 {
-  display: block;
-  margin-top: 2.4rem;
-  font-size: 1.4rem;
-  line-height: 135%;
-  color: #3D3D3D;
-}
-.articles-tiles__date-2 {
+.articles-tiles__date {
   position: absolute;
   left: 0;
   bottom: 10%;
@@ -746,8 +739,83 @@ button {
     margin: 24px 0;
     font-size: 16px;
   }
-  .articles-tiles__date-2 {
+  .articles-tiles__date {
     font-size: 14px;
+  }
+}
+.articles-media__row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -1.2rem;
+  margin-top: -4rem;
+}
+.articles-media__col {
+  flex: 0 0 auto;
+  width: 33.33%;
+  padding: 0 1.2rem;
+  margin-top: 4rem;
+}
+.articles-media__item {
+  position: relative;
+}
+.articles-media__image {
+  position: relative;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+.articles-media__date {
+  display: block;
+  margin-top: 2.4rem;
+  font-size: 1.4rem;
+  line-height: 135%;
+  color: #3D3D3D;
+}
+.articles-media__name {
+  margin: 1.6rem 0;
+  font-weight: 500;
+  font-size: 2.4rem;
+  line-height: 140%;
+}
+.articles-media__name a {
+  display: block;
+}
+.articles-media__media {
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 150%;
+  color: #20877D;
+}
+
+@media (max-width: 899.98px) {
+  .articles-media__col {
+    width: 50%;
+  }
+  .articles-media__name {
+    margin: 8px 0;
+    font-size: 20px;
+  }
+  .articles-media__date {
+    margin-top: 16px;
+    font-size: 12px;
+  }
+  .articles-media__media {
+    margin-top: 16px;
+    font-size: 14px;
+  }
+}
+@media (max-width: 499.98px) {
+  .articles-media__row {
+    margin-top: 0;
+  }
+  .articles-media__col {
+    width: 100%;
+    margin-top: 32px;
+  }
+  .articles-media__col:first-child {
+    margin-top: 0;
+  }
+  .articles-media__col:last-child {
+    margin-bottom: 0;
   }
 }
 .events-list__item {
@@ -1887,13 +1955,19 @@ button {
 
 @media (max-width: 899.98px) {
   .gallery__row {
-    margin: 0 -6px;
     margin-top: -12px;
   }
   .gallery__col {
     width: 50%;
-    padding: 0 6px;
     margin-top: 12px;
+  }
+  .gallery__item {
+    height: auto;
+  }
+  .gallery__item:before {
+    content: " ";
+    display: block;
+    padding-top: 66%;
   }
 }
 @media (max-width: 399.98px) {

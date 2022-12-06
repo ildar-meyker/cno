@@ -1,9 +1,10 @@
-.articles-tiles {
+.articles-media {
 
     &__row {
         display: flex;
         flex-wrap: wrap;
         margin: 0 -1.2rem;
+        margin-top: -4rem;
     }
 
     &__col {
@@ -11,10 +12,6 @@
         width: 33.33%;
         padding: 0 1.2rem;
         margin-top: 4rem;
-
-        &:nth-child(-n+3) {
-            margin-top: 0;
-        }
     }
 
     &__item {
@@ -28,15 +25,11 @@
     }
 
     &__date {
-        position: absolute;
-        left: 0;
-        bottom: 10%;
-        padding: 1em calc(24/16) + em;
-        background: #FFFFFF;
-        font-weight: 500;
-        font-size: 1.6rem;
-        line-height: 155%;
-        color: #20877D;
+        display: block;
+        margin-top: 2.4rem;
+        font-size: 1.4rem;
+        line-height: 135%;
+        color: #3D3D3D;
     }
 
     &__name {
@@ -44,10 +37,6 @@
         font-weight: 500;
         font-size: 2.4rem;
         line-height: 140%;
-
-        .articles-tiles__image + & {
-            margin-top: 3.2rem;
-        }
 
         a {
             display: block;
@@ -61,22 +50,54 @@
         color: #20877D;
     }
 
-    &__tags {
-        margin-top: 2.4rem;
-    }
+  
 }
 
 @media (max-width: 899.98px) {
 
-    .articles-tiles {
+    .articles-media {
+
+        &__col {
+            width: 50%;
+        }
+
         &__name {
-            margin: 24px 0;
-            font-size: 16px;
+            margin: 8px 0;
+            font-size: 20px;
         }
 
         &__date {
+            margin-top: 16px;
+            font-size: 12px;
+            
+        }
+
+        &__media {
+            margin-top: 16px;
             font-size: 14px;
         }
+
+    }
+}
+
+
+@media (max-width: 499.98px) {
+
+    .articles-media {
+
+        &__row {
+            margin-top: 0;
+        }
+
+        &__col {
+            width: 100%;
+            margin-top: 32px;
+
+            @include fix-margin;
+        }
+
+
+
     }
 }
 
