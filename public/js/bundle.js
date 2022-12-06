@@ -1,17 +1,33 @@
 /******/ (function() { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/js/modules/popup.js":
+/*!*********************************!*\
+  !*** ./src/js/modules/popup.js ***!
+  \*********************************/
+/***/ (function() {
+
+$(document).on("click", ".js-open-popup", function (e) {
+  e.preventDefault();
+  var target = $(e.currentTarget).attr("href");
+  $(target).addClass("active");
+});
+$(document).on("click", ".js-close-popup", function (e) {
+  e.preventDefault();
+  $(e.currentTarget).closest(".popup").removeClass("active");
+});
+
+/***/ }),
+
 /***/ "./src/js/modules/rangePicker.js":
 /*!***************************************!*\
   !*** ./src/js/modules/rangePicker.js ***!
   \***************************************/
 /***/ (function() {
 
-(function () {
-  var elem = document.getElementById("calendar");
-  if (!elem) return;
+$(".js-range-picker").each(function () {
   var picker = new easepick.create({
-    element: elem,
+    element: this,
     css: ["https://cdn.jsdelivr.net/npm/@easepick/bundle@1.2.0/dist/index.css", "css/easepick-custom.min.css"],
     inline: true,
     lang: "ru-RU",
@@ -27,7 +43,7 @@
       darkMode: false
     }
   });
-})();
+});
 
 /***/ }),
 
@@ -11740,6 +11756,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_sliderReviews__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/sliderReviews */ "./src/js/modules/sliderReviews.js");
 /* harmony import */ var _modules_sliderThanks__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./modules/sliderThanks */ "./src/js/modules/sliderThanks.js");
 /* harmony import */ var _modules_sliderThanks__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_modules_sliderThanks__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _modules_popup__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./modules/popup */ "./src/js/modules/popup.js");
+/* harmony import */ var _modules_popup__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_modules_popup__WEBPACK_IMPORTED_MODULE_6__);
+
 
 
 

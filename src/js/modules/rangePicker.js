@@ -1,9 +1,6 @@
-(() => {
-	const elem = document.getElementById("calendar");
-	if (!elem) return;
-
+$(".js-range-picker").each(function () {
 	const picker = new easepick.create({
-		element: elem,
+		element: this,
 		css: [
 			"https://cdn.jsdelivr.net/npm/@easepick/bundle@1.2.0/dist/index.css",
 			"css/easepick-custom.min.css",
@@ -22,4 +19,4 @@
 			darkMode: false,
 		},
 	});
-})();
+});

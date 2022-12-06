@@ -1,0 +1,32 @@
+.popup {
+    position: fixed;
+    z-index: 100;
+    overflow: auto;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    padding: 4rem;
+    background: #fff;
+    display: none;
+
+    &.active {
+        display: block;
+    }
+
+    &__close {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        padding: 1rem;
+        background: none;
+        border: 0;
+        cursor: pointer;
+
+        .icon {
+            width: 2rem;
+            height: 2rem;
+            stroke: #000;
+        }
+    }
+}
