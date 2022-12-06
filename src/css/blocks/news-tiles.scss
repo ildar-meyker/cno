@@ -1,4 +1,4 @@
-.articles-tiles {
+.news-tiles {
 
     &__row {
         display: flex;
@@ -45,7 +45,7 @@
         font-size: 2.4rem;
         line-height: 140%;
 
-        .articles-tiles__image + & {
+        .news-tiles__image + & {
             margin-top: 3.2rem;
         }
 
@@ -68,7 +68,7 @@
 
 @media (max-width: 899.98px) {
 
-    .articles-tiles {
+    .news-tiles {
         &__name {
             margin: 24px 0;
             font-size: 16px;

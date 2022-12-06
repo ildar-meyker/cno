@@ -1,17 +1,17 @@
-.l-coming {
+.l-news {
     &__main {
 
         margin-bottom: 15rem;
 
         &__row {
             display: flex;
+
         }
     
         &__left {
         }
     
         &__right {
-            margin-top: 3.2rem;
             padding-left: 8rem;
             flex-grow: 1;
         }
@@ -30,7 +30,7 @@
 }
 
 @media (max-width: 1199.98px) {
-    .l-coming {
+    .l-news {
         &__main {
             &__row {
                 display: block;
@@ -51,13 +51,17 @@
             margin-bottom: 35px;
         }
     }
+
 }
-    @media (max-width: 899.98px) {
-    .l-coming {
+@media (max-width: 899.98px) {
+    .l-news {
         &__main {
             margin-bottom: 80px;
 
+           
         }
+
+        
 
     }
 }

@@ -113,7 +113,7 @@ input, textarea {
 @import './blocks/docs-list.scss';
 @import './blocks/programs.scss';
 @import './blocks/nav-pager.scss';
-@import './blocks/articles-tiles.scss';
+
 @import './blocks/articles-media.scss';
 @import './blocks/events-list.scss';
 @import './blocks/nav-bread.scss';
@@ -141,6 +141,8 @@ input, textarea {
 @import './blocks/slider-dots.scss'; 
 @import './blocks/contact.scss'; 
 @import './blocks/popup.scss'; 
+@import './blocks/news-list.scss'; 
+@import './blocks/news-tiles.scss'; 
 
 
 @import './layouts/l-index.scss';
@@ -151,6 +153,7 @@ input, textarea {
 @import './layouts/l-gallery.scss';
 @import './layouts/l-creative.scss';
 @import './layouts/l-program.scss';
+@import './layouts/l-news.scss';
 
 
 
