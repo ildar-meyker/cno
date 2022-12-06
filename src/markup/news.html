@@ -1,0 +1,324 @@
+<!-- @@master = ./layouts/gray.html-->
+ 
+<!-- @@block = title-->
+<title>Главная</title>
+<!-- @@close-->
+
+<!-- @@block = styles-->
+<!-- @@close-->
+
+<!-- @@block = scripts-->
+<script src="https://cdn.jsdelivr.net/npm/@easepick/bundle@1.2.0/dist/index.umd.min.js"></script>
+<!-- @@close-->
+
+<!-- @@block = content-->
+<!-- @@include = ./partials/header.html -->
+
+<div class="page__center">
+   <nav class="nav-bread">
+      <a href="#" class="nice-link">Главная</a> /
+      <a href="#" class="nice-link">Пресс-служба</a> /
+      <span>Анонсы</span>
+   </nav>
+</div>
+
+<div class="l-coming__main">
+   <section>
+      <div class="page__center">
+         <h1 class="page__h1">Новости</h1>
+
+         <form action="#" class="l-coming__search">
+            <div class="l-coming__search__input">
+               <div class="input-search">
+                  <svg class="icon">
+                     <use xlink:href="img/sprite.svg#search"></use>
+                  </svg>
+                  <input type="text" placeholder="Поиск по программам">
+               </div>
+            </div>
+            <div class="l-coming__search__btn">
+               <a href="#popup-filter" class="btn-icon js-open-popup">
+                  <span>Фильтры</span>
+                  <svg class="icon">
+                     <use xlink:href="img/sprite.svg#filter"></use>
+                  </svg>
+               </a>
+            </div>
+         </form>
+         
+         <div class="l-coming__main__row">
+            <div class="l-coming__main__left">
+   
+               <form action="#" class="form-filter">
+                  <h3 class="form-filter__title">Фильтр</h3>
+   
+                  <div class="form-filter__group">
+                     <input type="hidden" class="js-range-picker">
+                  </div>
+   
+                  <div class="form-filter__group">
+                     <div class="form-filter__group__name">По теме:</div>
+   
+                     <div class="form-filter__checkboxes">
+                        <label class="checkbox">Инновации
+                           <input type="checkbox" checked="checked">
+                           <span class="checkmark"></span>
+                        </label>
+   
+                        <label class="checkbox">Общественно-значимое
+                           <input type="checkbox">
+                           <span class="checkmark"></span>
+                        </label>
+   
+                        <label class="checkbox">Конкурс
+                           <input type="checkbox">
+                           <span class="checkmark"></span>
+                        </label>
+   
+                        <label class="checkbox">Выставки
+                           <input type="checkbox">
+                           <span class="checkmark"></span>
+                        </label>
+   
+                        <label class="checkbox">Конференции и формы
+                           <input type="checkbox">
+                           <span class="checkmark"></span>
+                        </label>
+   
+                        <label class="checkbox">Студентам
+                           <input type="checkbox">
+                           <span class="checkmark"></span>
+                        </label>
+                        
+                        <label class="checkbox">Сотрудникам
+                           <input type="checkbox">
+                           <span class="checkmark"></span>
+                        </label>
+                     </div>
+                  </div>
+   
+                  <div class="form-filter__apply">
+                     <button class="btn-filled text-uppercase btn-100">Применить</button>
+                  </div>
+   
+                  <div class="form-filter__reset">
+                     <button class="btn-text">
+                        <svg class="icon">
+                           <use xlink:href="img/sprite.svg#close"></use>
+                        </svg>
+                        <span>Cбросить фильтр</span>
+                     </button>
+                  </div>
+                  
+               </form>
+               
+            </div>
+            <div class="l-coming__main__right">
+               
+               <section class="news-list">
+                  <div class="news-list__item">
+                     <div class="news-list__image" style="background-image: url(img/temp/4.jpg)">
+                        <div style="padding-top: 57%;"></div>
+                        <time class="news-list__date">22 сентября</time>
+                        <a href="#" class="link-area"></a>
+                     </div>
+                     <div class="news-list__desc">
+                        <div class="news-list__tags">
+                           <div class="tags tags--white">
+                              <span style="color: #A854A5;">#образование</span>
+                              <span style="color: #F2C94C;">#студенту</span>
+                           </div>
+                        </div>
+                        <div class="news-list__title">
+                           Подведены итоги всероссийского конкурса институтов искусства и культуры
+                        </div>
+                     </div>
+                  </div>
+                  <div class="news-list__item">
+                     <div class="news-list__image" style="background-image: url(img/temp/5.jpg)">
+                        <div style="padding-top: 57%;"></div>
+                        <time class="news-list__date">22 сентября</time>
+                        <a href="#" class="link-area"></a>
+                     </div>
+                     <div class="news-list__desc">
+                        <div class="news-list__tags">
+                           <div class="tags tags--white">
+                              <span style="color: #A854A5;">#образование</span>
+                              <span style="color: #F2C94C;">#студенту</span>
+                           </div>
+                        </div>
+                        <div class="news-list__title">
+                           Подведены итоги всероссийского конкурса институтов искусства и культуры
+                        </div>
+                     </div>
+                  </div>
+                  <div class="news-list__item">
+                     <div class="news-list__image" style="background-image: url(img/temp/6.jpg)">
+                        <div style="padding-top: 57%;"></div>
+                        <time class="news-list__date">22 сентября</time>
+                        <a href="#" class="link-area"></a>
+                     </div>
+                     <div class="news-list__desc">
+                        <div class="news-list__tags">
+                           <div class="tags tags--white">
+                              <span style="color: #A854A5;">#образование</span>
+                              <span style="color: #F2C94C;">#студенту</span>
+                           </div>
+                        </div>
+                        <div class="news-list__title">
+                           Подведены итоги всероссийского конкурса институтов искусства и культуры
+                        </div>
+                     </div>
+                  </div>
+                  <div class="news-list__item">
+                     <div class="news-list__image" style="background-image: url(img/temp/4.jpg)">
+                        <div style="padding-top: 57%;"></div>
+                        <time class="news-list__date">22 сентября</time>
+                        <a href="#" class="link-area"></a>
+                     </div>
+                     <div class="news-list__desc">
+                        <div class="news-list__tags">
+                           <div class="tags tags--white">
+                              <span style="color: #A854A5;">#образование</span>
+                              <span style="color: #F2C94C;">#студенту</span>
+                           </div>
+                        </div>
+                        <div class="news-list__title">
+                           Подведены итоги всероссийского конкурса институтов искусства и культуры
+                        </div>
+                     </div>
+                  </div>
+                  <div class="news-list__item">
+                     <div class="news-list__image" style="background-image: url(img/temp/5.jpg)">
+                        <div style="padding-top: 57%;"></div>
+                        <time class="news-list__date">22 сентября</time>
+                        <a href="#" class="link-area"></a>
+                     </div>
+                     <div class="news-list__desc">
+                        <div class="news-list__tags">
+                           <div class="tags tags--white">
+                              <span style="color: #A854A5;">#образование</span>
+                              <span style="color: #F2C94C;">#студенту</span>
+                           </div>
+                        </div>
+                        <div class="news-list__title">
+                           Подведены итоги всероссийского конкурса институтов искусства и культуры
+                        </div>
+                     </div>
+                  </div>
+                  <div class="news-list__item">
+                     <div class="news-list__image" style="background-image: url(img/temp/6.jpg)">
+                        <div style="padding-top: 57%;"></div>
+                        <time class="news-list__date">22 сентября</time>
+                        <a href="#" class="link-area"></a>
+                     </div>
+                     <div class="news-list__desc">
+                        <div class="news-list__tags">
+                           <div class="tags tags--white">
+                              <span style="color: #A854A5;">#образование</span>
+                              <span style="color: #F2C94C;">#студенту</span>
+                           </div>
+                        </div>
+                        <div class="news-list__title">
+                           Подведены итоги всероссийского конкурса институтов искусства и культуры
+                        </div>
+                     </div>
+                  </div>
+               </section>
+   
+               <nav class="nav-pager">
+                  <div class="nav-pager__nums">
+                     <a href="#" class="active">1</a>
+                     <a href="#">2</a>
+                     <a href="#">3</a>
+                     <a href="#">4</a>
+                     <a href="#">5</a>
+                  </div>
+                  <a href="#" class="nav-pager__btn">
+                     <span class="nice-link active">Дальше</span>
+                  </a>
+               </nav>
+            </div>
+         </div>
+      </div>
+   </section>
+</div>
+
+
+<div class="popup" id="popup-filter">
+
+   <button class="popup__close js-close-popup">
+      <svg class="icon">
+         <use xlink:href="img/sprite.svg#close"></use>
+      </svg>
+   </button>
+
+   <form action="#" class="form-filter  form-filter--bare">
+      <h3 class="form-filter__title">Фильтр</h3>
+
+      <div class="form-filter__group">
+         <input type="hidden" class="js-range-picker">
+      </div>
+
+      <div class="form-filter__group">
+         <div class="form-filter__group__name">По теме:</div>
+
+         <div class="form-filter__checkboxes">
+            <label class="checkbox">Инновации
+               <input type="checkbox" checked="checked">
+               <span class="checkmark"></span>
+            </label>
+
+            <label class="checkbox">Общественно-значимое
+               <input type="checkbox">
+               <span class="checkmark"></span>
+            </label>
+
+            <label class="checkbox">Конкурс
+               <input type="checkbox">
+               <span class="checkmark"></span>
+            </label>
+
+            <label class="checkbox">Выставки
+               <input type="checkbox">
+               <span class="checkmark"></span>
+            </label>
+
+            <label class="checkbox">Конференции и формы
+               <input type="checkbox">
+               <span class="checkmark"></span>
+            </label>
+
+            <label class="checkbox">Студентам
+               <input type="checkbox">
+               <span class="checkmark"></span>
+            </label>
+            
+            <label class="checkbox">Сотрудникам
+               <input type="checkbox">
+               <span class="checkmark"></span>
+            </label>
+         </div>
+      </div>
+
+      <div class="form-filter__apply">
+         <button class="btn-filled text-uppercase btn-100">Применить</button>
+      </div>
+
+      <div class="form-filter__reset">
+         <button class="btn-text">
+            <svg class="icon">
+               <use xlink:href="img/sprite.svg#close"></use>
+            </svg>
+            <span>Cбросить фильтр</span>
+         </button>
+      </div>
+      
+   </form>
+</div>
+<!-- @@include = ./partials/footer.html -->
+<!-- @@close-->
+
+
+
+
