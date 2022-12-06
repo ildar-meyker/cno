@@ -2760,6 +2760,10 @@ input:focus, textarea:focus {
 .l-coming__main__row {
   display: flex;
 }
+.l-coming__main__left {
+  flex: 0 0 auto;
+  width: 400px;
+}
 .l-coming__main__right {
   margin-top: 3.2rem;
   padding-left: 8rem;
@@ -3049,6 +3053,10 @@ input:focus, textarea:focus {
 }
 .l-news__main__row {
   display: flex;
+}
+.l-news__main__left {
+  flex: 0 0 auto;
+  width: 400px;
 }
 .l-news__main__right {
   padding-left: 8rem;
