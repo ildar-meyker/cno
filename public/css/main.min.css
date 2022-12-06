@@ -1073,7 +1073,6 @@ button {
 }
 .header__main__in {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 .header__name {
@@ -1084,18 +1083,90 @@ button {
   white-space: nowrap;
 }
 .header__nav {
-  text-align: right;
+  flex-grow: 1;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 5rem;
 }
 .header__nav a {
-  margin-left: 8rem;
-  white-space: nowrap;
   font-weight: 500;
   font-size: 1.6rem;
   line-height: 150%;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  white-space: nowrap;
+  margin: 0.2rem clamp(20px, 4vw, 80px) 0.2rem 0;
+}
+.header__nav a:last-child {
+  margin-right: 0;
+}
+.header__tools {
+  margin-left: auto;
+  display: flex;
+}
+.header__btn-eye, .header__btn-search, .header__btn-menu {
+  border: 0;
+  background: none;
+  padding: 0;
+  width: 5rem;
+  height: 5rem;
+  cursor: pointer;
+}
+.header__btn-eye {
+  display: none;
+}
+.header__btn-eye .icon {
+  fill: #20877D;
+  width: 3rem;
+  height: 3rem;
+}
+.header__btn-search .icon {
+  fill: #20877D;
+  width: 2.4rem;
+  height: 2.4rem;
+  margin-top: 0.4rem;
+}
+.header__btn-menu i {
+  display: block;
+  margin: 0.7rem auto;
+  width: 2.4rem;
+  height: 2px;
+  background: #20877D;
 }
 
+@media (max-width: 899.98px) {
+  .header__top {
+    display: none;
+  }
+  .header__main {
+    padding: 16px 0;
+  }
+  .header__nav {
+    display: none;
+  }
+  .header__name {
+    font-size: 10px;
+  }
+  .header__btn-eye, .header__btn-search, .header__btn-menu {
+    width: 44px;
+    height: 44px;
+  }
+  .header__btn-eye {
+    display: block;
+  }
+  .header__btn-eye .icon {
+    width: 22px;
+    height: 22px;
+  }
+  .header__btn-search .icon {
+    width: 16px;
+    height: 16px;
+  }
+  .header__btn-menu i {
+    margin: 4px auto;
+    width: 16px;
+  }
+}
 .promo-1 {
   position: relative;
 }

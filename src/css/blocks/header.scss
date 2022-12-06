@@ -88,11 +88,8 @@
 
         &__in {
             display: flex;
-            justify-content: space-between;
             align-items: center;
         }
-
-
     }
 
     &__name {
@@ -104,17 +101,125 @@
     }
 
     &__nav {
-        text-align: right;
+        flex-grow: 1;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 5rem;
 
         a {
             @extend .nice-link;
-            margin-left: 8rem;
-            white-space: nowrap;
             font-weight: 500;
             font-size: 1.6rem;
             line-height: 150%;
             letter-spacing: 0.03em;
             text-transform: uppercase;
+            white-space: nowrap;
+            margin: .2rem clamp(20px, 4vw, 80px) .2rem 0;
+
+            &:last-child {
+                margin-right: 0;
+            }
         }
+    }
+
+    &__tools {
+        margin-left: auto;
+        display: flex;
+    }
+
+    &__btn-eye,
+    &__btn-search,
+    &__btn-menu {
+        border: 0;
+        background: none;
+        padding: 0;
+        width: 5rem;
+        height: 5rem;
+        cursor: pointer;
+    }
+
+    &__btn-eye {
+        display: none;
+
+        .icon {
+            fill: #20877D;
+            width: 3rem;
+            height: 3rem;
+        }
+    }
+
+    &__btn-search {
+        .icon {
+            fill: #20877D;
+            width: 2.4rem;
+            height: 2.4rem;
+            margin-top: .4rem;
+        }
+    }
+
+    &__btn-menu {
+        i {
+            display: block;
+            margin: .7rem auto;
+            width: 2.4rem;
+            height: 2px;
+            background: #20877D;
+        }
+    }
+
+
+
+}
+
+@media (max-width: 899.98px) {
+    .header {
+
+        &__top {
+            display: none;
+        }
+
+        &__main {
+            padding: 16px 0;
+        }
+
+        &__nav {
+            display: none;
+        }
+
+        &__name {
+            font-size: 10px;
+        }
+
+        &__btn-eye,
+        &__btn-search,
+        &__btn-menu {
+            width: 44px;
+            height: 44px;
+        }
+
+        &__btn-eye {
+            display: block;
+
+            .icon {
+                width: 22px;
+                height: 22px;
+                
+            }
+        }
+
+        &__btn-search {
+            .icon {
+                width: 16px;
+                height: 16px;
+            }
+        }
+
+        &__btn-menu {
+            i {
+                margin: 4px auto;
+                width: 16px;
+            }
+        }
+
     }
 }
