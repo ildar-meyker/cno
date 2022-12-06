@@ -11,13 +11,56 @@
         font-size: 1.4rem;
         font-family: inherit;
         line-height: 135%;
+        color: inherit;
         
         &::placeholder {
             color: #898989;
+        }
+
+        &:focus {
+            box-shadow: 0 0 5px rgba(#000, .1);
+            background: #fff;
         }
     }
 
     textarea {
         resize: vertical;
+    }
+}
+
+.input-search {
+    position: relative;
+    
+    .icon {
+        position: absolute;
+        left: 1.9rem;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 1.8rem;
+        height: 1.8rem;
+        fill: #20877D;
+        pointer-events: none;
+    }
+
+    input {
+        background: #FFFFFF;
+        border: 1px solid #EFEFEF;
+        border-radius: 4px;
+        padding: 1.9rem;
+        padding-left: 5.5rem;
+        width: 100%;
+        font-size: 1.4rem;
+        font-family: inherit;
+        line-height: 135%;
+        color: inherit;
+
+        &:focus {
+            box-shadow: 0 0 5px rgba(#000, .1);
+        }
+
+        &::placeholder {
+            color: #898989;
+        }
+
     }
 }

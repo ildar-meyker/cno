@@ -54,7 +54,7 @@
     }
 }
 
-.btn-all {
+.btn-forward {
     display: inline-flex;
     align-items: center;
     font-weight: 500;
@@ -105,8 +105,32 @@
 }
 
 @media (max-width: 899.98px) {
-    .btn-all,
+    .btn-forward,
     .btn-back {
         font-size: 14px;
+    }
+}
+
+.btn-icon {
+    border: 0;
+    padding:  .4rem;
+    background: none;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 150%;
+    color: #20877D;
+    cursor: pointer;
+
+    &:hover {
+        color: darken(#20877D, 5%)
+    }
+
+    .icon {
+        margin-left: 1rem;
+        width: 2.4rem;
+        height: 2.4rem;
+        fill: #20877D;
     }
 }
