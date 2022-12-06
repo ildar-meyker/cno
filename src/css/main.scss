@@ -114,7 +114,7 @@ input, textarea {
 @import './blocks/programs.scss';
 @import './blocks/nav-pager.scss';
 
-@import './blocks/articles-media.scss';
+@import './blocks/media-tiles.scss';
 @import './blocks/events-list.scss';
 @import './blocks/nav-bread.scss';
 @import './blocks/points.scss';
@@ -143,6 +143,7 @@ input, textarea {
 @import './blocks/popup.scss'; 
 @import './blocks/news-list.scss'; 
 @import './blocks/news-tiles.scss'; 
+@import './blocks/albums-tiles.scss'; 
 
 
 @import './layouts/l-index.scss';
@@ -154,6 +155,7 @@ input, textarea {
 @import './layouts/l-creative.scss';
 @import './layouts/l-program.scss';
 @import './layouts/l-news.scss';
+@import './layouts/l-press.scss';
 
 
 

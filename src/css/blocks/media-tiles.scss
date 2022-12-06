@@ -1,4 +1,4 @@
-.articles-media {
+.media-tiles {
 
     &__row {
         display: flex;
@@ -55,7 +55,7 @@
 
 @media (max-width: 899.98px) {
 
-    .articles-media {
+    .media-tiles {
 
         &__col {
             width: 50%;
@@ -83,7 +83,7 @@
 
 @media (max-width: 499.98px) {
 
-    .articles-media {
+    .media-tiles {
 
         &__row {
             margin-top: 0;

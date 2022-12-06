@@ -1,0 +1,100 @@
+.albums-tiles {
+
+    &__row {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -1.2rem;
+        margin-top: -2rem;
+    }
+
+    &__col {
+        margin-top: 2rem;
+        padding: 0 1.2rem;
+        flex: 0 0 auto;
+        width: 33.33%;
+        display: flex;
+    }
+
+    &__item {
+        flex-grow: 1;
+        position: relative;
+        background-size: cover;
+        background-position: 50% 50%;
+        min-height: 280px;
+        overflow: hidden;
+    }
+
+    &__overlay {
+        @include fill;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+    }
+
+
+    &__flower {
+        @include fill;
+        background: url(../img/albums/flower.svg) -5rem -5rem/110% auto no-repeat;
+        backdrop-filter: blur(4px);
+    }
+
+    &__desc {
+        position: relative;
+        z-index: 10;
+        padding: 3.2rem;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        color: #FFFFFF;
+    }
+
+    &__date {
+        margin-bottom: 1.6rem;
+        font-weight: 500;
+        font-size: 1.6rem;
+        line-height: 155%;
+    }
+
+    &__title {
+        margin-top: auto;
+        font-weight: 500;
+        font-size: 2.4rem;
+        line-height: 135%;
+    }
+
+    &__count {
+        margin-top: 1.6rem;
+        font-size: 1.4rem;
+        line-height: 135%;
+    }
+}
+
+@media (max-width: 899.98px) {
+    .albums-tiles {
+
+        &__col {
+            width: 50%;
+        }
+
+        &__title {
+            font-size: 20px;
+        }
+
+    }
+}
+
+@media (max-width: 499.98px) {
+    .albums-tiles {
+
+        &__row {
+            margin-top: -12px;
+        }
+
+        &__col {
+            width: 100%;
+            margin-top: 12px;
+        }
+
+        &__desc {
+            padding: 32px;
+        }
+    }
+}

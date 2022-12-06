@@ -4,6 +4,11 @@
     line-height: calc(16/14);
     color: #B7B7B7;
 
+   
+    span {
+        color: #000;
+    }
+
     &--dark-bg {
         color: rgba(#fff, .5);
 

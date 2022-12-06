@@ -1,0 +1,33 @@
+.l-press {
+
+    &__read {
+        margin-bottom: 15rem;
+    }
+
+    &__media {
+        margin-bottom: 10rem;
+    }
+
+    &__albums {
+        background: #f8f8f8;
+        padding-top: 10rem;
+        padding-bottom: 20rem;
+    }
+}
+
+@media (max-width: 899.98px) {
+    .l-press {
+        &__read {
+            margin-bottom: 80px;
+        }
+
+        &__media {
+            margin-bottom: 60px;
+        }
+
+        &__albums {
+            padding-top: 60px;
+            padding-bottom: 80px;
+        }
+    }
+}
