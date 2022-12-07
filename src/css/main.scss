@@ -72,6 +72,10 @@ input, textarea {
     text-transform: uppercase;
 }
 
+.d-block {
+    display: block !important;
+}
+
 .mb-0 {
     margin-bottom: 0 !important;
 }
@@ -160,6 +164,8 @@ input, textarea {
 @import './layouts/l-press.scss';
 @import './layouts/l-albums.scss';
 @import './layouts/l-search.scss';
+
+@import './vendor/fix-nice-select2';
 
 
 @media (max-width: 1600px) {

@@ -76,6 +76,10 @@ input:focus, textarea:focus {
   text-transform: uppercase;
 }
 
+.d-block {
+  display: block !important;
+}
+
 .mb-0 {
   margin-bottom: 0 !important;
 }
@@ -217,12 +221,12 @@ input:focus, textarea:focus {
   pointer-events: none;
 }
 .input-search input {
+  width: 100%;
   background: #FFFFFF;
   border: 1px solid #EFEFEF;
   border-radius: 0.4rem;
   padding: 1.9rem;
   padding-left: 5.5rem;
-  width: 100%;
   font-size: 1.4rem;
   font-family: inherit;
   line-height: 135%;
@@ -259,7 +263,7 @@ input:focus, textarea:focus {
   pointer-events: none;
 }
 .input-date input {
-  width: 20rem;
+  width: 100%;
   padding: 1rem 4rem;
   background: #FFFFFF;
   border: 1px solid #EFEFEF;
@@ -1823,7 +1827,16 @@ input:focus, textarea:focus {
   flex-wrap: wrap;
   gap: 0.8rem;
 }
-.form-search__open {
+.form-search__filter--popup {
+  display: flex !important;
+}
+.form-search__filter__date {
+  width: 15rem;
+}
+.form-search__filter__where {
+  width: 20rem;
+}
+.form-search__toggle {
   display: none;
 }
 
@@ -1831,7 +1844,16 @@ input:focus, textarea:focus {
   .form-search__text__btn {
     display: none;
   }
-  .form-search__open {
+  .form-search__filter {
+    display: none;
+  }
+  .form-search__filter--popup .form-search__filter__date {
+    flex: 1 1 auto;
+  }
+  .form-search__filter--popup .form-search__filter__where {
+    width: 100%;
+  }
+  .form-search__toggle {
     display: block;
     margin-top: 12px;
   }
@@ -3362,6 +3384,25 @@ input:focus, textarea:focus {
     margin-bottom: 32px;
   }
 }
+.nice-select {
+  height: 4rem;
+  line-height: 3.8rem;
+  font-size: 1.4rem;
+  padding-left: 1.8rem;
+  padding-right: 4rem;
+  width: 100%;
+}
+
+.nice-select:active, .nice-select.open, .nice-select:focus {
+  border-color: #EFEFEF;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+.nice-select .option {
+  line-height: 4rem;
+  font-size: 1.4rem;
+}
+
 @media (max-width: 1600px) {
   :root {
     --side-padding: 40px;

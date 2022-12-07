@@ -43,12 +43,12 @@
     }
 
     input {
+        width: 100%;
         background: #FFFFFF;
         border: 1px solid #EFEFEF;
         border-radius: .4rem;
         padding: 1.9rem;
         padding-left: 5.5rem;
-        width: 100%;
         font-size: 1.4rem;
         font-family: inherit;
         line-height: 135%;
@@ -93,7 +93,7 @@
     }
 
     input {
-        width: 20rem;
+        width: 100%;
         padding: 1rem 4rem;
         background: #FFFFFF;
         border: 1px solid #EFEFEF;

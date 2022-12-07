@@ -5,10 +5,12 @@
 <!-- @@close-->
 
 <!-- @@block = styles-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nice-select2@2.0.0/dist/css/nice-select2.css">
 <!-- @@close-->
 
 <!-- @@block = scripts-->
 <script src="https://cdn.jsdelivr.net/npm/@easepick/bundle@1.2.0/dist/index.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/nice-select2@2.0.0/dist/js/nice-select2.js"></script>
 <!-- @@close-->
 
 <!-- @@block = content-->
@@ -42,7 +44,7 @@
                     </div>
                 </div>
                 <div class="form-search__filter">
-                    <div class="form-search__date">
+                    <div class="form-search__filter__date">
                         <div class="input-date">
                             <svg class="icon">
                                 <use xlink:href="img/sprite.svg#calendar"></use>
@@ -51,7 +53,7 @@
                             <input type="text">
                         </div>
                     </div>
-                    <div class="form-search__date">
+                    <div class="form-search__filter__date">
                         <div class="input-date">
                             <svg class="icon">
                                 <use xlink:href="img/sprite.svg#calendar"></use>
@@ -60,8 +62,13 @@
                             <input type="text">
                         </div>
                     </div>
-                    <div class="form-search__where"></div>
-                    <div class="form-search__reset">
+                    <div class="form-search__filter__where">
+                        <select class="js-select">
+                            <option selected>Весь сайт</option>
+                            <option>Раздел</option>
+                        </select>
+                    </div>
+                    <div class="form-search__filter__reset">
                         <button class="btn-text">
                             <svg class="icon">
                                 <use xlink:href="img/sprite.svg#close"></use>
@@ -70,7 +77,7 @@
                         </button>
                     </div>
                 </div>
-                <div class="form-search__open">
+                <div class="form-search__toggle">
                     <a href="#popup-filter" class="btn-icon js-open-popup">
                         <span>Фильтры</span>
                         <svg class="icon">
@@ -145,6 +152,63 @@
    </section>
 </div>
 
+
+<div class="popup" id="popup-filter">
+
+    <button class="popup__close js-close-popup">
+       <svg class="icon">
+          <use xlink:href="img/sprite.svg#close"></use>
+       </svg>
+    </button>
+ 
+    <form action="#" class="form-filter  form-filter--bare">
+       <h3 class="form-filter__title">Фильтр</h3>
+
+       <div class="form-filter__group">
+            <div class="form-search__filter form-search__filter--popup">
+                <div class="form-search__filter__date">
+                    <div class="input-date">
+                        <svg class="icon">
+                            <use xlink:href="img/sprite.svg#calendar"></use>
+                            </svg>
+                        <span class="input-date__prefix">С</span>
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="form-search__filter__date">
+                    <div class="input-date">
+                        <svg class="icon">
+                            <use xlink:href="img/sprite.svg#calendar"></use>
+                            </svg>
+                        <span class="input-date__prefix">По</span>
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="form-search__filter__where">
+                    <select class="js-select">
+                        <option selected>Весь сайт</option>
+                        <option>Раздел</option>
+                    </select>
+                </div>
+            
+            </div>
+       </div>
+ 
+       <div class="form-filter__apply">
+          <button class="btn-filled text-uppercase btn-100">Применить</button>
+       </div>
+ 
+       <div class="form-filter__reset">
+          <button class="btn-text">
+             <svg class="icon">
+                <use xlink:href="img/sprite.svg#close"></use>
+             </svg>
+             <span>Cбросить фильтр</span>
+          </button>
+       </div>
+       
+    </form>
+ </div>
 
 <!-- @@include = ./partials/footer.html -->
 <!-- @@close-->

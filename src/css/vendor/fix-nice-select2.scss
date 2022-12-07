@@ -1,0 +1,21 @@
+
+.nice-select {
+    height: 4rem;
+    line-height: 3.8rem;
+    font-size: 1.4rem;
+    padding-left: 1.8rem;
+    padding-right: 4rem;
+    width: 100%;
+}
+
+.nice-select:active, .nice-select.open, .nice-select:focus {
+    border-color: #EFEFEF;
+        box-shadow: 0 0 0.5rem rgb(0 0 0 / 10%)
+}
+
+
+
+.nice-select .option {
+    line-height: 4rem;
+    font-size: 1.4rem;
+}
