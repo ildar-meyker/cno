@@ -1,0 +1,50 @@
+.results {
+
+    &__item {
+        padding: 4rem 0;
+        border-bottom: 1px solid #E1E1E1;
+
+        &:last-child {
+            border: 0;
+        }
+    }
+
+    &__date {
+        margin-bottom: 2.4rem;
+        font-weight: 400;
+        font-size: 1.4rem;
+        line-height: 135%;
+        color: #3D3D3D;
+
+    }
+
+    &__title {
+        font-weight: 500;
+        font-size: 2.4rem;
+        line-height: 135%;
+        color: #20877D;
+    }
+
+    &__text {
+        margin-top: 1.6rem;
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 155%;
+        color: #3D3D3D;
+    }
+}
+
+@media (max-width: 899.98px) {
+    .results {
+
+
+        &__item {
+            padding: 24px 0;
+        }
+
+        &__date {
+            font-size: 14px;
+        }
+
+    }
+}

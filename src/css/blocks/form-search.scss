@@ -1,0 +1,43 @@
+.form-search {
+
+    &__text {
+        display: flex;
+
+        &__input {
+            flex-grow: 1;
+            
+        }
+    
+        &__btn {
+            padding-left: 1.6rem;
+        }
+    }
+
+    &__filter {
+        margin-top: 1.6rem;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: .8rem
+    }
+
+    &__open {
+        display: none;
+    }
+}
+
+@media (max-width: 899.98px) {
+    .form-search {
+
+        &__text {
+            &__btn {
+                display: none;
+            }
+        }
+
+        &__open {
+            display: block;
+            margin-top: 12px;
+        }
+    }
+}

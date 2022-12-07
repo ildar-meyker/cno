@@ -129,6 +129,7 @@ input, textarea {
 @import './blocks/contacts.scss'; 
 @import './blocks/form-feedback.scss'; 
 @import './blocks/form-filter.scss'; 
+@import './blocks/form-search.scss'; 
 @import './blocks/team.scss'; 
 @import './blocks/about-us.scss'; 
 @import './blocks/gallery.scss'; 
@@ -144,6 +145,7 @@ input, textarea {
 @import './blocks/news-list.scss'; 
 @import './blocks/news-tiles.scss'; 
 @import './blocks/albums-tiles.scss'; 
+@import './blocks/results.scss'; 
 
 
 @import './layouts/l-index.scss';
@@ -157,6 +159,7 @@ input, textarea {
 @import './layouts/l-news.scss';
 @import './layouts/l-press.scss';
 @import './layouts/l-albums.scss';
+@import './layouts/l-search.scss';
 
 
 @media (max-width: 1600px) {

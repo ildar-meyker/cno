@@ -1,0 +1,27 @@
+.l-search {
+
+    &__main {
+        margin-bottom: 20rem;
+    }
+
+    &__form {
+        margin-bottom: 6.4rem;
+    }
+
+    &__results {
+        max-width: 1100px;
+    }
+}
+
+@media (max-width: 899.98px) {
+    .l-search {
+
+        &__main {
+            margin-bottom: 80px;
+        }
+
+        &__form {
+            margin-bottom: 32px;
+        }
+    }
+}
