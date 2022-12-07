@@ -1,5 +1,11 @@
 .albums-tiles {
 
+    &--full {
+        .albums-tiles__col {
+            width: 50%;
+        }
+    }
+
     &__row {
         display: flex;
         flex-wrap: wrap;

@@ -1,0 +1,49 @@
+.l-albums {
+    &__main {
+
+        margin-bottom: 20rem;
+
+        &__row {
+            display: flex;
+        }
+    
+        &__left {
+            flex: 0 0 auto;
+            width: 400px;
+        }
+    
+        &__right {
+            padding-left: 8rem;
+            flex-grow: 1;
+        }
+    }
+
+}
+
+@media (max-width: 1199.98px) {
+    .l-albums {
+        &__main {
+            &__row {
+                display: block;
+            }
+
+            &__left {
+                display: none;
+            }
+
+            &__right {
+                padding-left: 0;
+                width: auto;
+            }
+        }
+
+    }
+
+}
+@media (max-width: 899.98px) {
+    .l-albums {
+        &__main {
+            margin-bottom: 80px;
+        }
+    }
+}
