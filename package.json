@@ -52,6 +52,7 @@
     "webpack-stream": "^7.0.0"
   },
   "dependencies": {
+    "accordionjs": "^2.1.2",
     "bootstrap": "^4.3.1",
     "js-match-height": "^1.0.7",
     "slick-carousel": "^1.8.1"
