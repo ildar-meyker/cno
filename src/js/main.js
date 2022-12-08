@@ -5,3 +5,4 @@ import "./modules/sliderThanks";
 import "./modules/popup";
 import "./modules/select";
 import "./modules/accordion";
+import "./modules/gallery";

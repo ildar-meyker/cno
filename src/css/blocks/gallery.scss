@@ -22,6 +22,7 @@
     }
 
     &__item {
+        display: block;
         background: #eeeeee 50% 50% / cover;
         height: clamp(200px, 30vw, 400px);
         cursor: pointer;

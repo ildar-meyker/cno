@@ -7,10 +7,30 @@
   \*************************************/
 /***/ (function() {
 
-$(".js-accordion").accordionjs({
-  closeAble: true,
-  activeIndex: false
+$(".js-accordion").each(function () {
+  $(this).accordionjs({
+    closeAble: true,
+    activeIndex: false
+  });
 });
+
+/***/ }),
+
+/***/ "./src/js/modules/gallery.js":
+/*!***********************************!*\
+  !*** ./src/js/modules/gallery.js ***!
+  \***********************************/
+/***/ (function() {
+
+(function () {
+  if ($("#gallery").length === 0) return;
+  var lightbox = new PhotoSwipeLightbox({
+    gallery: "#gallery",
+    children: "a",
+    pswpModule: PhotoSwipe
+  });
+  lightbox.init();
+})();
 
 /***/ }),
 
@@ -274,6 +294,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_select__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_modules_select__WEBPACK_IMPORTED_MODULE_5__);
 /* harmony import */ var _modules_accordion__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./modules/accordion */ "./src/js/modules/accordion.js");
 /* harmony import */ var _modules_accordion__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_modules_accordion__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _modules_gallery__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./modules/gallery */ "./src/js/modules/gallery.js");
+/* harmony import */ var _modules_gallery__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_modules_gallery__WEBPACK_IMPORTED_MODULE_7__);
+
 
 
 
