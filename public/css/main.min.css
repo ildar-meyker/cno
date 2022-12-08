@@ -1496,67 +1496,6 @@ input:focus, textarea:focus {
     max-width: none;
   }
 }
-.accordion {
-  background: #fff;
-}
-.accordion__group {
-  border-bottom: 1px solid #E1E1E1;
-}
-.accordion__group:last-child {
-  border-bottom: 0;
-}
-.accordion__title {
-  position: relative;
-  padding: 4rem;
-  padding-right: 8rem;
-  display: block;
-  font-weight: 500;
-  font-size: 2.4rem;
-  line-height: 155%;
-}
-.accordion__title.collapsed i:before {
-  transform: rotate(-180deg);
-}
-.accordion__title.collapsed i:after {
-  transform: rotate(-90deg);
-  opacity: 1;
-}
-.accordion__title i:before, .accordion__title i:after {
-  transition: all 0.2s;
-  transform-origin: 50% 50%;
-  content: " ";
-  height: 2px;
-  background: #20877D;
-  width: 2.8rem;
-  position: absolute;
-  right: 4rem;
-  top: 50%;
-  margin-top: -1px;
-}
-.accordion__title i:after {
-  opacity: 0;
-}
-.accordion__body {
-  padding: 0 4rem 4rem 4rem;
-  font-weight: 400;
-  font-size: 1.6rem;
-  line-height: 150%;
-  color: #3D3D3D;
-}
-
-@media (max-width: 899.98px) {
-  .accordion__title {
-    padding: 13px 54px 13px 24px;
-    font-size: 14px;
-  }
-  .accordion__title i:before, .accordion__title i:after {
-    width: 18px;
-    right: 24px;
-  }
-  .accordion__body {
-    padding: 0 24px 24px 24px;
-  }
-}
 .accordion-2 {
   background: #fff;
 }
