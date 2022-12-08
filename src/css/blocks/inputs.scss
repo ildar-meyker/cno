@@ -3,15 +3,15 @@
     input,
     textarea {
         display: block;
-        padding: 1.8rem 1.6rem;
         width: 100%;
+        padding: 1.8rem 1.6rem;
         background: #F6F6F6;
         border: 1px solid #E1E1E1;
         border-radius: .4rem;
         font-size: 1.4rem;
         font-family: inherit;
         line-height: 135%;
-        color: inherit;
+        color: #333333;
         
         &::placeholder {
             color: #898989;
@@ -31,17 +31,6 @@
 .input-search {
     position: relative;
 
-    .icon {
-        position: absolute;
-        left: 1.9rem;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 1.8rem;
-        height: 1.8rem;
-        fill: #20877D;
-        pointer-events: none;
-    }
-
     input {
         width: 100%;
         background: #FFFFFF;
@@ -52,43 +41,38 @@
         font-size: 1.4rem;
         font-family: inherit;
         line-height: 135%;
-        color: inherit;
-
-        &:focus {
-            box-shadow: 0 0 .5rem rgba(#000, .1);
-        }
+        color: #333333;
 
         &::placeholder {
             color: #898989;
         }
 
+        &:focus {
+            box-shadow: 0 0 .5rem rgba(#000, .1);
+        }
+
+    }
+
+    .icon {
+        @include position-middle;
+        left: 1.9rem;
+        width: 1.8rem;
+        height: 1.8rem;
+        fill: #20877D;
+        pointer-events: none;
     }
 
 }
 
 .input-date {
     position: relative;
-    
 
     &__prefix {
-        position: absolute;
+        @include position-middle;
         left: 1.2rem;
-        top: 50%;
-        transform: translateY(-50%);
         font-size: 1.4rem;
         line-height: 135%;
         color: #898989;
-        pointer-events: none;
-    }
-
-    .icon {
-        position: absolute;
-        right: 1.2rem;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 1.8rem;
-        height: 1.8rem;
-        fill: #20877D;
         pointer-events: none;
     }
 
@@ -99,6 +83,7 @@
         border: 1px solid #EFEFEF;
         border-radius: .4rem;
         font-size: 1.4rem;
+        font-family: inherit;
         line-height: 135%;
         color: #333333;
 
@@ -106,4 +91,14 @@
             box-shadow: 0 0 .5rem rgba(#000, .1);
         }
     }
+
+    .icon {
+        @include position-middle;
+        right: 1.2rem;
+        width: 1.8rem;
+        height: 1.8rem;
+        fill: #20877D;
+        pointer-events: none;
+    }
+    
 }

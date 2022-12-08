@@ -8,13 +8,19 @@
     height: 100%;
 }
 
-@mixin fix-margin {
+@mixin reset-margins {
     &:first-child {
         margin-top: 0;
     }
     &:last-child {
         margin-bottom: 0;
     }
+}
+
+@mixin position-middle {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 :root {
@@ -73,6 +79,10 @@ input, textarea {
 }
 
 .d-block {
+    display: block !important;
+}
+
+.d-none {
     display: block !important;
 }
 

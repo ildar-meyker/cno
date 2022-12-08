@@ -48,7 +48,7 @@
             margin-top: 32px;
             padding: 0;
 
-            @include fix-margin;
+            @include reset-margins;
         }
 
         &__num {

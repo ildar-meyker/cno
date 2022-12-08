@@ -80,6 +80,10 @@ input:focus, textarea:focus {
   display: block !important;
 }
 
+.d-none {
+  display: block !important;
+}
+
 .mb-0 {
   margin-bottom: 0 !important;
 }
@@ -184,15 +188,15 @@ input:focus, textarea:focus {
 .input input,
 .input textarea {
   display: block;
-  padding: 1.8rem 1.6rem;
   width: 100%;
+  padding: 1.8rem 1.6rem;
   background: #F6F6F6;
   border: 1px solid #E1E1E1;
   border-radius: 0.4rem;
   font-size: 1.4rem;
   font-family: inherit;
   line-height: 135%;
-  color: inherit;
+  color: #333333;
 }
 .input input::placeholder,
 .input textarea::placeholder {
@@ -210,16 +214,6 @@ input:focus, textarea:focus {
 .input-search {
   position: relative;
 }
-.input-search .icon {
-  position: absolute;
-  left: 1.9rem;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 1.8rem;
-  height: 1.8rem;
-  fill: #20877D;
-  pointer-events: none;
-}
 .input-search input {
   width: 100%;
   background: #FFFFFF;
@@ -230,13 +224,23 @@ input:focus, textarea:focus {
   font-size: 1.4rem;
   font-family: inherit;
   line-height: 135%;
-  color: inherit;
+  color: #333333;
+}
+.input-search input::placeholder {
+  color: #898989;
 }
 .input-search input:focus {
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
 }
-.input-search input::placeholder {
-  color: #898989;
+.input-search .icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 1.9rem;
+  width: 1.8rem;
+  height: 1.8rem;
+  fill: #20877D;
+  pointer-events: none;
 }
 
 .input-date {
@@ -244,22 +248,12 @@ input:focus, textarea:focus {
 }
 .input-date__prefix {
   position: absolute;
-  left: 1.2rem;
   top: 50%;
   transform: translateY(-50%);
+  left: 1.2rem;
   font-size: 1.4rem;
   line-height: 135%;
   color: #898989;
-  pointer-events: none;
-}
-.input-date .icon {
-  position: absolute;
-  right: 1.2rem;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 1.8rem;
-  height: 1.8rem;
-  fill: #20877D;
   pointer-events: none;
 }
 .input-date input {
@@ -269,11 +263,22 @@ input:focus, textarea:focus {
   border: 1px solid #EFEFEF;
   border-radius: 0.4rem;
   font-size: 1.4rem;
+  font-family: inherit;
   line-height: 135%;
   color: #333333;
 }
 .input-date input:focus {
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
+}
+.input-date .icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 1.2rem;
+  width: 1.8rem;
+  height: 1.8rem;
+  fill: #20877D;
+  pointer-events: none;
 }
 
 .btn-100 {
@@ -2481,9 +2486,9 @@ input:focus, textarea:focus {
 }
 .slider-thanks__prev, .slider-thanks__next {
   position: absolute;
-  z-index: 20;
   top: 50%;
   transform: translateY(-50%);
+  z-index: 20;
   padding: 1.6rem 2.4rem;
   border-radius: 2rem 0px;
   border: 0;

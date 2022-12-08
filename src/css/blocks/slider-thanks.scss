@@ -56,10 +56,8 @@
 
     &__prev,
     &__next {
-        position: absolute;
+        @include position-middle;
         z-index: 20;
-        top: 50%;
-        transform: translateY(-50%);
         padding: 1.6rem 2.4rem;
         border-radius: 2rem 0px;
         border: 0;

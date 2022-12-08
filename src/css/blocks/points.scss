@@ -59,7 +59,7 @@
             width: auto;
             margin-top: 16px;
 
-            @include fix-margin;
+            @include reset-margins;
         }
 
         &__item {
