@@ -1,6 +1,5 @@
-.l-albums {
+.l-programs {
     &__main {
-
         margin-bottom: 15rem;
 
         &__row {
@@ -13,15 +12,24 @@
         }
     
         &__right {
-            padding-left: 8rem;
+            padding-left: 4rem;
             flex-grow: 1;
         }
+      
     }
 
+    &__search {
+        margin-bottom: 4rem;
+
+        &__btn {
+            margin-top: 1rem;
+            display: none;
+        }
+    }
 }
 
 @media (max-width: 1199.98px) {
-    .l-albums {
+    .l-programs {
         &__main {
             &__row {
                 display: block;
@@ -37,11 +45,18 @@
             }
         }
 
+        &__search {
+            margin-bottom: 35px;
+
+            &__btn {
+                display: block;
+            }
+        }
     }
 
 }
 @media (max-width: 899.98px) {
-    .l-albums {
+    .l-programs {
         &__main {
             margin-bottom: 80px;
         }

@@ -33,6 +33,19 @@
         margin: 4rem 0;
     }
 
+    &__range {
+        display: flex;
+        align-items: center;
+
+        &__input {
+            flex: 0 1 15rem;
+        }
+
+        &__hyphen {
+            padding: 0 1rem;
+        }
+    }
+
     &__apply {
         margin-top: 4rem;
     }

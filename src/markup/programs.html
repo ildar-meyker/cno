@@ -1,0 +1,441 @@
+<!-- @@master = ./layouts/gray.html-->
+ 
+<!-- @@block = title-->
+<title>Главная</title>
+<!-- @@close-->
+
+<!-- @@block = styles-->
+<!-- @@close-->
+
+<!-- @@block = scripts-->
+<script src="https://cdn.jsdelivr.net/npm/@easepick/bundle@1.2.0/dist/index.umd.min.js"></script>
+<!-- @@close-->
+
+<!-- @@block = content-->
+<!-- @@include = ./partials/header.html -->
+
+<div class="page__center">
+   <nav class="nav-bread">
+      <a href="#" class="nice-link">Главная</a> /
+      <span>Образовательные программы</span>
+   </nav>
+</div>
+
+<div class="l-programs__main">
+   <section>
+      <div class="page__center">
+         <h1 class="page__h3">Образовательные программы</h1>
+
+         <form action="#" class="l-programs__search">
+            <div class="l-programs__search__input">
+               <div class="input-search">
+                  <svg class="icon">
+                     <use xlink:href="img/sprite.svg#search"></use>
+                  </svg>
+                  <input type="text" placeholder="Поиск по программам">
+               </div>
+            </div>
+            <div class="l-programs__search__btn">
+               <a href="#popup-filter" class="btn-icon js-open-popup">
+                  <span>Фильтры</span>
+                  <svg class="icon">
+                     <use xlink:href="img/sprite.svg#filter"></use>
+                  </svg>
+               </a>
+            </div>
+         </form>
+         
+         <div class="l-programs__main__row">
+            <div class="l-programs__main__left">
+   
+               <form action="#" class="form-filter">
+                  <h3 class="form-filter__title">Фильтр</h3>
+                  
+                  <div class="form-filter__group">
+                     <div class="form-filter__checkboxes">
+                        <label class="checkbox">В рамках Национального проекта «Культура»
+                           <input type="checkbox">
+                           <span class="checkmark"></span>
+                        </label>
+                     </div>
+                  </div>
+
+
+                  <div class="form-filter__group">
+                     <div class="form-filter__group__name">Тип курса</div>
+   
+                     <div class="form-filter__checkboxes">
+                        <label class="checkbox">Профессиональная переподготовка
+                           <input type="checkbox">
+                           <span class="checkmark"></span>
+                        </label>
+
+                        <label class="checkbox">Повышение квалификации
+                           <input type="checkbox">
+                           <span class="checkmark"></span>
+                        </label>
+
+                        <label class="checkbox">Подготовительные курсы
+                           <input type="checkbox">
+                           <span class="checkmark"></span>
+                        </label>
+
+                        <label class="checkbox">Для иностранных граждан
+                           <input type="checkbox">
+                           <span class="checkmark"></span>
+                        </label>
+   
+                        <label class="checkbox">Университет третьего возраста
+                           <input type="checkbox">
+                           <span class="checkmark"></span>
+                        </label>
+                     </div>
+                  </div>
+
+                  <div class="form-filter__group">
+                     <div class="form-filter__group__name">Тематика</div>
+   
+                     <div class="form-filter__checkboxes">
+                        <label class="checkbox">Библиотековедение
+                           <input type="checkbox">
+                           <span class="checkmark"></span>
+                        </label>
+
+                        <label class="checkbox">Педагогика
+                           <input type="checkbox">
+                           <span class="checkmark"></span>
+                        </label>
+
+                        <label class="checkbox">Музеология
+                           <input type="checkbox">
+                           <span class="checkmark"></span>
+                        </label>
+
+                        <label class="checkbox">Цифровые технологии
+                           <input type="checkbox">
+                           <span class="checkmark"></span>
+                        </label>
+   
+                        <label class="checkbox">Дизайн
+                           <input type="checkbox">
+                           <span class="checkmark"></span>
+                        </label>
+
+                        <label class="checkbox">Продвижение
+                           <input type="checkbox">
+                           <span class="checkmark"></span>
+                        </label>
+                     </div>
+                  </div>
+
+                  <div class="form-filter__group">
+                     <div class="form-filter__group__name">Стоимость</div>
+                     <div class="form-filter__range">
+                        <div class="form-filter__range__input">
+                           <div class="input">
+                              <input type="text" placeholder="От, ₽">
+                           </div>
+                        </div>
+                        <div class="form-filter__range__hyphen"> – </div>
+                        <div class="form-filter__range__input">
+                           <div class="input">
+                              <input type="text" placeholder="До, ₽">
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  
+
+                  <div class="form-filter__apply">
+                     <button class="btn-filled text-uppercase btn-100">Применить</button>
+                  </div>
+   
+                  <div class="form-filter__reset">
+                     <button class="btn-text">
+                        <svg class="icon">
+                           <use xlink:href="img/sprite.svg#close"></use>
+                        </svg>
+                        <span>Cбросить фильтр</span>
+                     </button>
+                  </div>
+                  
+               </form>
+               
+            </div>
+            <div class="l-programs__main__right">
+               
+                <div class="programs programs--full">
+                    <div class="programs__row">
+                        <div class="programs__col">
+                           <div class="programs__item programs__item--orange">
+                            <div class="programs__tags">
+                                <span>Дизайн</span>
+                             </div>
+                              <div class="programs__tags">
+                                 <span>36 часов</span>
+                                 <span>Дистанционно</span>
+                              </div>
+                              <div class="programs__name">
+                                 Современные тенденции цифрового дизайна музейно-выставочных экспозиций
+                              </div>
+                              <div class="programs__desc">
+                                Очень краткое описание программы длиной в две строчки. Продолжение краткого описания
+                              </div>
+                              <div class="programs__price">
+                                10 000 ₽
+                              </div>
+                              <a href="#" class="link-area"></a>
+                           </div>
+                        </div>
+                        <div class="programs__col">
+                           <div class="programs__item programs__item--green">
+                              <div class="programs__tags">
+                                 <span>Дизайн</span>
+                              </div>
+                               <div class="programs__tags">
+                                  <span>36 часов</span>
+                                  <span>Дистанционно</span>
+                               </div>
+                               <div class="programs__name">
+                                  Современные тенденции цифрового дизайна музейно-выставочных экспозиций
+                               </div>
+                               <div class="programs__desc">
+                                 Очень краткое описание программы длиной в две строчки. Продолжение краткого описания
+                               </div>
+                               <div class="programs__price">
+                                 10 000 ₽
+                               </div>
+                              <a href="#" class="link-area"></a>
+                           </div>
+                        </div>
+                        <div class="programs__col">
+                           <div class="programs__item programs__item--dark-blue">
+                              <div class="programs__tags">
+                                 <span>Дизайн</span>
+                              </div>
+                               <div class="programs__tags">
+                                  <span>36 часов</span>
+                                  <span>Дистанционно</span>
+                               </div>
+                               <div class="programs__name">
+                                  Современные тенденции цифрового дизайна музейно-выставочных экспозиций
+                               </div>
+                               <div class="programs__desc">
+                                 Очень краткое описание программы длиной в две строчки. Продолжение краткого описания
+                               </div>
+                               <div class="programs__price">
+                                 10 000 ₽
+                               </div>
+                              <a href="#" class="link-area"></a>
+                           </div>
+                        </div>
+                        <div class="programs__col">
+                           <div class="programs__item programs__item--yellow">
+                              <div class="programs__tags">
+                                 <span>Дизайн</span>
+                              </div>
+                               <div class="programs__tags">
+                                  <span>36 часов</span>
+                                  <span>Дистанционно</span>
+                               </div>
+                               <div class="programs__name">
+                                  Современные тенденции цифрового дизайна музейно-выставочных экспозиций
+                               </div>
+                               <div class="programs__desc">
+                                 Очень краткое описание программы длиной в две строчки. Продолжение краткого описания
+                               </div>
+                               <div class="programs__price">
+                                 10 000 ₽
+                               </div>
+                              <a href="#" class="link-area"></a>
+                           </div>
+                        </div>
+                        <div class="programs__col">
+                           <div class="programs__item programs__item--blue">
+                              <div class="programs__tags">
+                                 <span>Дизайн</span>
+                              </div>
+                               <div class="programs__tags">
+                                  <span>36 часов</span>
+                                  <span>Дистанционно</span>
+                               </div>
+                               <div class="programs__name">
+                                  Современные тенденции цифрового дизайна музейно-выставочных экспозиций
+                               </div>
+                               <div class="programs__desc">
+                                 Очень краткое описание программы длиной в две строчки. Продолжение краткого описания
+                               </div>
+                               <div class="programs__price">
+                                 10 000 ₽
+                               </div>
+                              <a href="#" class="link-area"></a>
+                           </div>
+                        </div>
+                        <div class="programs__col">
+                           <div class="programs__item programs__item--purple">
+                              <div class="programs__tags">
+                                 <span>Дизайн</span>
+                              </div>
+                               <div class="programs__tags">
+                                  <span>36 часов</span>
+                                  <span>Дистанционно</span>
+                               </div>
+                               <div class="programs__name">
+                                  Современные тенденции цифрового дизайна музейно-выставочных экспозиций
+                               </div>
+                               <div class="programs__desc">
+                                 Очень краткое описание программы длиной в две строчки. Продолжение краткого описания
+                               </div>
+                               <div class="programs__price">
+                                 10 000 ₽
+                               </div>
+                              <a href="#" class="link-area"></a>
+                           </div>
+                        </div>
+                     </div>
+                </div>
+   
+               <nav class="nav-pager">
+                  <div class="nav-pager__nums">
+                     <a href="#" class="active">1</a>
+                     <a href="#">2</a>
+                     <a href="#">3</a>
+                     <a href="#">4</a>
+                     <a href="#">5</a>
+                  </div>
+                  <a href="#" class="nav-pager__btn">
+                     <span class="nice-link active">Дальше</span>
+                  </a>
+               </nav>
+            </div>
+         </div>
+      </div>
+   </section>
+</div>
+
+<div class="popup" id="popup-filter">
+
+   <button class="popup__close js-close-popup">
+      <svg class="icon">
+         <use xlink:href="img/sprite.svg#close"></use>
+      </svg>
+   </button>
+
+   <form action="#" class="form-filter  form-filter--bare">
+      <h3 class="form-filter__title">Фильтр</h3>
+
+      <div class="form-filter__group">
+         <div class="form-filter__checkboxes">
+            <label class="checkbox">В рамках Национального проекта «Культура»
+               <input type="checkbox">
+               <span class="checkmark"></span>
+            </label>
+         </div>
+      </div>
+
+
+      <div class="form-filter__group">
+         <div class="form-filter__group__name">Тип курса</div>
+
+         <div class="form-filter__checkboxes">
+            <label class="checkbox">Профессиональная переподготовка
+               <input type="checkbox">
+               <span class="checkmark"></span>
+            </label>
+
+            <label class="checkbox">Повышение квалификации
+               <input type="checkbox">
+               <span class="checkmark"></span>
+            </label>
+
+            <label class="checkbox">Подготовительные курсы
+               <input type="checkbox">
+               <span class="checkmark"></span>
+            </label>
+
+            <label class="checkbox">Для иностранных граждан
+               <input type="checkbox">
+               <span class="checkmark"></span>
+            </label>
+
+            <label class="checkbox">Университет третьего возраста
+               <input type="checkbox">
+               <span class="checkmark"></span>
+            </label>
+         </div>
+      </div>
+
+      <div class="form-filter__group">
+         <div class="form-filter__group__name">Тематика</div>
+
+         <div class="form-filter__checkboxes">
+            <label class="checkbox">Библиотековедение
+               <input type="checkbox">
+               <span class="checkmark"></span>
+            </label>
+
+            <label class="checkbox">Педагогика
+               <input type="checkbox">
+               <span class="checkmark"></span>
+            </label>
+
+            <label class="checkbox">Музеология
+               <input type="checkbox">
+               <span class="checkmark"></span>
+            </label>
+
+            <label class="checkbox">Цифровые технологии
+               <input type="checkbox">
+               <span class="checkmark"></span>
+            </label>
+
+            <label class="checkbox">Дизайн
+               <input type="checkbox">
+               <span class="checkmark"></span>
+            </label>
+
+            <label class="checkbox">Продвижение
+               <input type="checkbox">
+               <span class="checkmark"></span>
+            </label>
+         </div>
+      </div>
+
+      <div class="form-filter__group">
+         <div class="form-filter__group__name">Стоимость</div>
+         <div class="form-filter__range">
+            <div class="form-filter__range__input">
+               <div class="input">
+                  <input type="text" placeholder="От, ₽">
+               </div>
+            </div>
+            <div class="form-filter__range__hyphen"> – </div>
+            <div class="form-filter__range__input">
+               <div class="input">
+                  <input type="text" placeholder="До, ₽">
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div class="form-filter__apply">
+         <button class="btn-filled text-uppercase btn-100">Применить</button>
+      </div>
+
+      <div class="form-filter__reset">
+         <button class="btn-text">
+            <svg class="icon">
+               <use xlink:href="img/sprite.svg#close"></use>
+            </svg>
+            <span>Cбросить фильтр</span>
+         </button>
+      </div>
+      
+   </form>
+</div>
+<!-- @@include = ./partials/footer.html -->
+<!-- @@close-->
+
+
+
+
