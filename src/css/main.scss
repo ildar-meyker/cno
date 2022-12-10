@@ -1,4 +1,3 @@
-@import './vendor/bootstrap-transitions.scss';
 
 @mixin fill {
     position: absolute;
@@ -153,6 +152,7 @@ input, textarea {
 @import './blocks/slider-people.scss'; 
 @import './blocks/slider-reviews.scss'; 
 @import './blocks/slider-thanks.scss'; 
+@import './blocks/slider-thumbs.scss'; 
 @import './blocks/slider-dots.scss'; 
 @import './blocks/contact.scss'; 
 @import './blocks/popup.scss'; 
@@ -171,6 +171,7 @@ input, textarea {
 @import './layouts/l-creative.scss';
 @import './layouts/l-program.scss';
 @import './layouts/l-news.scss';
+@import './layouts/l-news-item.scss';
 @import './layouts/l-press.scss';
 @import './layouts/l-albums.scss';
 @import './layouts/l-search.scss';

@@ -194,6 +194,32 @@ $(".slider-thanks").each(function () {
 
 /***/ }),
 
+/***/ "./src/js/modules/sliderThumbs.js":
+/*!****************************************!*\
+  !*** ./src/js/modules/sliderThumbs.js ***!
+  \****************************************/
+/***/ (function() {
+
+$(".slider-thumbs").each(function () {
+  var $root = $(this);
+  var swiper = new Swiper($root.find(".slider-thumbs__tape .swiper")[0], {
+    slidesPerView: "auto",
+    watchSlidesProgress: true,
+    freeMode: true
+  });
+  new Swiper($root.find(".slider-thumbs__main .swiper")[0], {
+    thumbs: {
+      swiper: swiper
+    },
+    navigation: {
+      nextEl: $root.find(".slider-thumbs__next")[0],
+      prevEl: $root.find(".slider-thumbs__prev")[0]
+    }
+  });
+});
+
+/***/ }),
+
 /***/ "./node_modules/js-match-height/lib/index.js":
 /*!***************************************************!*\
   !*** ./node_modules/js-match-height/lib/index.js ***!
@@ -288,14 +314,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_sliderReviews__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/sliderReviews */ "./src/js/modules/sliderReviews.js");
 /* harmony import */ var _modules_sliderThanks__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/sliderThanks */ "./src/js/modules/sliderThanks.js");
 /* harmony import */ var _modules_sliderThanks__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_modules_sliderThanks__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _modules_popup__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/popup */ "./src/js/modules/popup.js");
-/* harmony import */ var _modules_popup__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_modules_popup__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _modules_select__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./modules/select */ "./src/js/modules/select.js");
-/* harmony import */ var _modules_select__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_modules_select__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _modules_accordion__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./modules/accordion */ "./src/js/modules/accordion.js");
-/* harmony import */ var _modules_accordion__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_modules_accordion__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _modules_gallery__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./modules/gallery */ "./src/js/modules/gallery.js");
-/* harmony import */ var _modules_gallery__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_modules_gallery__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _modules_sliderThumbs__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/sliderThumbs */ "./src/js/modules/sliderThumbs.js");
+/* harmony import */ var _modules_sliderThumbs__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_modules_sliderThumbs__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _modules_popup__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./modules/popup */ "./src/js/modules/popup.js");
+/* harmony import */ var _modules_popup__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_modules_popup__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _modules_select__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./modules/select */ "./src/js/modules/select.js");
+/* harmony import */ var _modules_select__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_modules_select__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _modules_accordion__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./modules/accordion */ "./src/js/modules/accordion.js");
+/* harmony import */ var _modules_accordion__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_modules_accordion__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _modules_gallery__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./modules/gallery */ "./src/js/modules/gallery.js");
+/* harmony import */ var _modules_gallery__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_modules_gallery__WEBPACK_IMPORTED_MODULE_8__);
+
 
 
 
