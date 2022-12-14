@@ -98,6 +98,10 @@
         line-height: 120%;
         text-transform: uppercase;
         white-space: nowrap;
+
+        span {
+            color: #20877D;
+        }
     }
 
     &__nav {
@@ -149,6 +153,8 @@
     }
 
     &__btn-search {
+        width: auto;
+
         .icon {
             fill: #20877D;
             width: 2.4rem;
@@ -158,12 +164,30 @@
     }
 
     &__btn-menu {
+        display: none;
+
         i {
             display: block;
             margin: .7rem auto;
             width: 2.4rem;
             height: 2px;
             background: #20877D;
+        }
+
+        &.active {
+            i {
+                margin: 0 auto;
+                
+                &:nth-child(1) {
+                    transform: translateY(2px) rotate(45deg);
+                }
+                &:nth-child(2) {
+                    opacity: 0;
+                }
+                &:nth-child(3) {
+                    transform: translateY(-2px) rotate(-45deg);
+                }
+            }
         }
     }
 
@@ -215,9 +239,11 @@
         }
 
         &__btn-menu {
+            display: block;
+
             i {
                 margin: 4px auto;
-                width: 16px;
+                width: 18px;
             }
         }
 

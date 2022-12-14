@@ -16,6 +16,21 @@ $(".js-accordion").each(function () {
 
 /***/ }),
 
+/***/ "./src/js/modules/burger.js":
+/*!**********************************!*\
+  !*** ./src/js/modules/burger.js ***!
+  \**********************************/
+/***/ (function() {
+
+var $buttons = $(".js-burger");
+$(document).on("click", ".js-burger", function () {
+  $("body").toggleClass("burger__locked");
+  $("#burger").toggleClass("active");
+  $buttons.toggleClass("active");
+});
+
+/***/ }),
+
 /***/ "./src/js/modules/gallery.js":
 /*!***********************************!*\
   !*** ./src/js/modules/gallery.js ***!
@@ -324,6 +339,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_accordion__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_modules_accordion__WEBPACK_IMPORTED_MODULE_7__);
 /* harmony import */ var _modules_gallery__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./modules/gallery */ "./src/js/modules/gallery.js");
 /* harmony import */ var _modules_gallery__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_modules_gallery__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _modules_burger__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./modules/burger */ "./src/js/modules/burger.js");
+/* harmony import */ var _modules_burger__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_modules_burger__WEBPACK_IMPORTED_MODULE_9__);
+
 
 
 

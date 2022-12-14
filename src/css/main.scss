@@ -42,6 +42,8 @@ body {
     font-family: 'Raleway', sans-serif;
     font-feature-settings: 'pnum' on, 'lnum' on;
     color: #000;
+
+  
 }
 
 a {
@@ -126,6 +128,7 @@ input, textarea {
 @import './blocks/docs-list.scss';
 @import './blocks/programs.scss';
 @import './blocks/nav-pager.scss';
+@import './blocks/nav-mobile.scss';
 
 @import './blocks/media-tiles.scss';
 @import './blocks/events-list.scss';
@@ -160,6 +163,7 @@ input, textarea {
 @import './blocks/news-tiles.scss'; 
 @import './blocks/albums-tiles.scss'; 
 @import './blocks/results.scss'; 
+@import './blocks/burger.scss'; 
 
 
 @import './layouts/l-index.scss';
