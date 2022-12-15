@@ -1,4 +1,3 @@
-import "./modules/rangePicker";
 import "./modules/sliderPeople";
 import "./modules/sliderReviews";
 import "./modules/sliderThanks";
@@ -8,3 +7,12 @@ import "./modules/select";
 import "./modules/accordion";
 import "./modules/gallery";
 import "./modules/burger";
+import "./modules/masks";
+import "./modules/rangepicker";
+import "./modules/datepicker";
+import "./modules/digits";
+import "./modules/scroll-up";
+
+$("#form-feedback").validate({
+	lang: "ru",
+});

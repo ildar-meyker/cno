@@ -147,6 +147,38 @@ input:focus, textarea:focus {
 .page__space {
   height: 150px;
 }
+.page__up {
+  position: fixed;
+  z-index: 999;
+  bottom: 4rem;
+  left: 4rem;
+  width: 10rem;
+  height: 10rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 50%;
+  background: #fff;
+  display: none;
+}
+.page__up.active {
+  display: flex;
+}
+.page__up .icon {
+  stroke: #20877D;
+  font-size: 2rem;
+  width: 1em;
+  height: 1em;
+}
+.page__up__text {
+  margin-top: 0.8rem;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 135%;
+  text-transform: uppercase;
+  color: #20877D;
+}
 
 @media (max-width: 899.98px) {
   .page__h1, .page__h3 {
@@ -154,6 +186,20 @@ input:focus, textarea:focus {
     font-size: 24px;
     font-weight: 600;
     line-height: 120%;
+  }
+  .page__up {
+    top: auto;
+    left: auto;
+    right: 15px;
+    bottom: 15px;
+    width: 75px;
+    height: 75px;
+  }
+  .page__up .icon {
+    font-size: 15px;
+  }
+  .page__up__text {
+    font-size: 12px;
   }
 }
 .input input,
@@ -178,8 +224,18 @@ input:focus, textarea:focus {
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
   background: #fff;
 }
+.input input.error,
+.input textarea.error {
+  border-color: #f00;
+}
 .input textarea {
   resize: vertical;
+}
+.input label.error {
+  display: block;
+  font-size: 1.4rem;
+  margin-top: 0.5em;
+  color: #f00;
 }
 
 .input-search {
@@ -263,6 +319,7 @@ input:focus, textarea:focus {
   border-radius: 10rem 0px;
   min-width: 15em;
   padding: 1.6rem;
+  font-family: inherit;
   font-weight: 500;
   font-size: 1.6rem;
   line-height: 150%;
@@ -283,6 +340,7 @@ input:focus, textarea:focus {
   border: 0;
   padding: 1rem 1.5rem;
   border-radius: 0.5rem;
+  font-family: inherit;
   white-space: nowrap;
   cursor: pointer;
 }
@@ -306,6 +364,7 @@ input:focus, textarea:focus {
 .btn-forward {
   display: inline-flex;
   align-items: center;
+  font-family: inherit;
   font-weight: 500;
   font-size: 2.4rem;
   line-height: 150%;
@@ -327,6 +386,7 @@ input:focus, textarea:focus {
 .btn-back {
   display: inline-flex;
   align-items: center;
+  font-family: inherit;
   font-weight: 500;
   font-size: 2.4rem;
   line-height: 150%;
@@ -357,6 +417,7 @@ input:focus, textarea:focus {
   background: none;
   display: inline-flex;
   align-items: center;
+  font-family: inherit;
   font-weight: 500;
   font-size: 1.6rem;
   line-height: 150%;
@@ -409,7 +470,7 @@ input:focus, textarea:focus {
 }
 
 .checkbox input:checked ~ .checkmark {
-  background-color: #2196F3;
+  background-color: #20877D;
   border-color: transparent;
 }
 
@@ -461,7 +522,7 @@ input:focus, textarea:focus {
   padding-top: 100%;
   display: block;
 }
-.digits__item:hover {
+.digits__item.active {
   background: #72CAC1 url(../img/digits/flower.svg) 0 0/cover no-repeat;
 }
 .digits__text {
@@ -760,8 +821,8 @@ input:focus, textarea:focus {
   color: #000;
 }
 .nav-pager__nums a:hover {
-  background: #f8f8f8;
-  border-radius: 0.5em;
+  background: #c3ede9;
+  border-radius: 1em 0px;
 }
 .nav-pager__nums a.active {
   background: #20877D;
@@ -1095,6 +1156,7 @@ input:focus, textarea:focus {
 }
 .points-text__value--total {
   color: #20877D;
+  font-weight: 700;
 }
 
 @media (max-width: 899.98px) {
@@ -1927,7 +1989,7 @@ input:focus, textarea:focus {
   display: flex !important;
 }
 .form-search__filter__date {
-  width: 15rem;
+  width: 20rem;
 }
 .form-search__filter__where {
   width: 20rem;
@@ -2176,18 +2238,42 @@ input:focus, textarea:focus {
   }
 }
 .inform {
+  transition: background 0.2s;
+  position: relative;
   border: 1px solid #20877D;
   border-radius: 12rem 0px;
   padding: 6.4rem;
+  cursor: pointer;
+  overflow: hidden;
 }
 .inform__title {
+  transition: color 0.2s;
   margin-bottom: 11rem;
   font-weight: 500;
   font-size: 3.2rem;
   line-height: 135%;
   color: #000000;
 }
+.inform:hover {
+  background: #20877D;
+}
+.inform:hover .inform__title {
+  color: #fff;
+}
+.inform:hover .btn-forward {
+  color: #fff;
+}
 
+@media (min-width: 900px) {
+  .inform--compact {
+    padding: 4rem;
+    border-radius: 8rem 0px;
+  }
+  .inform--compact .inform__title {
+    margin-bottom: 8rem;
+    font-size: 2.4rem;
+  }
+}
 @media (max-width: 899.98px) {
   .inform {
     padding: 40px;
@@ -2316,7 +2402,7 @@ input:focus, textarea:focus {
 .slider-people__prev, .slider-people__next {
   margin-left: 0.8rem;
   padding: 1.6rem 2.4rem;
-  border-radius: 2rem 0px;
+  border-radius: 0px 2rem;
   border: 0;
   cursor: pointer;
   background: #F8F8F8;
@@ -2330,7 +2416,7 @@ input:focus, textarea:focus {
   stroke: #20877D;
 }
 .slider-people__next {
-  border-radius: 0px 2rem;
+  border-radius: 2rem 0px;
 }
 .slider-people__dots {
   display: none;
@@ -2447,7 +2533,7 @@ input:focus, textarea:focus {
 .slider-reviews__prev, .slider-reviews__next {
   margin-left: 0.8rem;
   padding: 1.6rem 2.4rem;
-  border-radius: 2rem 0px;
+  border-radius: 0px 2rem;
   border: 0;
   cursor: pointer;
   background: #F8F8F8;
@@ -2461,7 +2547,7 @@ input:focus, textarea:focus {
   stroke: #20877D;
 }
 .slider-reviews__next {
-  border-radius: 0px 2rem;
+  border-radius: 2rem 0px;
 }
 .slider-reviews__dots {
   display: none;
@@ -2553,7 +2639,7 @@ input:focus, textarea:focus {
   transform: translateY(-50%);
   z-index: 20;
   padding: 1.6rem 2.4rem;
-  border-radius: 2rem 0px;
+  border-radius: 0px 2rem;
   border: 0;
   cursor: pointer;
   background: #20877D;
@@ -2571,7 +2657,7 @@ input:focus, textarea:focus {
 }
 .slider-thanks__next {
   right: 0;
-  border-radius: 0px 2rem;
+  border-radius: 2rem 0px;
 }
 .slider-thanks__dots {
   display: none;
@@ -2625,7 +2711,7 @@ input:focus, textarea:focus {
   transform: translateY(-50%);
   z-index: 20;
   padding: 0.8em 1.2em;
-  border-radius: 1em 0px;
+  border-radius: 0px 1em;
   border: 0;
   cursor: pointer;
   background: #20877D;
@@ -2644,7 +2730,7 @@ input:focus, textarea:focus {
 }
 .slider-thumbs__next {
   right: -1.5em;
-  border-radius: 0px 2rem;
+  border-radius: 1em 0px;
 }
 .slider-thumbs__image {
   background: 50% 50%/cover no-repeat;
@@ -3410,7 +3496,8 @@ input:focus, textarea:focus {
   margin: 16rem 0;
 }
 .l-creative__reg-docs {
-  margin: 10rem 0 20rem 0;
+  background: #f8f8f8;
+  padding: 10rem 0 20rem 0;
 }
 
 @media (max-width: 899.98px) {
@@ -3609,12 +3696,8 @@ input:focus, textarea:focus {
   padding: 0 3.5rem;
 }
 .l-news-item__main__right {
-  margin-top: 15rem;
   flex: 0 0 auto;
   width: 30rem;
-}
-.l-news-item__main__right .inform__title {
-  display: none;
 }
 .l-news-item__date {
   font-weight: 400;
@@ -3655,9 +3738,6 @@ input:focus, textarea:focus {
     margin-bottom: 24px;
     width: auto;
     order: 1;
-  }
-  .l-news-item__main__right .inform__title {
-    display: block;
   }
   .l-news-item__main .page__h3 {
     margin-bottom: 16px;

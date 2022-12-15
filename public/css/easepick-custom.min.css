@@ -2,3 +2,7 @@
   --color-fg-primary: #20877D;
   --color-bg-inrange: #F6F6F6;
 }
+
+.container.inline {
+  box-shadow: 0 0 14px 0 rgba(65, 69, 88, 0.1), 0 0 6px 0 rgba(0, 0, 0, 0.07);
+}

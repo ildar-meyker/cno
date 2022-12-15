@@ -1,5 +1,7 @@
 
 .input {
+
+
     input,
     textarea {
         display: block;
@@ -21,10 +23,21 @@
             box-shadow: 0 0 .5rem rgba(#000, .1);
             background: #fff;
         }
+
+        &.error {
+            border-color: #f00
+        }
     }
 
     textarea {
         resize: vertical;
+    }
+
+    label.error {
+        display: block;
+        font-size: 1.4rem;
+        margin-top: .5em;
+        color: #f00;
     }
 }
 

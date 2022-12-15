@@ -61,7 +61,7 @@
     &__next {
         margin-left: .8rem;
         padding: 1.6rem 2.4rem;
-        border-radius: 2rem 0px;
+        border-radius: 0px 2rem;
         border: 0;
         cursor: pointer;
         background: #F8F8F8;
@@ -78,7 +78,7 @@
     }
 
     &__next {
-        border-radius: 0px 2rem;
+        border-radius: 2rem 0px;
     }
 
     &__dots {

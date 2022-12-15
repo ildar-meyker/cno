@@ -31,6 +31,45 @@ $(document).on("click", ".js-burger", function () {
 
 /***/ }),
 
+/***/ "./src/js/modules/datepicker.js":
+/*!**************************************!*\
+  !*** ./src/js/modules/datepicker.js ***!
+  \**************************************/
+/***/ (function() {
+
+$(".js-date").each(function () {
+  var picker = new easepick.create({
+    element: this,
+    css: ["https://cdn.jsdelivr.net/npm/@easepick/bundle@1.2.0/dist/index.css", "css/easepick-custom.min.css"],
+    lang: "ru-RU",
+    plugins: ["AmpPlugin"],
+    format: "DD.MM.YYYY",
+    zIndex: 100,
+    AmpPlugin: {
+      dropdown: {
+        months: true,
+        years: true
+      },
+      darkMode: false
+    }
+  });
+});
+
+/***/ }),
+
+/***/ "./src/js/modules/digits.js":
+/*!**********************************!*\
+  !*** ./src/js/modules/digits.js ***!
+  \**********************************/
+/***/ (function() {
+
+$(".digits__item").hover(function () {
+  $(this).closest(".digits").find(".digits__item").removeClass("active");
+  $(this).addClass("active");
+});
+
+/***/ }),
+
 /***/ "./src/js/modules/gallery.js":
 /*!***********************************!*\
   !*** ./src/js/modules/gallery.js ***!
@@ -46,6 +85,27 @@ $(document).on("click", ".js-burger", function () {
   });
   lightbox.init();
 })();
+
+/***/ }),
+
+/***/ "./src/js/modules/masks.js":
+/*!*********************************!*\
+  !*** ./src/js/modules/masks.js ***!
+  \*********************************/
+/***/ (function() {
+
+$(".js-price").each(function () {
+  IMask(this, {
+    mask: Number,
+    min: 0,
+    thousandsSeparator: " "
+  });
+});
+$(".js-phone").each(function () {
+  IMask(this, {
+    mask: "+{7}(000)000-00-00"
+  });
+});
 
 /***/ }),
 
@@ -67,9 +127,9 @@ $(document).on("click", ".js-close-popup", function (e) {
 
 /***/ }),
 
-/***/ "./src/js/modules/rangePicker.js":
+/***/ "./src/js/modules/rangepicker.js":
 /*!***************************************!*\
-  !*** ./src/js/modules/rangePicker.js ***!
+  !*** ./src/js/modules/rangepicker.js ***!
   \***************************************/
 /***/ (function() {
 
@@ -92,6 +152,29 @@ $(".js-range-picker").each(function () {
     }
   });
 });
+
+/***/ }),
+
+/***/ "./src/js/modules/scroll-up.js":
+/*!*************************************!*\
+  !*** ./src/js/modules/scroll-up.js ***!
+  \*************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var debounce__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! debounce */ "./node_modules/debounce/index.js");
+/* harmony import */ var debounce__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(debounce__WEBPACK_IMPORTED_MODULE_0__);
+
+$("#scroll-up").on("click", function (e) {
+  e.preventDefault();
+  $("html, body").animate({
+    scrollTop: 0
+  });
+});
+$(window).on("scroll", (0,debounce__WEBPACK_IMPORTED_MODULE_0__.debounce)(function () {
+  $("#scroll-up").toggleClass("active", $(window).scrollTop() > $(window).height() * 2);
+}, 200));
 
 /***/ }),
 
@@ -235,6 +318,86 @@ $(".slider-thumbs").each(function () {
 
 /***/ }),
 
+/***/ "./node_modules/debounce/index.js":
+/*!****************************************!*\
+  !*** ./node_modules/debounce/index.js ***!
+  \****************************************/
+/***/ (function(module) {
+
+/**
+ * Returns a function, that, as long as it continues to be invoked, will not
+ * be triggered. The function will be called after it stops being called for
+ * N milliseconds. If `immediate` is passed, trigger the function on the
+ * leading edge, instead of the trailing. The function also has a property 'clear' 
+ * that is a function which will clear the timer to prevent previously scheduled executions. 
+ *
+ * @source underscore.js
+ * @see http://unscriptable.com/2009/03/20/debouncing-javascript-methods/
+ * @param {Function} function to wrap
+ * @param {Number} timeout in ms (`100`)
+ * @param {Boolean} whether to execute at the beginning (`false`)
+ * @api public
+ */
+function debounce(func, wait, immediate){
+  var timeout, args, context, timestamp, result;
+  if (null == wait) wait = 100;
+
+  function later() {
+    var last = Date.now() - timestamp;
+
+    if (last < wait && last >= 0) {
+      timeout = setTimeout(later, wait - last);
+    } else {
+      timeout = null;
+      if (!immediate) {
+        result = func.apply(context, args);
+        context = args = null;
+      }
+    }
+  };
+
+  var debounced = function(){
+    context = this;
+    args = arguments;
+    timestamp = Date.now();
+    var callNow = immediate && !timeout;
+    if (!timeout) timeout = setTimeout(later, wait);
+    if (callNow) {
+      result = func.apply(context, args);
+      context = args = null;
+    }
+
+    return result;
+  };
+
+  debounced.clear = function() {
+    if (timeout) {
+      clearTimeout(timeout);
+      timeout = null;
+    }
+  };
+  
+  debounced.flush = function() {
+    if (timeout) {
+      result = func.apply(context, args);
+      context = args = null;
+      
+      clearTimeout(timeout);
+      timeout = null;
+    }
+  };
+
+  return debounced;
+};
+
+// Adds compatibility for ES modules
+debounce.debounce = debounce;
+
+module.exports = debounce;
+
+
+/***/ }),
+
 /***/ "./node_modules/js-match-height/lib/index.js":
 /*!***************************************************!*\
   !*** ./node_modules/js-match-height/lib/index.js ***!
@@ -322,25 +485,32 @@ var __webpack_exports__ = {};
   !*** ./src/js/main.js ***!
   \************************/
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _modules_rangePicker__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/rangePicker */ "./src/js/modules/rangePicker.js");
-/* harmony import */ var _modules_rangePicker__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_modules_rangePicker__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _modules_sliderPeople__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/sliderPeople */ "./src/js/modules/sliderPeople.js");
-/* harmony import */ var _modules_sliderPeople__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_modules_sliderPeople__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _modules_sliderReviews__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/sliderReviews */ "./src/js/modules/sliderReviews.js");
-/* harmony import */ var _modules_sliderThanks__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/sliderThanks */ "./src/js/modules/sliderThanks.js");
-/* harmony import */ var _modules_sliderThanks__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_modules_sliderThanks__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _modules_sliderThumbs__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/sliderThumbs */ "./src/js/modules/sliderThumbs.js");
-/* harmony import */ var _modules_sliderThumbs__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_modules_sliderThumbs__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _modules_popup__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./modules/popup */ "./src/js/modules/popup.js");
-/* harmony import */ var _modules_popup__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_modules_popup__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _modules_select__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./modules/select */ "./src/js/modules/select.js");
-/* harmony import */ var _modules_select__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_modules_select__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _modules_accordion__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./modules/accordion */ "./src/js/modules/accordion.js");
-/* harmony import */ var _modules_accordion__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_modules_accordion__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _modules_gallery__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./modules/gallery */ "./src/js/modules/gallery.js");
-/* harmony import */ var _modules_gallery__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_modules_gallery__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var _modules_burger__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./modules/burger */ "./src/js/modules/burger.js");
-/* harmony import */ var _modules_burger__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_modules_burger__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _modules_sliderPeople__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/sliderPeople */ "./src/js/modules/sliderPeople.js");
+/* harmony import */ var _modules_sliderPeople__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_modules_sliderPeople__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _modules_sliderReviews__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/sliderReviews */ "./src/js/modules/sliderReviews.js");
+/* harmony import */ var _modules_sliderThanks__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/sliderThanks */ "./src/js/modules/sliderThanks.js");
+/* harmony import */ var _modules_sliderThanks__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_modules_sliderThanks__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _modules_sliderThumbs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/sliderThumbs */ "./src/js/modules/sliderThumbs.js");
+/* harmony import */ var _modules_sliderThumbs__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_modules_sliderThumbs__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _modules_popup__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/popup */ "./src/js/modules/popup.js");
+/* harmony import */ var _modules_popup__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_modules_popup__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _modules_select__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./modules/select */ "./src/js/modules/select.js");
+/* harmony import */ var _modules_select__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_modules_select__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _modules_accordion__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./modules/accordion */ "./src/js/modules/accordion.js");
+/* harmony import */ var _modules_accordion__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_modules_accordion__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _modules_gallery__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./modules/gallery */ "./src/js/modules/gallery.js");
+/* harmony import */ var _modules_gallery__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_modules_gallery__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _modules_burger__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./modules/burger */ "./src/js/modules/burger.js");
+/* harmony import */ var _modules_burger__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_modules_burger__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _modules_masks__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./modules/masks */ "./src/js/modules/masks.js");
+/* harmony import */ var _modules_masks__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_modules_masks__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _modules_rangepicker__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./modules/rangepicker */ "./src/js/modules/rangepicker.js");
+/* harmony import */ var _modules_rangepicker__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_modules_rangepicker__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var _modules_datepicker__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./modules/datepicker */ "./src/js/modules/datepicker.js");
+/* harmony import */ var _modules_datepicker__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_modules_datepicker__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var _modules_digits__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./modules/digits */ "./src/js/modules/digits.js");
+/* harmony import */ var _modules_digits__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_modules_digits__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var _modules_scroll_up__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./modules/scroll-up */ "./src/js/modules/scroll-up.js");
 
 
 
@@ -351,6 +521,13 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+
+
+
+$("#form-feedback").validate({
+  lang: "ru"
+});
 }();
 /******/ })()
 ;

@@ -37,7 +37,7 @@
             display: block;
         }
 
-        &:hover {
+        &.active {
             background: #72CAC1 url(../img/digits/flower.svg) 0 0 / cover no-repeat;
         }
     }

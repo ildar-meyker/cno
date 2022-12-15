@@ -28,7 +28,7 @@
         @include position-middle;
         z-index: 20;
         padding: .8em 1.2em;
-        border-radius: 1em 0px;
+        border-radius: 0px 1em;
         border: 0;
         cursor: pointer;
         background: #20877D;
@@ -51,7 +51,7 @@
 
     &__next {
         right: -1.5em;
-        border-radius: 0px 2rem;
+        border-radius: 1em 0px;
     }
 
     &__image {

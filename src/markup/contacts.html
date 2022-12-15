@@ -4,6 +4,15 @@
 <title>Главная</title>
 <!-- @@close-->
 
+<!-- @@block = styles-->
+
+<!-- @@close-->
+
+<!-- @@block = scripts-->
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/localization/messages_ru.js"></script>
+<!-- @@close-->
+
 <!-- @@block = content-->
 <!-- @@include = ./partials/header.html -->
 <div class="page__center">
@@ -70,34 +79,34 @@
    
                </div>
                <div class="contacts__right">
-                  <form action="#" class="form-feedback">
+                  <form action="#" class="form-feedback" id="form-feedback" novalidate>
                      <div class="form-feedback__title">Форма обратной связи</div>
                      
                      <div class="form-feedback__body">
                            <div class="form-feedback__input">
                               <div class="input">
-                                 <input type="text" placeholder="ФИО*">
+                                 <input type="text" placeholder="ФИО*" required>
                               </div>
                            </div>
                            <div class="form-feedback__input">
                               <div class="input">
-                                 <input type="text" placeholder="Email*">
+                                 <input type="email" placeholder="Email*" required>
                               </div>
                            </div>
                            <div class="form-feedback__input">
                               <div class="input">
-                                 <input type="text" placeholder="Телефон">
+                                 <input type="text" placeholder="Телефон" class="js-phone">
                               </div>
                            </div>
                            <div class="form-feedback__area">
                               <div class="input">
-                                 <textarea rows="5" placeholder="Задайте вопрос*"></textarea>
+                                 <textarea rows="5" placeholder="Задайте вопрос*" required></textarea>
                               </div>
                            </div>
                      </div>
    
                      <div class="form-feedback__ctrl">
-                           <button class="btn-filled">Отправить</button>
+                           <button class="btn-filled" type="submit">Отправить</button>
                      </div>
                      
                   </form>
@@ -105,6 +114,8 @@
             </div>
       </div>
    </section>
+
+
 </div>
 <!-- @@include = ./partials/footer.html -->
 <!-- @@close-->
