@@ -1,4 +1,7 @@
 $(".js-range-picker").each(function () {
+	const startDate = $(this).data("start-date") || null;
+	const endDate = $(this).data("end-date") || null;
+
 	const picker = new easepick.create({
 		element: this,
 		css: [
@@ -10,6 +13,8 @@ $(".js-range-picker").each(function () {
 		plugins: ["RangePlugin", "AmpPlugin"],
 		RangePlugin: {
 			tooltip: false,
+			startDate,
+			endDate,
 		},
 		AmpPlugin: {
 			dropdown: {

@@ -134,6 +134,8 @@ $(document).on("click", ".js-close-popup", function (e) {
 /***/ (function() {
 
 $(".js-range-picker").each(function () {
+  var startDate = $(this).data("start-date") || null;
+  var endDate = $(this).data("end-date") || null;
   var picker = new easepick.create({
     element: this,
     css: ["https://cdn.jsdelivr.net/npm/@easepick/bundle@1.2.0/dist/index.css", "css/easepick-custom.min.css"],
@@ -141,7 +143,9 @@ $(".js-range-picker").each(function () {
     lang: "ru-RU",
     plugins: ["RangePlugin", "AmpPlugin"],
     RangePlugin: {
-      tooltip: false
+      tooltip: false,
+      startDate: startDate,
+      endDate: endDate
     },
     AmpPlugin: {
       dropdown: {
