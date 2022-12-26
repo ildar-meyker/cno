@@ -15,8 +15,8 @@
 
 
 
-		<link rel="stylesheet" href="css/main.min.css?t=1671362904799">
-		<script src="js/modernizr-output.js?t=1671362904799"></script>
+		<link rel="stylesheet" href="css/main.min.css?t=1672020741109">
+		<script src="js/modernizr-output.js?t=1672020741109"></script>
 	 </head>
 <body> 
 	<div class="page__wrapper page__wrapper--gray">
@@ -74,14 +74,10 @@
                <a href="#">О нас</a>
                <a href="#">ФП «Творческие люди»</a>
                <a href="#">программы</a>
+               <a href="#">Пресс-служба</a>
                <a href="#">Контакты</a>
             </nav>
             <div class="header__tools">
-               <button class="header__btn-eye">
-                  <svg class="icon">
-                     <use xlink:href="img/sprite.svg#eye-stroke"></use>
-                  </svg>
-               </button>
                <button class="header__btn-search">
                   <svg class="icon">
                      <use xlink:href="img/sprite.svg#search"></use>
@@ -520,58 +516,77 @@
    </form>
 </div>
 <footer class="footer">
-    <div class="page__center">
-       <div class="footer__in">
-          <div class="footer__name">
-            <a href="#">
-               Центр непрерывного 
-               <br>образования казгик
-            </a>
-          </div>
-          <div class="footer__row">
-            <div class="footer__col">
-               <div class="footer__nav">
+   <div class="footer__flower"></div>
+   <div class="page__center">
+      <div class="footer__in">
+         <div class="footer__name">
+         <a href="#">
+            Центр непрерывного 
+            <br>образования казгик
+         </a>
+         </div>
+         <div class="footer__row">
+         <div class="footer__col">
+            <div class="footer__nav">
+               <div class="nav-footer">
                   <div><a href="#">Главная</a></div>
                   <div><a href="#">О нас</a></div>
                   <div><a href="#">Программы</a></div>
                   <div><a href="#">Федеральный Проект «Творческие люди»</a></div>
                </div>
+               <ul class="nav-collapse js-accordion">
+                  <li class="acc_section">
+                        <div class="acc_head">пресс-служба<i><i></i></i></div>
+                        <div class="acc_content" style="display: none;">
+                           <div class="nav-collapse__body">
+                              <div class="nav-collapse__links">
+                                 <div><a href="#">Пресс-служба</a></div>
+                                 <div><a href="#">Новости</a></div>
+                                 <div><a href="#">Анонсы</a></div>
+                                 <div><a href="#">Медиагалерея</a></div>
+                                 <div><a href="#">СМИ о нас</a></div>
+                              </div>
+                           </div>
+                        </div>
+                  </li>
+               </ul>
             </div>
-            <div class="footer__col">
-               <div class="footer__touch">
-                  <div class="footer__touch__title">Контакты</div>
-                  <div class="footer__touch__desc">
-                     <div>Казань, ул. Спартаковская, д. 2 </div>
-                     <div><a href="tel:+79274231774">+7 (927) 423-17-74</a></div>
-                  </div>
-                  <nav class="footer__icons">
-                     <a href="#">
-                        <svg class="icon">
-                           <use xlink:href="img/sprite.svg#telegram"></use>
-                        </svg>
-                     </a>
-                     <a href="#">
-                        <svg class="icon">
-                           <use xlink:href="img/sprite.svg#youtube"></use>
-                        </svg>
-                     </a>
-                     <a href="#">
-                        <svg class="icon">
-                           <use xlink:href="img/sprite.svg#vk"></use>
-                        </svg>
-                     </a>
-                  </nav>
+         </div>
+         <div class="footer__col">
+            <div class="footer__touch">
+               <div class="footer__touch__title">Контакты</div>
+               <div class="footer__touch__desc">
+                  <div>Казань, ул. Спартаковская, д. 2 &nbsp;&nbsp;<a href="#" class="nice-link nice-link--active">На карте</a></div>
+                  <div><a href="tel:+79274231774">+7 (927) 423-17-74</a></div>
                </div>
+               <nav class="footer__icons">
+                  <a href="#">
+                     <svg class="icon">
+                        <use xlink:href="img/sprite.svg#telegram"></use>
+                     </svg>
+                  </a>
+                  <a href="#">
+                     <svg class="icon">
+                        <use xlink:href="img/sprite.svg#youtube"></use>
+                     </svg>
+                  </a>
+                  <a href="#">
+                     <svg class="icon">
+                        <use xlink:href="img/sprite.svg#vk"></use>
+                     </svg>
+                  </a>
+               </nav>
             </div>
-            <div class="footer__col">
-               <div class="footer__promo">
-                  <div class="footer__promo__title">При поддержке</div>
-                  <img src="img/logo.svg" alt="">
-               </div>
+         </div>
+         <div class="footer__col">
+            <div class="footer__promo">
+               <div class="footer__promo__title">При поддержке</div>
+               <img src="img/logo.svg" alt="">
             </div>
-          </div>
-       </div>
-    </div>
+         </div>
+         </div>
+      </div>
+   </div>
 </footer>
 
 <div class="burger" id="burger">
@@ -590,11 +605,6 @@
                     <a href="#">Контакты</a>
                 </nav>
                 <div class="header__tools">
-                    <button class="header__btn-eye">
-                        <svg class="icon">
-                            <use xlink:href="img/sprite.svg#eye-stroke"></use>
-                        </svg>
-                    </button>
                     <button class="header__btn-search">
                         <svg class="icon">
                             <use xlink:href="img/sprite.svg#search"></use>
@@ -612,6 +622,11 @@
          </div>
 
         <nav class="burger__icons">
+            <button class="burger__btn-eye">
+                <svg class="icon">
+                    <use xlink:href="img/sprite.svg#eye-stroke"></use>
+                </svg>
+            </button>
             <a href="#" class="burger__btn-lang">
                 EN
             </a>
@@ -623,99 +638,25 @@
         </nav>
 
         <div class="burger__toggle">
-            <ul class="nav-mobile js-accordion">
-                <li class="acc_section">
-                    <div class="acc_head">Абитуриентам<i><i></i></i></div>
-                    <div class="acc_content" style="display: none;">
-                        <div class="nav-mobile__body">
-                            <div class="nav-mobile__group">
-                                <div class="nav-mobile__subtitle">Информация</div>
-                                <div class="nav-mobile__links">
-                                    <div><a href="#">Поступающим</a></div>
-                                    <div><a href="#">Направления подготовки</a></div>
-                                    <div><a href="#">Последние объявления</a></div>
-                                    <div><a href="#">Дни открытых дверей</a></div>
-                                    <div><a href="#">Вступительные испытания</a></div>
-                                    <div><a href="#">Подготовительные курсы</a></div>
-                                </div>
-                            </div>
-                            <div class="nav-mobile__group">
-                                <div class="nav-mobile__subtitle">Приемная комиссия</div>
-                                <div class="nav-mobile__links">
-                                    <div><a href="#">Подать документы</a></div>
-                                    <div><a href="#">Контрольные цифры приема</a></div>
-                                    <div><a href="#">Целевой прием</a></div>
-                                    <div><a href="#">Особое право ЕГЭ-2022</a></div>
-                                    <div><a href="#">Контакты</a></div>
-                                </div>
-                            </div>
-                            <div class="nav-mobile__group">
-                                <div class="nav-mobile__subtitle">Полезное</div>
-                                <div class="nav-mobile__links">
-                                    <div><a href="#">Факультеты</a></div>
-                                    <div><a href="#">Кафедры</a></div>
-                                    <div><a href="#">FAQ</a></div>
-                                    <div><a href="#">Профориентация</a></div>
-                                    <div><a href="#">Иностранным гражданам</a></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li class="acc_section">
-                    <div class="acc_head">Студентам<i><i></i></i></div>
-                    <div class="acc_content" style="display: none;">
-                        <div class="nav-mobile__body">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint tempora consectetur repellendus ea officia obcaecati, velit facilis, sapiente nostrum et vitae accusamus aspernatur possimus corporis laboriosam, esse officiis ipsam quibusdam!
-                        </div>
-                    </div>
-                </li>
-                <li class="acc_section">
-                    <div class="acc_head">Сотрудникам<i><i></i></i></div>
-                    <div class="acc_content" style="display: none;">
-                        <div class="nav-mobile__body">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, provident deserunt reprehenderit ea aspernatur quod eum nisi consequatur eaque corporis nulla maxime tempora vel magnam quam officia soluta voluptate nam!
-                        </div>
-                    </div>
-                </li>
-                <li class="acc_section">
-                    <div class="acc_head">о вузе<i><i></i></i></div>
-                    <div class="acc_content" style="display: none;">
-                        <div class="nav-mobile__body">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, provident deserunt reprehenderit ea aspernatur quod eum nisi consequatur eaque corporis nulla maxime tempora vel magnam quam officia soluta voluptate nam!
-                        </div>
-                    </div>
-                </li>
-                <li class="acc_section">
-                    <div class="acc_head">образование<i><i></i></i></div>
-                    <div class="acc_content" style="display: none;">
-                        <div class="nav-mobile__body">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, provident deserunt reprehenderit ea aspernatur quod eum nisi consequatur eaque corporis nulla maxime tempora vel magnam quam officia soluta voluptate nam!
-                        </div>
-                    </div>
-                </li>
-                <li class="acc_section">
-                    <div class="acc_head">наука<i><i></i></i></div>
-                    <div class="acc_content" style="display: none;">
-                        <div class="nav-mobile__body">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, provident deserunt reprehenderit ea aspernatur quod eum nisi consequatur eaque corporis nulla maxime tempora vel magnam quam officia soluta voluptate nam!
-                        </div>
-                    </div>
-                </li>
-                <li class="acc_section">
-                    <div class="acc_head">творчество<i><i></i></i></div>
-                    <div class="acc_content" style="display: none;">
-                        <div class="nav-mobile__body">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, provident deserunt reprehenderit ea aspernatur quod eum nisi consequatur eaque corporis nulla maxime tempora vel magnam quam officia soluta voluptate nam!
-                        </div>
-                    </div>
-                </li>
+            <div class="nav-footer">
+                <div><a href="#">Главная</a></div>
+                <div><a href="#">О нас</a></div>
+                <div><a href="#">Программы</a></div>
+                <div><a href="#">Федеральный Проект «Творческие люди»</a></div>
+            </div>
+            <ul class="nav-collapse js-accordion">
                 <li class="acc_section">
                     <div class="acc_head">пресс-служба<i><i></i></i></div>
                     <div class="acc_content" style="display: none;">
-                        <div class="nav-mobile__body">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, provident deserunt reprehenderit ea aspernatur quod eum nisi consequatur eaque corporis nulla maxime tempora vel magnam quam officia soluta voluptate nam!
-                        </div>
+                        <div class="nav-collapse__body">
+                            <div class="nav-collapse__links">
+                               <div><a href="#">Пресс-служба</a></div>
+                               <div><a href="#">Новости</a></div>
+                               <div><a href="#">Анонсы</a></div>
+                               <div><a href="#">Медиагалерея</a></div>
+                               <div><a href="#">СМИ о нас</a></div>
+                            </div>
+                         </div>
                     </div>
                 </li>
             </ul>
@@ -723,14 +664,12 @@
 
         <div class="burger__help">
             <div><a href="#">Сведения об образовательной организации</a></div>
-            <div><a href="#">Предпринимательство</a></div>
-            <div><a href="#">Афиша</a></div>
         </div>
 
         <div class="burger__touch">
             <div class="burger__touch__title">Контакты</div>
             <div class="burger__touch__desc">
-                <div>Казань, ул. Спартаковская, д. 2 </div>
+                <div>Казань, ул. Спартаковская, д. 2 &nbsp;&nbsp;<a href="#" class="nice-link nice-link--active">На карте</a> </div>
                 <div><a href="tel:+79274231774">+7 (927) 423-17-74</a></div>
             </div>
         </div>
@@ -770,7 +709,7 @@
 
 <script src="https://cdn.jsdelivr.net/npm/@easepick/bundle@1.2.0/dist/index.umd.min.js"></script>
 
-		<script src="js/bundle.js?t=1671362904799"></script>
+		<script src="js/bundle.js?t=1672020741109"></script>
 
 <style type="text/css">
 	.filelist {
