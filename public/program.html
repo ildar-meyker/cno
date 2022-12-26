@@ -12,11 +12,11 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
-		<link rel="stylesheet" href="css/main.min.css?t=1672020740988">
+		<link rel="stylesheet" href="css/main.min.css?t=1672026041071">
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
 
-		<script src="js/modernizr-output.js?t=1672020740988"></script>
+		<script src="js/modernizr-output.js?t=1672026041071"></script>
 	 </head>
 <body> 
 	<div class="page__wrapper">
@@ -70,12 +70,24 @@
                <br> образования <span>казгик</span>
             </a>
             <nav class="header__nav">
-               <a href="#">главная</a>
-               <a href="#">О нас</a>
-               <a href="#">ФП «Творческие люди»</a>
-               <a href="#">программы</a>
-               <a href="#">Пресс-служба</a>
-               <a href="#">Контакты</a>
+               <div class="header__nav__item">
+                  <a href="#">главная</a>
+               </div>
+               <div class="header__nav__item">
+                  <a href="#">О нас</a>
+               </div>
+               <div class="header__nav__item">
+                  <a href="#">ФП «Творческие люди»</a>
+               </div>
+               <div class="header__nav__item">
+                  <a href="#" data-submenu="submenu2" class="js-submenu-item">программы</a>
+               </div>
+               <div class="header__nav__item">
+                  <a href="#" data-submenu="submenu1" class="js-submenu-item">Пресс-служба</a>
+               </div>
+               <div class="header__nav__item">
+                  <a href="#">Контакты</a>
+               </div>
             </nav>
             <div class="header__tools">
                <button class="header__btn-search">
@@ -94,6 +106,35 @@
          </div>
       </div>
    </div>
+<div class="submenu js-submenu" id="submenu1">
+    <div class="page__center">
+        <div class="submenu__row">
+            <div class="submenu__title">Пресс-служба</div>
+            <div class="submenu__list">
+                <div><a href="#">Пресс-служба</a></div>
+                <div><a href="#">Новости</a></div>
+                <div><a href="#">Анонсы</a></div>
+                <div><a href="#">Медиагалерея</a></div>
+                <div><a href="#">СМИ о нас</a></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="submenu js-submenu" id="submenu2">
+    <div class="page__center">
+        <div class="submenu__row">
+            <div class="submenu__title">Программы</div>
+            <div class="submenu__list">
+                <div><a href="#">Тест</a></div>
+                <div><a href="#">Новости</a></div>
+                <div><a href="#">Анонсы</a></div>
+                <div><a href="#">Медиагалерея</a></div>
+                <div><a href="#">СМИ о нас</a></div>
+            </div>
+        </div>
+    </div>
+</div>
 </header>
 
  
@@ -585,7 +626,7 @@
 
 <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
-		<script src="js/bundle.js?t=1672020740988"></script>
+		<script src="js/bundle.js?t=1672026041071"></script>
 
 <style type="text/css">
 	.filelist {

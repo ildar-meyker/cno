@@ -12,6 +12,7 @@ import "./modules/rangepicker";
 import "./modules/datepicker";
 import "./modules/digits";
 import "./modules/scroll-up";
+import "./modules/submenu";
 
 $("#form-feedback").validate({
 	lang: "ru",

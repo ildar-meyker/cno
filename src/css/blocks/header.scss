@@ -1,4 +1,5 @@
 .header {
+    position: relative;
     box-shadow: 0px 0px 1.5rem rgba(0, 0, 0, 0.05);
 
     // topbar
@@ -89,6 +90,7 @@
         &__in {
             display: flex;
             align-items: center;
+            
         }
     }
 
@@ -110,6 +112,15 @@
         flex-wrap: wrap;
         padding: 0 5rem;
 
+        &__item {
+            position: relative;
+            margin: .2rem clamp(20px, 4vw, 80px) .2rem 0;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+
         a {
             @extend .nice-link;
             font-weight: 500;
@@ -118,11 +129,6 @@
             letter-spacing: 0.03em;
             text-transform: uppercase;
             white-space: nowrap;
-            margin: .2rem clamp(20px, 4vw, 80px) .2rem 0;
-
-            &:last-child {
-                margin-right: 0;
-            }
         }
     }
 

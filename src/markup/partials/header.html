@@ -46,12 +46,24 @@
                <br> образования <span>казгик</span>
             </a>
             <nav class="header__nav">
-               <a href="#">главная</a>
-               <a href="#">О нас</a>
-               <a href="#">ФП «Творческие люди»</a>
-               <a href="#">программы</a>
-               <a href="#">Пресс-служба</a>
-               <a href="#">Контакты</a>
+               <div class="header__nav__item">
+                  <a href="#">главная</a>
+               </div>
+               <div class="header__nav__item">
+                  <a href="#">О нас</a>
+               </div>
+               <div class="header__nav__item">
+                  <a href="#">ФП «Творческие люди»</a>
+               </div>
+               <div class="header__nav__item">
+                  <a href="#" data-submenu="submenu2" class="js-submenu-item">программы</a>
+               </div>
+               <div class="header__nav__item">
+                  <a href="#" data-submenu="submenu1" class="js-submenu-item">Пресс-служба</a>
+               </div>
+               <div class="header__nav__item">
+                  <a href="#">Контакты</a>
+               </div>
             </nav>
             <div class="header__tools">
                <button class="header__btn-search">
@@ -70,4 +82,5 @@
          </div>
       </div>
    </div>
+   <!-- @@include = ./submenu.html -->
 </header>

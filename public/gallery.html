@@ -15,8 +15,8 @@
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@5.3.4/dist/photoswipe.css">
 
-		<link rel="stylesheet" href="css/main.min.css?t=1672020740556">
-		<script src="js/modernizr-output.js?t=1672020740556"></script>
+		<link rel="stylesheet" href="css/main.min.css?t=1672026040348">
+		<script src="js/modernizr-output.js?t=1672026040348"></script>
 	 </head>
 <body> 
 	<div class="page__wrapper page__wrapper--gray">
@@ -70,12 +70,24 @@
                <br> образования <span>казгик</span>
             </a>
             <nav class="header__nav">
-               <a href="#">главная</a>
-               <a href="#">О нас</a>
-               <a href="#">ФП «Творческие люди»</a>
-               <a href="#">программы</a>
-               <a href="#">Пресс-служба</a>
-               <a href="#">Контакты</a>
+               <div class="header__nav__item">
+                  <a href="#">главная</a>
+               </div>
+               <div class="header__nav__item">
+                  <a href="#">О нас</a>
+               </div>
+               <div class="header__nav__item">
+                  <a href="#">ФП «Творческие люди»</a>
+               </div>
+               <div class="header__nav__item">
+                  <a href="#" data-submenu="submenu2" class="js-submenu-item">программы</a>
+               </div>
+               <div class="header__nav__item">
+                  <a href="#" data-submenu="submenu1" class="js-submenu-item">Пресс-служба</a>
+               </div>
+               <div class="header__nav__item">
+                  <a href="#">Контакты</a>
+               </div>
             </nav>
             <div class="header__tools">
                <button class="header__btn-search">
@@ -94,7 +106,37 @@
          </div>
       </div>
    </div>
+<div class="submenu js-submenu" id="submenu1">
+    <div class="page__center">
+        <div class="submenu__row">
+            <div class="submenu__title">Пресс-служба</div>
+            <div class="submenu__list">
+                <div><a href="#">Пресс-служба</a></div>
+                <div><a href="#">Новости</a></div>
+                <div><a href="#">Анонсы</a></div>
+                <div><a href="#">Медиагалерея</a></div>
+                <div><a href="#">СМИ о нас</a></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="submenu js-submenu" id="submenu2">
+    <div class="page__center">
+        <div class="submenu__row">
+            <div class="submenu__title">Программы</div>
+            <div class="submenu__list">
+                <div><a href="#">Тест</a></div>
+                <div><a href="#">Новости</a></div>
+                <div><a href="#">Анонсы</a></div>
+                <div><a href="#">Медиагалерея</a></div>
+                <div><a href="#">СМИ о нас</a></div>
+            </div>
+        </div>
+    </div>
+</div>
 </header>
+
 
 <div class="page__center">
    <nav class="nav-bread">
@@ -379,7 +421,7 @@
 <script src="https://cdn.jsdelivr.net/npm/photoswipe@5.3.4/dist/umd/photoswipe.umd.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/photoswipe@5.3.4/dist/umd/photoswipe-lightbox.umd.min.js"></script>
 
-		<script src="js/bundle.js?t=1672020740556"></script>
+		<script src="js/bundle.js?t=1672026040348"></script>
 
 <style type="text/css">
 	.filelist {

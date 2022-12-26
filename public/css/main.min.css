@@ -71,14 +71,14 @@ input:focus, textarea:focus {
   height: 100%;
 }
 
-.nice-link, .l-program__docs__list a, .header__nav a, .nav-footer a {
+.nice-link, .l-program__docs__list a, .submenu__list > div a, .header__nav a, .nav-footer a {
   background-image: linear-gradient(currentColor, currentColor);
   background-position: 0 100%;
   background-repeat: no-repeat;
   background-size: 0 1px;
   transition: background-size 0.25s ease-out, color 0.2s;
 }
-.nice-link:hover, .l-program__docs__list a:hover, .header__nav a:hover, .nav-footer a:hover {
+.nice-link:hover, .l-program__docs__list a:hover, .submenu__list > div a:hover, .header__nav a:hover, .nav-footer a:hover {
   background-size: 100% 1px;
 }
 .nice-link--active, .l-program__docs__list a {
@@ -1289,6 +1289,7 @@ input:focus, textarea:focus {
   }
 }
 .header {
+  position: relative;
   box-shadow: 0px 0px 1.5rem rgba(0, 0, 0, 0.05);
 }
 .header__top {
@@ -1373,6 +1374,13 @@ input:focus, textarea:focus {
   flex-wrap: wrap;
   padding: 0 5rem;
 }
+.header__nav__item {
+  position: relative;
+  margin: 0.2rem clamp(20px, 4vw, 80px) 0.2rem 0;
+}
+.header__nav__item:last-child {
+  margin-right: 0;
+}
 .header__nav a {
   font-weight: 500;
   font-size: 1.6rem;
@@ -1380,10 +1388,6 @@ input:focus, textarea:focus {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   white-space: nowrap;
-  margin: 0.2rem clamp(20px, 4vw, 80px) 0.2rem 0;
-}
-.header__nav a:last-child {
-  margin-right: 0;
 }
 .header__tools {
   margin-left: auto;
@@ -3288,6 +3292,50 @@ input:focus, textarea:focus {
   }
   .burger__locked {
     overflow: auto;
+  }
+}
+.submenu {
+  position: absolute;
+  z-index: 100;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  box-shadow: 0px 1rem 1.5rem rgba(0, 0, 0, 0.02);
+  padding: 5.3rem;
+  display: none;
+}
+.submenu.active {
+  display: block;
+}
+.submenu__row {
+  display: flex;
+}
+.submenu__title {
+  flex: 0 0 40%;
+  padding-right: 5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 135%;
+  white-space: nowrap;
+  color: #20877D;
+}
+.submenu__list {
+  column-count: 2;
+  column-width: 25rem;
+  column-gap: 5rem;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 135%;
+  color: #000000;
+}
+.submenu__list > div {
+  margin-bottom: 1.6rem;
+}
+@media (max-width: 899.98px) {
+  .submenu {
+    display: none;
   }
 }
 .l-index__read {
